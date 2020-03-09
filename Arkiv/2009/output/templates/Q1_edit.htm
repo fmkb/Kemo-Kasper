@@ -1,0 +1,185 @@
+<head><title>Questionaire</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+<style>
+#center_block {width:400px;margin:0 auto;}
+#contents_block {text-align:center;}
+#header_block {white-space:nowrap;height:31px;padding:5px;text-align:center;}
+#footer_block {height:15px;}
+#fields_block {width:100%}
+#buttons_block {padding-bottom:5px;white-space:nowrap;text-align:center;}
+#required_block {text-align:left;padding:5px}
+#message_block {padding:5px 5px;text-align:center;}
+
+</style>
+</head>
+<body>
+{$header}
+{BEGIN body}
+
+<TABLE align=center id="center_block" cellpadding=0 cellspacing=0><tr><td>
+
+<b class="xtop"><b class="xb1b"></b><b class="xb2b"></b><b class="xb3b"></b><b class="xb4b"></b></b>
+<div id="header_block" class="upeditmenu">
+Questionaire, {mlang_message EDIT_RECORD} [
+Q1_id: {$show_key1}
+]
+</div>
+<div class="main_table_border2" style="border: 1px solid #516C81;">
+<TABLE CELLPADDING=0 CELLSPACING=0 align=center border=0 class="main_table_border">
+{BEGIN message_block}
+<div id="message_block" class=downedit>{$message}</div>
+{END message_block}
+
+{BEGIN Q1_work_fieldblock}
+<tr style="padding:3px">
+<td class=editshade_b width=150 style="padding-left:15px;">Q1_work</td>
+<td width=250 class=editshade_lb style="padding-left:10px;">
+    {$Q1_work_editcontrol}
+    </td></tr>
+{END Q1_work_fieldblock}
+{BEGIN Q1_where_fieldblock}
+<tr style="padding:3px">
+<td class=editshade_b width=150 style="padding-left:15px;">Q1_where</td>
+<td width=250 class=editshade_lb style="padding-left:10px;">
+    {$Q1_where_editcontrol}
+    </td></tr>
+{END Q1_where_fieldblock}
+{BEGIN Q1_why_fieldblock}
+<tr style="padding:3px">
+<td class=editshade_b width=150 style="padding-left:15px;">Q1_why</td>
+<td width=250 class=editshade_lb style="padding-left:10px;">
+    {$Q1_why_editcontrol}
+    </td></tr>
+{END Q1_why_fieldblock}
+{BEGIN Q1_rating_fieldblock}
+<tr style="padding:3px">
+<td class=editshade_b width=150 style="padding-left:15px;">Q1_rating</td>
+<td width=250 class=editshade_lb style="padding-left:10px;">
+    {$Q1_rating_editcontrol}
+    </td></tr>
+{END Q1_rating_fieldblock}
+{BEGIN Q1_speakothers_fieldblock}
+<tr style="padding:3px">
+<td class=editshade_b width=150 style="padding-left:15px;">Q1_speakothers</td>
+<td width=250 class=editshade_lb style="padding-left:10px;">
+    {$Q1_speakothers_editcontrol}
+    </td></tr>
+{END Q1_speakothers_fieldblock}
+{BEGIN Q1_changedme_fieldblock}
+<tr style="padding:3px">
+<td class=editshade_b width=150 style="padding-left:15px;">Q1_changedme</td>
+<td width=250 class=editshade_lb style="padding-left:10px;">
+    {$Q1_changedme_editcontrol}
+    </td></tr>
+{END Q1_changedme_fieldblock}
+{BEGIN Q1_playoften_fieldblock}
+<tr style="padding:3px">
+<td class=editshade_b width=150 style="padding-left:15px;">Q1_playoften</td>
+<td width=250 class=editshade_lb style="padding-left:10px;">
+    {$Q1_playoften_editcontrol}
+    </td></tr>
+{END Q1_playoften_fieldblock}
+{BEGIN Q1_infolevel_fieldblock}
+<tr style="padding:3px">
+<td class=editshade_b width=150 style="padding-left:15px;">Q1_infolevel</td>
+<td width=250 class=editshade_lb style="padding-left:10px;">
+    {$Q1_infolevel_editcontrol}
+    </td></tr>
+{END Q1_infolevel_fieldblock}
+{BEGIN Q1_SNotice_fieldblock}
+<tr style="padding:3px">
+<td class=editshade_b width=150 style="padding-left:15px;">Q1_SNotice</td>
+<td width=250 class=editshade_lb style="padding-left:10px;">
+    {$Q1_SNotice_editcontrol}
+    </td></tr>
+{END Q1_SNotice_fieldblock}
+{BEGIN Q1_SNoticewhere_fieldblock}
+<tr style="padding:3px">
+<td class=editshade_b width=150 style="padding-left:15px;">Q1_SNoticewhere</td>
+<td width=250 class=editshade_lb style="padding-left:10px;">
+    {$Q1_SNoticewhere_editcontrol}
+    </td></tr>
+{END Q1_SNoticewhere_fieldblock}
+{BEGIN Q1_SNoticemainsponsor_fieldblock}
+<tr style="padding:3px">
+<td class=editshade_b width=150 style="padding-left:15px;">Q1_SNoticemainsponsor</td>
+<td width=250 class=editshade_lb style="padding-left:10px;">
+    {$Q1_SNoticemainsponsor_editcontrol}
+    </td></tr>
+{END Q1_SNoticemainsponsor_fieldblock}
+{BEGIN Q1_SNoticeteam_fieldblock}
+<tr style="padding:3px">
+<td class=editshade_b width=150 style="padding-left:15px;">Q1_SNoticeteam</td>
+<td width=250 class=editshade_lb style="padding-left:10px;">
+    {$Q1_SNoticeteam_editcontrol}
+    </td></tr>
+{END Q1_SNoticeteam_fieldblock}
+{BEGIN Q1_SNoticeother_fieldblock}
+<tr style="padding:3px">
+<td class=editshade_b width=150 style="padding-left:15px;">Q1_SNoticeother</td>
+<td width=250 class=editshade_lb style="padding-left:10px;">
+    {$Q1_SNoticeother_editcontrol}
+    </td></tr>
+{END Q1_SNoticeother_fieldblock}
+{BEGIN Q1_Shavechangedview_fieldblock}
+<tr style="padding:3px">
+<td class=editshade_b width=150 style="padding-left:15px;">Q1_Shavechangedview</td>
+<td width=250 class=editshade_lb style="padding-left:10px;">
+    {$Q1_Shavechangedview_editcontrol}
+    </td></tr>
+{END Q1_Shavechangedview_fieldblock}
+{BEGIN Q1_Sbuyproducts_fieldblock}
+<tr style="padding:3px">
+<td class=editshade_b width=150 style="padding-left:15px;">Q1_Sbuyproducts</td>
+<td width=250 class=editshade_lb style="padding-left:10px;">
+    {$Q1_Sbuyproducts_editcontrol}
+    </td></tr>
+{END Q1_Sbuyproducts_fieldblock}
+{BEGIN Q1_Snameothers_fieldblock}
+<tr style="padding:3px">
+<td class=editshade_b width=150 style="padding-left:15px;">Q1_Snameothers</td>
+<td width=250 class=editshade_lb style="padding-left:10px;">
+    {$Q1_Snameothers_editcontrol}
+    </td></tr>
+{END Q1_Snameothers_fieldblock}
+{BEGIN Q1_Comments_fieldblock}
+<tr style="padding:3px">
+<td class=editshade_b width=150 style="padding-left:15px;">Q1_Comments</td>
+<td width=250 class=editshade_lb style="padding-left:10px;">
+    {$Q1_Comments_editcontrol}
+    </td></tr>
+{END Q1_Comments_fieldblock}
+{BEGIN Q1_p_id_fieldblock}
+<tr style="padding:3px">
+<td class=editshade_b width=150 style="padding-left:15px;">Q1_p_id</td>
+<td width=250 class=editshade_lb style="padding-left:10px;">
+    {$Q1_p_id_editcontrol}
+    </td></tr>
+{END Q1_p_id_fieldblock}
+</table>
+
+<div class="downedit" id="buttons_block">
+<div id="required_block" ><img src="images/icon_required.gif"> - {mlang_message REQUIRED_FIELD}</div>
+{BEGIN save_button}
+<span class=buttonborder><input class=button type=submit value="{mlang_message SAVE}" name=submit1></span>
+{END save_button}
+{BEGIN reset_button}
+<span class=buttonborder><input class=button type=reset value="{mlang_message RESET}"></span>
+{END reset_button}
+{BEGIN back_button}
+<span class=buttonborder><input class=button type=button value="{mlang_message BACK_TO_LIST}" {$backbutton_attrs}></span>
+{END back_button}
+</div>
+</div>
+<b class="xbottom"><b class="xb4b"></b><b class="xb3b"></b><b class="xb2b"></b><b class="xb1b"></b></b>
+
+</td></tr>
+</table>
+{$footer}
+{END body}
+
+</body>
+</html>

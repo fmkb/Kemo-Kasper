@@ -1,0 +1,158 @@
+<!-- Edit this file to change the layout of the detail view form -->
+
+<br>
+<table border=1 bordercolor=navy cellpadding=0 cellspacing=0>
+	<tr>
+		<td>
+			<div class=TableTitle><%%DETAIL_VIEW_TITLE%%></div>
+			</td>
+		</tr>
+	<tr>
+		<td>
+			<table>
+				<tr>
+					<td colspan=2></td>
+					<td rowspan=6 valign=top>
+						<div><%%UPDATE_BUTTON%%></div>
+						<div><%%DELETE_BUTTON%%></div>
+						<div><%%DESELECT_BUTTON%%></div>
+						<br>
+						<div><%%INSERT_BUTTON%%></div>
+						</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">Active</div>
+						</td>
+					<td class=TableBody width=300 valign=top><%%COMBO(p_active)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">Location</div>
+						</td>
+					<td class=TableBody width=300 valign=top><%%COMBO(p_location)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">P_s_id</div>
+						</td>
+					<td class=TableBody width=300 valign=top><%%COMBO(p_s_id)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">P_first</div>
+						</td>
+					<td class=TableBody width=300 valign=top><input size= 30 type=text class=TextBox name=p_first value="<%%VALUE(p_first)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">Name</div>
+						</td>
+					<td class=TableBody width=300 valign=top><input size= 30 type=text class=TextBox name=p_name value="<%%VALUE(p_name)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">Adr</div>
+						</td>
+					<td class=TableBody width=300 valign=top><input size= 30 type=text class=TextBox name=p_adr value="<%%VALUE(p_adr)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">Zip</div>
+						</td>
+					<td class=TableBody width=300 valign=top><%%COMBO(p_zip)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">Mail</div>
+						</td>
+					<td class=TableBody width=300 valign=top><input size= 50 type=text class=TextBox name=p_mail value="<%%VALUE(p_mail)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">Newsaccept</div>
+						</td>
+					<td class=TableBody width=300 valign=top><input type="checkbox" name="p_newsaccept" value="1" <%%CHECKED(p_newsaccept)%%>>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">Score</div>
+						</td>
+					<td class=TableBody width=300 valign=top><input size=10 type=text class=TextBox name=p_score value="<%%VALUE(p_score)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">P_scorehigh</div>
+						</td>
+					<td class=TableBody width=300 valign=top><input size=10 type=text class=TextBox name=p_scorehigh value="<%%VALUE(p_scorehigh)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">P_games</div>
+						</td>
+					<td class=TableBody width=300 valign=top><input size=10 type=text class=TextBox name=p_games value="<%%VALUE(p_games)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">Time</div>
+						</td>
+					<td class=TableBody width=300 valign=top><input size=10 type=text class=TextBox name=p_time value="<%%VALUE(p_time)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">P_win</div>
+						</td>
+					<td class=TableBody width=300 valign=top><input size=10 type=text class=TextBox name=p_win value="<%%VALUE(p_win)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">P_mk</div>
+						</td>
+					<td class=TableBody width=300 valign=top><%%COMBO(p_mk)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">P_born</div>
+						</td>
+					<td class=TableBody width=300 valign=top><input size=10 type=text class=TextBox name=p_born value="<%%VALUE(p_born)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">p_user</div>
+						</td>
+					<td class=TableBody width=300 valign=top><input size= 12 type=text class=TextBox name=p_user value="<%%VALUE(p_user)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">P_pwd</div>
+						</td>
+					<td class=TableBody width=300 valign=top><input size= 12 type=text class=TextBox name=p_pwd value="<%%VALUE(p_pwd)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">IP Address</div>
+						</td>
+					<td class=TableBody width=300 valign=top><%%VALUE(p_ip)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">P_datetime</div>
+						</td>
+					<td class=TableBody width=300 valign=top><%%VALUE(p_datetime)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">Turnament score</div>
+						</td>
+					<td class=TableBody width=300 valign=top><%%VALUE(p_tscore)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">Turnament kills</div>
+						</td>
+					<td class=TableBody width=300 valign=top><%%VALUE(p_tkills)%%>&nbsp;&nbsp;</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>

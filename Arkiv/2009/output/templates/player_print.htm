@@ -1,0 +1,337 @@
+<html>
+<head>
+<title>Players</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+<style>
+.grid_block {  
+margin-top:5px;
+border-collapse: collapse;
+align:center;
+width:95%;
+border:none;
+} 
+.grid_block td { 
+ padding: 5px; 
+ margin: 0px; 
+ border: solid black 1px;
+}
+.grid_block .gridspacing {width:20px;border-top-color:white; border-bottom-color:white;background-color:white}
+@media print 
+{
+	a.pdf {display:none}
+}
+.printpage {page-break-after:always}
+#selpage{margin-left:30px;}
+</style> 
+</head>
+<body style="background-color:white">
+{BEGIN body}
+{BEGIN page}
+{$header}
+{BEGIN mastertable_block}
+<div id="mastertable_block">
+{$showmasterfile}
+</div>
+{END mastertable_block}
+
+<h1>Players</h1>
+{BEGIN page_number}
+<div id='selpage'>{mlang_message PAGE1} {$page} {mlang_message PAGE2} {$maxpages} </div>
+{END page_number}
+
+{BEGIN grid_block}
+
+<table align="center" cellpadding=5 class="grid_block">
+{BEGIN grid_header}
+<tr>
+{BEGIN record_header}
+{BEGIN p_active_fieldheadercolumn}
+	<td>
+{BEGIN p_active_fieldheader}
+	<b>Status</b>
+{END p_active_fieldheader}
+	</td>
+{END p_active_fieldheadercolumn}
+{BEGIN p_s_id_fieldheadercolumn}
+	<td>
+{BEGIN p_s_id_fieldheader}
+	<b>Team</b>
+{END p_s_id_fieldheader}
+	</td>
+{END p_s_id_fieldheadercolumn}
+{BEGIN p_first_fieldheadercolumn}
+	<td>
+{BEGIN p_first_fieldheader}
+	<b>First name</b>
+{END p_first_fieldheader}
+	</td>
+{END p_first_fieldheadercolumn}
+{BEGIN p_name_fieldheadercolumn}
+	<td>
+{BEGIN p_name_fieldheader}
+	<b>Last Name</b>
+{END p_name_fieldheader}
+	</td>
+{END p_name_fieldheadercolumn}
+{BEGIN p_adr_fieldheadercolumn}
+	<td>
+{BEGIN p_adr_fieldheader}
+	<b>Adress</b>
+{END p_adr_fieldheader}
+	</td>
+{END p_adr_fieldheadercolumn}
+{BEGIN p_zip_fieldheadercolumn}
+	<td>
+{BEGIN p_zip_fieldheader}
+	<b>Zip</b>
+{END p_zip_fieldheader}
+	</td>
+{END p_zip_fieldheadercolumn}
+{BEGIN p_country_fieldheadercolumn}
+	<td>
+{BEGIN p_country_fieldheader}
+	<b>Country</b>
+{END p_country_fieldheader}
+	</td>
+{END p_country_fieldheadercolumn}
+{BEGIN p_mail_fieldheadercolumn}
+	<td>
+{BEGIN p_mail_fieldheader}
+	<b>Email</b>
+{END p_mail_fieldheader}
+	</td>
+{END p_mail_fieldheadercolumn}
+{BEGIN p_mobile_fieldheadercolumn}
+	<td>
+{BEGIN p_mobile_fieldheader}
+	<b>Mobile</b>
+{END p_mobile_fieldheader}
+	</td>
+{END p_mobile_fieldheadercolumn}
+{BEGIN p_newsaccept_fieldheadercolumn}
+	<td>
+{BEGIN p_newsaccept_fieldheader}
+	<b>Newsaccept</b>
+{END p_newsaccept_fieldheader}
+	</td>
+{END p_newsaccept_fieldheadercolumn}
+{BEGIN p_score_fieldheadercolumn}
+	<td>
+{BEGIN p_score_fieldheader}
+	<b>Score</b>
+{END p_score_fieldheader}
+	</td>
+{END p_score_fieldheadercolumn}
+{BEGIN p_scorehigh_fieldheadercolumn}
+	<td>
+{BEGIN p_scorehigh_fieldheader}
+	<b>Scorehigh</b>
+{END p_scorehigh_fieldheader}
+	</td>
+{END p_scorehigh_fieldheadercolumn}
+{BEGIN p_games_fieldheadercolumn}
+	<td>
+{BEGIN p_games_fieldheader}
+	<b>Games Played</b>
+{END p_games_fieldheader}
+	</td>
+{END p_games_fieldheadercolumn}
+{BEGIN p_win_fieldheadercolumn}
+	<td>
+{BEGIN p_win_fieldheader}
+	<b>Winner</b>
+{END p_win_fieldheader}
+	</td>
+{END p_win_fieldheadercolumn}
+{BEGIN p_mk_fieldheadercolumn}
+	<td>
+{BEGIN p_mk_fieldheader}
+	<b>MQ</b>
+{END p_mk_fieldheader}
+	</td>
+{END p_mk_fieldheadercolumn}
+{BEGIN p_born_fieldheadercolumn}
+	<td>
+{BEGIN p_born_fieldheader}
+	<b>Born</b>
+{END p_born_fieldheader}
+	</td>
+{END p_born_fieldheadercolumn}
+{BEGIN p_user_fieldheadercolumn}
+	<td>
+{BEGIN p_user_fieldheader}
+	<b>Username</b>
+{END p_user_fieldheader}
+	</td>
+{END p_user_fieldheadercolumn}
+{BEGIN p_pwd_fieldheadercolumn}
+	<td>
+{BEGIN p_pwd_fieldheader}
+	<b>Password</b>
+{END p_pwd_fieldheader}
+	</td>
+{END p_pwd_fieldheadercolumn}
+{BEGIN p_ip_fieldheadercolumn}
+	<td>
+{BEGIN p_ip_fieldheader}
+	<b>IP</b>
+{END p_ip_fieldheader}
+	</td>
+{END p_ip_fieldheadercolumn}
+{BEGIN p_datetime_fieldheadercolumn}
+	<td>
+{BEGIN p_datetime_fieldheader}
+	<b>Datetime</b>
+{END p_datetime_fieldheader}
+	</td>
+{END p_datetime_fieldheadercolumn}
+{BEGIN p_tscore_fieldheadercolumn}
+	<td>
+{BEGIN p_tscore_fieldheader}
+	<b>Competetion Score</b>
+{END p_tscore_fieldheader}
+	</td>
+{END p_tscore_fieldheadercolumn}
+{BEGIN p_tkills_fieldheadercolumn}
+	<td>
+{BEGIN p_tkills_fieldheader}
+	<b>Competetion Kills</b>
+{END p_tkills_fieldheader}
+	</td>
+{END p_tkills_fieldheadercolumn}
+{BEGIN endrecordheader_block}
+	<td class="gridspacing">&nbsp;</td>
+{END endrecordheader_block}
+{END record_header}
+</tr>
+{END grid_header}
+{BEGIN grid_row}
+<tr valign=top {$rowstyle} {$rowattrs}>
+{BEGIN grid_record}
+{BEGIN p_active_fieldcolumn}
+<td {$p_active_style}>
+{$p_active_value}
+</td>
+{END p_active_fieldcolumn}
+{BEGIN p_s_id_fieldcolumn}
+<td {$p_s_id_style}>
+{$p_s_id_value}
+</td>
+{END p_s_id_fieldcolumn}
+{BEGIN p_first_fieldcolumn}
+<td {$p_first_style}>
+{$p_first_value}
+</td>
+{END p_first_fieldcolumn}
+{BEGIN p_name_fieldcolumn}
+<td {$p_name_style}>
+{$p_name_value}
+</td>
+{END p_name_fieldcolumn}
+{BEGIN p_adr_fieldcolumn}
+<td {$p_adr_style}>
+{$p_adr_value}
+</td>
+{END p_adr_fieldcolumn}
+{BEGIN p_zip_fieldcolumn}
+<td {$p_zip_style}>
+{$p_zip_value}
+</td>
+{END p_zip_fieldcolumn}
+{BEGIN p_country_fieldcolumn}
+<td {$p_country_style}>
+{$p_country_value}
+</td>
+{END p_country_fieldcolumn}
+{BEGIN p_mail_fieldcolumn}
+<td {$p_mail_style}>
+{$p_mail_value}
+</td>
+{END p_mail_fieldcolumn}
+{BEGIN p_mobile_fieldcolumn}
+<td {$p_mobile_style}>
+{$p_mobile_value}
+</td>
+{END p_mobile_fieldcolumn}
+{BEGIN p_newsaccept_fieldcolumn}
+<td {$p_newsaccept_style}>
+{$p_newsaccept_value}
+</td>
+{END p_newsaccept_fieldcolumn}
+{BEGIN p_score_fieldcolumn}
+<td {$p_score_style}>
+{$p_score_value}
+</td>
+{END p_score_fieldcolumn}
+{BEGIN p_scorehigh_fieldcolumn}
+<td {$p_scorehigh_style}>
+{$p_scorehigh_value}
+</td>
+{END p_scorehigh_fieldcolumn}
+{BEGIN p_games_fieldcolumn}
+<td {$p_games_style}>
+{$p_games_value}
+</td>
+{END p_games_fieldcolumn}
+{BEGIN p_win_fieldcolumn}
+<td {$p_win_style}>
+{$p_win_value}
+</td>
+{END p_win_fieldcolumn}
+{BEGIN p_mk_fieldcolumn}
+<td {$p_mk_style}>
+{$p_mk_value}
+</td>
+{END p_mk_fieldcolumn}
+{BEGIN p_born_fieldcolumn}
+<td {$p_born_style}>
+{$p_born_value}
+</td>
+{END p_born_fieldcolumn}
+{BEGIN p_user_fieldcolumn}
+<td {$p_user_style}>
+{$p_user_value}
+</td>
+{END p_user_fieldcolumn}
+{BEGIN p_pwd_fieldcolumn}
+<td {$p_pwd_style}>
+{$p_pwd_value}
+</td>
+{END p_pwd_fieldcolumn}
+{BEGIN p_ip_fieldcolumn}
+<td {$p_ip_style}>
+{$p_ip_value}
+</td>
+{END p_ip_fieldcolumn}
+{BEGIN p_datetime_fieldcolumn}
+<td {$p_datetime_style}>
+{$p_datetime_value}
+</td>
+{END p_datetime_fieldcolumn}
+{BEGIN p_tscore_fieldcolumn}
+<td {$p_tscore_style}>
+{$p_tscore_value}
+</td>
+{END p_tscore_fieldcolumn}
+{BEGIN p_tkills_fieldcolumn}
+<td {$p_tkills_style}>
+{$p_tkills_value}
+</td>
+{END p_tkills_fieldcolumn}
+{BEGIN endrecord_block}
+<td class="gridspacing">&nbsp;</td>
+{END endrecord_block}
+{END grid_record}
+</tr>
+{END grid_row}
+<!-- totals row -->
+</table>
+{END grid_block}
+{$footer}
+{END page}
+{END body}
+</body>
+</html>

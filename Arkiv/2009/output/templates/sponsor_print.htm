@@ -1,0 +1,248 @@
+<html>
+<head>
+<title>Sponsors</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+<style>
+.grid_block {  
+margin-top:5px;
+border-collapse: collapse;
+align:center;
+width:95%;
+border:none;
+} 
+.grid_block td { 
+ padding: 5px; 
+ margin: 0px; 
+ border: solid black 1px;
+}
+.grid_block .gridspacing {width:20px;border-top-color:white; border-bottom-color:white;background-color:white}
+@media print 
+{
+	a.pdf {display:none}
+}
+.printpage {page-break-after:always}
+#selpage{margin-left:30px;}
+</style> 
+</head>
+<body style="background-color:white">
+{BEGIN body}
+{BEGIN page}
+{$header}
+
+<h1>Sponsors</h1>
+{BEGIN page_number}
+<div id='selpage'>{mlang_message PAGE1} {$page} {mlang_message PAGE2} {$maxpages} </div>
+{END page_number}
+
+{BEGIN grid_block}
+
+<table align="center" cellpadding=5 class="grid_block">
+{BEGIN grid_header}
+<tr>
+{BEGIN record_header}
+{BEGIN s_active_fieldheadercolumn}
+	<td>
+{BEGIN s_active_fieldheader}
+	<b>Status</b>
+{END s_active_fieldheader}
+	</td>
+{END s_active_fieldheadercolumn}
+{BEGIN s_name_fieldheadercolumn}
+	<td>
+{BEGIN s_name_fieldheader}
+	<b>Name</b>
+{END s_name_fieldheader}
+	</td>
+{END s_name_fieldheadercolumn}
+{BEGIN s_contact_fieldheadercolumn}
+	<td>
+{BEGIN s_contact_fieldheader}
+	<b>Contact</b>
+{END s_contact_fieldheader}
+	</td>
+{END s_contact_fieldheadercolumn}
+{BEGIN s_adr_fieldheadercolumn}
+	<td>
+{BEGIN s_adr_fieldheader}
+	<b>Address</b>
+{END s_adr_fieldheader}
+	</td>
+{END s_adr_fieldheadercolumn}
+{BEGIN s_zip_fieldheadercolumn}
+	<td>
+{BEGIN s_zip_fieldheader}
+	<b>Zip</b>
+{END s_zip_fieldheader}
+	</td>
+{END s_zip_fieldheadercolumn}
+{BEGIN s_country_fieldheadercolumn}
+	<td>
+{BEGIN s_country_fieldheader}
+	<b>Country</b>
+{END s_country_fieldheader}
+	</td>
+{END s_country_fieldheadercolumn}
+{BEGIN s_phone1_fieldheadercolumn}
+	<td>
+{BEGIN s_phone1_fieldheader}
+	<b>Phone 1</b>
+{END s_phone1_fieldheader}
+	</td>
+{END s_phone1_fieldheadercolumn}
+{BEGIN s_phone2_fieldheadercolumn}
+	<td>
+{BEGIN s_phone2_fieldheader}
+	<b>Phone 2</b>
+{END s_phone2_fieldheader}
+	</td>
+{END s_phone2_fieldheadercolumn}
+{BEGIN s_total_fieldheadercolumn}
+	<td>
+{BEGIN s_total_fieldheader}
+	<b>Amount Sponsored</b>
+{END s_total_fieldheader}
+	</td>
+{END s_total_fieldheadercolumn}
+{BEGIN s_paid_fieldheadercolumn}
+	<td>
+{BEGIN s_paid_fieldheader}
+	<b>Amount Paid</b>
+{END s_paid_fieldheader}
+	</td>
+{END s_paid_fieldheadercolumn}
+{BEGIN s_logo_fieldheadercolumn}
+	<td>
+{BEGIN s_logo_fieldheader}
+	<b>Banner Ad 468x60</b>
+{END s_logo_fieldheader}
+	</td>
+{END s_logo_fieldheadercolumn}
+{BEGIN s_banner_fieldheadercolumn}
+	<td>
+{BEGIN s_banner_fieldheader}
+	<b>Logo</b>
+{END s_banner_fieldheader}
+	</td>
+{END s_banner_fieldheadercolumn}
+{BEGIN s_www_fieldheadercolumn}
+	<td>
+{BEGIN s_www_fieldheader}
+	<b>WWW</b>
+{END s_www_fieldheader}
+	</td>
+{END s_www_fieldheadercolumn}
+{BEGIN s_mail_fieldheadercolumn}
+	<td>
+{BEGIN s_mail_fieldheader}
+	<b>Email</b>
+{END s_mail_fieldheader}
+	</td>
+{END s_mail_fieldheadercolumn}
+{BEGIN s_cmt_fieldheadercolumn}
+	<td>
+{BEGIN s_cmt_fieldheader}
+	<b>Comment</b>
+{END s_cmt_fieldheader}
+	</td>
+{END s_cmt_fieldheadercolumn}
+{BEGIN endrecordheader_block}
+	<td class="gridspacing">&nbsp;</td>
+{END endrecordheader_block}
+{END record_header}
+</tr>
+{END grid_header}
+{BEGIN grid_row}
+<tr valign=top {$rowstyle} {$rowattrs}>
+{BEGIN grid_record}
+{BEGIN s_active_fieldcolumn}
+<td {$s_active_style}>
+{$s_active_value}
+</td>
+{END s_active_fieldcolumn}
+{BEGIN s_name_fieldcolumn}
+<td {$s_name_style}>
+{$s_name_value}
+</td>
+{END s_name_fieldcolumn}
+{BEGIN s_contact_fieldcolumn}
+<td {$s_contact_style}>
+{$s_contact_value}
+</td>
+{END s_contact_fieldcolumn}
+{BEGIN s_adr_fieldcolumn}
+<td {$s_adr_style}>
+{$s_adr_value}
+</td>
+{END s_adr_fieldcolumn}
+{BEGIN s_zip_fieldcolumn}
+<td {$s_zip_style}>
+{$s_zip_value}
+</td>
+{END s_zip_fieldcolumn}
+{BEGIN s_country_fieldcolumn}
+<td {$s_country_style}>
+{$s_country_value}
+</td>
+{END s_country_fieldcolumn}
+{BEGIN s_phone1_fieldcolumn}
+<td {$s_phone1_style}>
+{$s_phone1_value}
+</td>
+{END s_phone1_fieldcolumn}
+{BEGIN s_phone2_fieldcolumn}
+<td {$s_phone2_style}>
+{$s_phone2_value}
+</td>
+{END s_phone2_fieldcolumn}
+{BEGIN s_total_fieldcolumn}
+<td {$s_total_style}>
+{$s_total_value}
+</td>
+{END s_total_fieldcolumn}
+{BEGIN s_paid_fieldcolumn}
+<td {$s_paid_style}>
+{$s_paid_value}
+</td>
+{END s_paid_fieldcolumn}
+{BEGIN s_logo_fieldcolumn}
+<td {$s_logo_style}>
+{$s_logo_value}
+</td>
+{END s_logo_fieldcolumn}
+{BEGIN s_banner_fieldcolumn}
+<td {$s_banner_style}>
+{$s_banner_value}
+</td>
+{END s_banner_fieldcolumn}
+{BEGIN s_www_fieldcolumn}
+<td {$s_www_style}>
+{$s_www_value}
+</td>
+{END s_www_fieldcolumn}
+{BEGIN s_mail_fieldcolumn}
+<td {$s_mail_style}>
+{$s_mail_value}
+</td>
+{END s_mail_fieldcolumn}
+{BEGIN s_cmt_fieldcolumn}
+<td {$s_cmt_style}>
+{$s_cmt_value}
+</td>
+{END s_cmt_fieldcolumn}
+{BEGIN endrecord_block}
+<td class="gridspacing">&nbsp;</td>
+{END endrecord_block}
+{END grid_record}
+</tr>
+{END grid_row}
+<!-- totals row -->
+</table>
+{END grid_block}
+{$footer}
+{END page}
+{END body}
+</body>
+</html>

@@ -1,0 +1,38 @@
+<iframe id="iframe" style="position:absolute;
+               border:none;
+			   left:-1px; 
+			   top:-1px; 
+			   filter:alpha(opacity=0);
+			   z-index:-1;"> </iframe>
+Topscores<br>
+{mlang_message DETAILS_FOUND}: <strong>{$row_count}.</strong>
+{BEGIN display_first}
+<span>{mlang_message DISPLAYING_FIRST}: <strong>{$display_count}</strong>.</span>
+{END display_first}
+
+{BEGIN details_data}
+<table cellpadding=1 cellspacing=1 border=0  class="detailtable">
+<tr>
+<td><strong>ID</strong></td>
+<td><strong>User</strong></td>
+<td><strong>Score</strong></td>
+<td><strong>Datetime</strong></td>
+<td><strong>IP</strong></td>
+<td><strong>Player</strong></td>
+<td><strong>Team</strong></td>
+<td><strong>Kills</strong></td>
+</tr>
+{BEGIN details_row}
+<tr>
+<td>{$t_id_value}</td>
+<td>{$t_user_value}</td>
+<td>{$t_score_value}</td>
+<td>{$t_datetime_value}</td>
+<td>{$t_ip_value}</td>
+<td>{$t_p_id_value}</td>
+<td>{$t_ts_id_value}</td>
+<td>{$t_kills_value}</td>
+</tr>
+{END details_row}
+</table>
+{END details_data}

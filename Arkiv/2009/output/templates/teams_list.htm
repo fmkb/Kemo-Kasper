@@ -1,0 +1,483 @@
+<html>
+<head>
+<title>Teams</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+<style>
+#height100 {height:100%;display:table;}
+#search_block div {padding:5px 7px;}
+#global_block {padding:5px 12px;min-height:800px}
+#search_block_center {padding:3px 5px;text-align:center;}
+#center_block {text-align:center;padding:4px;}
+#center_block_caption {text-align:center;padding:4px;}
+#left_block { position:absolute;width:200px; left:20px; overflow:hidden;margin-top:10px}
+#right_block { padding:10px 0px 0px 220px;}
+#toplinks_block {padding:0 5px 5px 5px;}
+#toplinks_block > * {margin:4px 6px;vertical-align:middle;}
+#menu_block {clear:left;padding:10px;}
+#menu_block div {float:left;white-space:nowrap;}
+#menu_block div div {margin-right:1px;float:none;}
+#details_block, #pages_block, #records_pp_block {white-space:nowrap;padding:5px 7px;text-align:center;}
+#recordspp_block {padding:10px;}
+#recordcontrols_block {padding:13px 10px 9px 10px;text-align:left}
+#recordcontrols_block > * {margin:2px 2px;vertical-align:middle}
+.menuitem {padding:6px 18px 10px 13px}
+.menuitem_active {padding:6px 18px 11px 13px}
+.message_block {text-align:center;}
+.grid_recordheader {padding:0 5px 5px}
+.grid_recordheader * {margin:0px 5px; vertical-align:middle}
+#grid_block {margin-top:10px;}
+.headerlist_right2 *,.headerlist * {vertical-align:middle}
+</style>
+<!--[if IE]>
+<style>
+#right_block { width:100%}
+#global_block {height:95%}
+</style>
+<![endif]-->
+</head>
+<body topmargin=5 {$bodyattrs}>
+{BEGIN body}
+{$header}
+
+<div id="height100">
+<b class="xtop"><b class="xb1b"></b><b class="xb2b"></b><b class="xb3b"></b><b class="xb4b"></b></b>
+{BEGIN toplinks_block}
+<div id="toplinks_block" class="upeditmenu">
+<span><font style="FONT-FAMILY: Verdana, Arial;">{mlang_message LOGGED_AS}</font>&nbsp;<b>{$username}</b>&nbsp;</span>
+<span class=buttonborder><input type=button class=button value="{mlang_message LOG_OUT}" {$logoutlink_attrs}></span>
+
+
+
+{BEGIN asearch_link}
+<span class=buttonborder><input type=button class=button value="{mlang_message ADVANCED_SEARCH}" {$asearchlink_attrs}></span>
+{END asearch_link}
+
+{BEGIN export_link}
+<span class=buttonborder><input type=button class=button value="{mlang_message EXPORT_RESULTS}" {$exportlink_attrs}></span>
+{END export_link}
+
+{BEGIN print_link}
+<span class=buttonborder><input type=button class=button value="{mlang_message PRINTER_FRIENDLY}" {$printlink_attrs}></span>
+{END print_link}
+{BEGIN printall_link}
+<span class=buttonborder><input type=button class=button value="{mlang_message PRINT_ALL_PAGES}" {$printalllink_attrs}></span>
+{END printall_link}
+
+
+{BEGIN languages_block}
+<span>
+<b>{mlang_message LANGUAGE}:</b>&nbsp;
+	<select {$langselector_attrs}>
+		<option value="Danish" {$Danish_langattrs}>Danish</option>
+		<option value="English" {$English_langattrs}>English</option>
+		<option value="French" {$French_langattrs}>French</option>
+		<option value="German" {$German_langattrs}>German</option>
+		<option value="Norwegian(Bokmal)" {$Norwegian_Bokmal__langattrs}>Norwegian(Bokmal)</option>
+		<option value="Spanish" {$Spanish_langattrs}>Spanish</option>
+		<option value="Swedish" {$Swedish_langattrs}>Swedish</option>
+	</select>
+</span>	
+{END languages_block}
+</div>
+{END toplinks_block}
+<div class="main_table_border2 main_table" id="global_block" style="border: 1px solid #516C81;">
+    <div id="left_block">
+        <b class="xtop"><b class="xb1b1"></b><b class="xb2b1"></b><b class="xb3b1"></b><b class="xb4b1"></b></b>
+        <div class="menu_table">
+                        {BEGIN menu_block}
+                            {BEGIN player_tablelink}
+                <div id="menu_block">
+                <span>
+                 <img src="include/img/arrow_search.gif" border=0> 
+                </span>
+                <span>&nbsp;&nbsp;<a {$player_tablelink_attrs}
+                 class="tablelinkssearch">Players</a>
+                </span>
+                </div>
+                {END player_tablelink}
+                {BEGIN Dialog_tablelink}
+                <div id="menu_block">
+                <span>
+                 <img src="include/img/arrow_search.gif" border=0> 
+                </span>
+                <span>&nbsp;&nbsp;<a {$Dialog_tablelink_attrs}
+                 class="tablelinkssearch">Dialog</a>
+                </span>
+                </div>
+                {END Dialog_tablelink}
+                {BEGIN sponsor_tablelink}
+                <div id="menu_block">
+                <span>
+                 <img src="include/img/arrow_search.gif" border=0> 
+                </span>
+                <span>&nbsp;&nbsp;<a {$sponsor_tablelink_attrs}
+                 class="tablelinkssearch">Sponsors</a>
+                </span>
+                </div>
+                {END sponsor_tablelink}
+                {BEGIN teams_tablelink}
+                <div id="menu_block">
+                <span>
+                 <img src="include/img/arrow_search2.gif" border=0> 
+                </span>
+                <span>&nbsp;&nbsp;<a {$teams_tablelink_attrs}
+                 class="highlight-tablesearch" >Teams</a>
+                </span>
+                </div>
+                {END teams_tablelink}
+                {BEGIN top_tablelink}
+                <div id="menu_block">
+                <span>
+                 <img src="include/img/arrow_search.gif" border=0> 
+                </span>
+                <span>&nbsp;&nbsp;<a {$top_tablelink_attrs}
+                 class="tablelinkssearch">Topscores</a>
+                </span>
+                </div>
+                {END top_tablelink}
+                {BEGIN news_tablelink}
+                <div id="menu_block">
+                <span>
+                 <img src="include/img/arrow_search.gif" border=0> 
+                </span>
+                <span>&nbsp;&nbsp;<a {$news_tablelink_attrs}
+                 class="tablelinkssearch">News</a>
+                </span>
+                </div>
+                {END news_tablelink}
+                {BEGIN raffle_tablelink}
+                <div id="menu_block">
+                <span>
+                 <img src="include/img/arrow_search.gif" border=0> 
+                </span>
+                <span>&nbsp;&nbsp;<a {$raffle_tablelink_attrs}
+                 class="tablelinkssearch">Raffle</a>
+                </span>
+                </div>
+                {END raffle_tablelink}
+                {BEGIN mails_tablelink}
+                <div id="menu_block">
+                <span>
+                 <img src="include/img/arrow_search.gif" border=0> 
+                </span>
+                <span>&nbsp;&nbsp;<a {$mails_tablelink_attrs}
+                 class="tablelinkssearch">Texts</a>
+                </span>
+                </div>
+                {END mails_tablelink}
+                {BEGIN xcountries_tablelink}
+                <div id="menu_block">
+                <span>
+                 <img src="include/img/arrow_search.gif" border=0> 
+                </span>
+                <span>&nbsp;&nbsp;<a {$xcountries_tablelink_attrs}
+                 class="tablelinkssearch">xcountries</a>
+                </span>
+                </div>
+                {END xcountries_tablelink}
+                {BEGIN MQ_Chart_tablelink}
+                <div id="menu_block">
+                <span>
+                 <img src="include/img/arrow_search.gif" border=0> 
+                </span>
+                <span>&nbsp;&nbsp;<a {$MQ_Chart_tablelink_attrs}
+                 class="tablelinkssearch">MQ Chart</a>
+                </span>
+                </div>
+                {END MQ_Chart_tablelink}
+                {BEGIN Accept_news_Chart_tablelink}
+                <div id="menu_block">
+                <span>
+                 <img src="include/img/arrow_search.gif" border=0> 
+                </span>
+                <span>&nbsp;&nbsp;<a {$Accept_news_Chart_tablelink_attrs}
+                 class="tablelinkssearch">Accept news Chart</a>
+                </span>
+                </div>
+                {END Accept_news_Chart_tablelink}
+            {END menu_block}
+        </div>
+	{BEGIN search_records_block}
+	<div>
+        		{BEGIN searchform}
+        <div class="menu_table" id="search_block">
+            <div class="blackshade2" id="center_block">
+                {mlang_message SEARCH_FOR}:
+            </div>
+            <div class="blackshade">
+                {BEGIN searchform_field}
+                <select id="ctlSearchField">
+                <option value="">{mlang_message ANY_FIELD}</option>
+                <option value="ts_id" {$ts_id_searchfieldoption}>Team ID</option>
+                <option value="ts_p0" {$ts_p0_searchfieldoption}>Status</option>
+                <option value="ts_s_id" {$ts_s_id_searchfieldoption}>Sponsor</option>
+                <option value="ts_name" {$ts_name_searchfieldoption}>Name</option>
+                </select>
+                {END searchform_field}
+            </div>
+            <div class="blackshade">
+                {BEGIN searchform_option}
+                <select id="ctlSearchOption">
+                <option value="Contains" {$Contains_searchtypeoption}>{mlang_message CONTAINS}</option>
+                <option value="Equals" {$Equals_searchtypeoption}>{mlang_message EQUALS}</option>
+                <option value="Starts with ..." {$Starts_with_____searchtypeoption}>{mlang_message STARTS_WITH}</option>
+                <option value="More than ..." {$More_than_____searchtypeoption}>{mlang_message MORE_THAN}</option>
+                <option value="Less than ..." {$Less_than_____searchtypeoption}>{mlang_message LESS_THAN}</option>
+                <option value="Equal or more than ..." {$Equal_or_more_than_____searchtypeoption}>{mlang_message EQUAL_OR_MORE}</option>
+                <option value="Equal or less than ..." {$Equal_or_less_than_____searchtypeoption}>{mlang_message EQUAL_OR_LESS}</option>
+                <option value="Empty" {$Empty_searchtypeoption}>{mlang_message EMPTY}</option>
+                </select>
+                {END searchform_option}
+            </div>
+            <div class="blackshade">
+                {BEGIN searchform_text}
+                <input type=text size=20 {$searchfor_attrs}>
+                {END searchform_text}
+            </div>
+            <div id="search_block_center" class="blackshade">
+                {BEGIN searchform_search}
+                <span class=buttonborder><input type=button class="button" value="{mlang_message SEARCH}" {$searchbutton_attrs}></span>
+                {END searchform_search}
+                &nbsp;		
+                {BEGIN searchform_showall}
+                <span class=buttonborder><input type=button class="button" value="{mlang_message SHOW_ALL}" {$showallbutton_attrs}></span>
+                {END searchform_showall}
+            </div>
+            <div class="blackshade2" id="details_block">
+                {BEGIN details_block}
+                <span>{mlang_message DETAILS_FOUND}: {$records_found}</span>
+                {END details_block}
+            </div>
+            <div class="menu_text blackshade" id="pages_block">
+                {BEGIN pages_block}
+                <span>{mlang_message PAGE1} {$page} {mlang_message PAGE2} {$maxpages}</span>
+                {END pages_block}
+            </div>
+        </div>
+		{END searchform}
+        <div class="menu_table2">
+            {BEGIN recordspp_block}
+            <div class="menu_text blackshade" id="recordspp_block" >
+                {mlang_message RECORDS_PP}:&nbsp;
+                <select {$recordspp_attrs}>
+                <option value="10" {$rpp10_selected}>10</option>
+                <option value="20" {$rpp20_selected}>20</option>
+                <option value="30" {$rpp30_selected}>30</option>
+                <option value="50" {$rpp50_selected}>50</option>
+                <option value="100" {$rpp100_selected}>100</option>
+                <option value="500" {$rpp500_selected}>500</option>
+                </select>
+            </div>
+            {END recordspp_block}
+        </div>
+	</div>
+	{END search_records_block}
+    </div>
+
+    <div id="right_block">
+        
+                {BEGIN mastertable_block}
+        <div id="mastertable_block">
+        {$showmasterfile}
+	<a {$backtomasterlink_attrs} class="toplinks"><b>{mlang_message BACK_TO_MASTER}</b></a>
+	<br>
+        </div>
+        {END mastertable_block}
+
+        <div class=list_table1>
+        <div class=list_table>
+        
+        <div class=blackshade2 id="center_block_caption">
+        Teams
+        </div>
+        {BEGIN recordcontrols_block}
+        <div class=blackshade id="recordcontrols_block">
+                {BEGIN add_link}
+        <span class=buttonborder><input type=button class="button" value="{mlang_message ADD_NEW}" {$addlink_attrs}></span>
+        {END add_link}
+
+        
+        
+        
+                {BEGIN delete_link}
+        <span class=buttonborder><input type=button class="button" value="{mlang_message DELETE_SELECTED}" {$deletelink_attrs}></span>
+        {END delete_link}
+
+                {BEGIN exportselected_link}
+        <span class=buttonborder><input type=button class="button" value="{mlang_message EXPORT_SELECTED}" {$exportselectedlink_attrs}></span>
+        {END exportselected_link}
+
+                {BEGIN printselected_link}
+        <span class=buttonborder><input type=button class="button" value="{mlang_message PRINT_SELECTED}" {$printselectedlink_attrs}></span>
+        {END printselected_link}
+
+        </div>
+        {END recordcontrols_block}
+<div style="height:100%">
+{BEGIN grid_block}
+<div id="grid_block">
+<table width="100%" name="maintable" border=0 cellpadding=3 cellspacing=0 class="data">
+{BEGIN grid_header}
+<tr valign="top">
+{BEGIN record_header}
+<td class="headerlist">&nbsp;</td>
+
+{BEGIN edit_column}
+<td width=50 align="center" class="headerlist"><img src="include/img/icon_edit.gif"></td>
+{END edit_column}
+
+
+
+{BEGIN view_column}
+<td width=50 align="center" class="headerlist"><img src="include/img/icon_view.gif"></td>
+{END view_column}
+
+{BEGIN checkbox_column}
+<td width=50 align="center" class="headerlist">
+<input type=checkbox {$checkboxheader_attrs}>
+</td>
+{END checkbox_column}
+
+{BEGIN player_dtable_column}
+<td width=50 class="headerlist">&nbsp;</td>
+{END player_dtable_column}
+
+{BEGIN ts_id_fieldheadercolumn}
+    <td class="headerlist" align=center>
+{BEGIN ts_id_fieldheader}
+<a class="tablelinks" {$ts_id_orderlinkattrs}>
+Team ID</a>{$ts_id_orderimage}
+{END ts_id_fieldheader}
+</td>
+{END ts_id_fieldheadercolumn}
+{BEGIN ts_p0_fieldheadercolumn}
+    <td class="headerlist" align=center>
+{BEGIN ts_p0_fieldheader}
+<a class="tablelinks" {$ts_p0_orderlinkattrs}>
+Status</a>{$ts_p0_orderimage}
+{END ts_p0_fieldheader}
+</td>
+{END ts_p0_fieldheadercolumn}
+{BEGIN ts_s_id_fieldheadercolumn}
+    <td class="headerlist" align=center>
+{BEGIN ts_s_id_fieldheader}
+<a class="tablelinks" {$ts_s_id_orderlinkattrs}>
+Sponsor</a>{$ts_s_id_orderimage}
+{END ts_s_id_fieldheader}
+</td>
+{END ts_s_id_fieldheadercolumn}
+{BEGIN ts_name_fieldheadercolumn}
+    <td class="headerlist_right2" align=center>
+{BEGIN ts_name_fieldheader}
+<a class="tablelinks" {$ts_name_orderlinkattrs}>
+Name</a>{$ts_name_orderimage}
+{END ts_name_fieldheader}
+</td>
+{END ts_name_fieldheadercolumn}
+
+{BEGIN endrecordheader_block}
+<td class="table_right"></td>
+{END endrecordheader_block}
+{END record_header}
+</tr>
+{END grid_header}
+
+
+{BEGIN grid_row}
+<tr valign="top" {$rowstyle} {$rowattrs}>
+{BEGIN grid_record}
+
+<td>&nbsp;</td>
+
+{BEGIN edit_column}
+<td align="center" valign=middle>
+{BEGIN edit_link}
+<a class=tablelinks {$editlink_attrs}>{mlang_message EDIT}</a>
+{END edit_link}
+</td>
+{END edit_column}
+
+
+
+{BEGIN view_column}
+<td align="center" valign=middle>
+{BEGIN view_link}
+<a class=tablelinks {$viewlink_attrs}>{mlang_message VIEW}</a>
+{END view_link}
+</td>
+{END view_column}
+
+{BEGIN checkbox_column}
+<td align="center" valign=middle>
+{BEGIN checkbox}
+<input type=checkbox {$checkbox_attrs}>
+{END checkbox}
+</td>
+{END checkbox_column}
+
+{BEGIN player_dtable_column}
+<td align="center" valign=middle class=borderbody>
+{BEGIN player_dtable_link}
+<a  {$player_dtablelink_attrs}>Players{BEGIN player_childcount}({$player_childnumber})
+{END player_childcount}
+</a>
+{END player_dtable_link}
+</td>
+{END player_dtable_column}
+
+{BEGIN ts_id_fieldcolumn}
+<td align=center valign=middle class=borderbody {$ts_id_style}>
+{$ts_id_value}
+</td>
+{END ts_id_fieldcolumn}
+{BEGIN ts_p0_fieldcolumn}
+<td align=center valign=middle class=borderbody {$ts_p0_style}>
+{$ts_p0_value}
+</td>
+{END ts_p0_fieldcolumn}
+{BEGIN ts_s_id_fieldcolumn}
+<td align=center valign=middle class=borderbody {$ts_s_id_style}>
+{$ts_s_id_value}
+</td>
+{END ts_s_id_fieldcolumn}
+{BEGIN ts_name_fieldcolumn}
+<td align=center valign=middle class=borderbody {$ts_name_style}>
+{$ts_name_value}
+</td>
+{END ts_name_fieldcolumn}
+
+{BEGIN endrecord_block}
+<td width=20 class=table_right {$endrecordblock_attrs}>&nbsp;</td>
+{END endrecord_block}
+{END grid_record}
+</tr>
+{END grid_row}
+	
+</table>
+</div>
+{END grid_block}
+</div>
+{BEGIN message_block}
+<div class="xboxcontentb message_block">
+{$message}
+</div>
+{END message_block}
+{BEGIN pagination_block}
+<div class="xboxcontentb message_block">
+{$pagination}
+</div>
+{END pagination_block}
+</div>
+</div>
+</div>
+</div>
+<b class="xbottom"><b class="xb4b"></b><b class="xb3b"></b><b class="xb2b"></b><b class="xb1b"></b></b>
+</div>
+{$footer}
+{END body}
+</body>
+</html>
+

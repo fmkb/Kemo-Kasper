@@ -1,0 +1,32 @@
+<iframe id="iframe" style="position:absolute;
+               border:none;
+			   left:-1px; 
+			   top:-1px; 
+			   filter:alpha(opacity=0);
+			   z-index:-1;"> </iframe>
+Raffle<br>
+{mlang_message DETAILS_FOUND}: <strong>{$row_count}.</strong>
+{BEGIN display_first}
+<span>{mlang_message DISPLAYING_FIRST}: <strong>{$display_count}</strong>.</span>
+{END display_first}
+
+{BEGIN details_data}
+<table cellpadding=1 cellspacing=1 border=0  class="detailtable">
+<tr>
+<td><strong>r_id</strong></td>
+<td><strong>Name</strong></td>
+<td><strong>Image</strong></td>
+<td><strong>Date</strong></td>
+<td><strong>Player</strong></td>
+</tr>
+{BEGIN details_row}
+<tr>
+<td>{$r_id_value}</td>
+<td>{$r_name_value}</td>
+<td>{$r_img_value}</td>
+<td>{$r_date_value}</td>
+<td>{$r_p_id_value}</td>
+</tr>
+{END details_row}
+</table>
+{END details_data}

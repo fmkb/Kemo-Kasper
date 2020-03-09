@@ -1,0 +1,48 @@
+<iframe id="iframe" style="position:absolute;
+               border:none;
+			   left:-1px; 
+			   top:-1px; 
+			   filter:alpha(opacity=0);
+			   z-index:-1;"> </iframe>
+Players<br>
+{mlang_message DETAILS_FOUND}: <strong>{$row_count}.</strong>
+{BEGIN display_first}
+<span>{mlang_message DISPLAYING_FIRST}: <strong>{$display_count}</strong>.</span>
+{END display_first}
+
+{BEGIN details_data}
+<table cellpadding=1 cellspacing=1 border=0  class="detailtable">
+<tr>
+<td><strong>Status</strong></td>
+<td><strong>Team</strong></td>
+<td><strong>First name</strong></td>
+<td><strong>Last Name</strong></td>
+<td><strong>Zip</strong></td>
+<td><strong>Email</strong></td>
+<td><strong>Newsaccept</strong></td>
+<td><strong>Winner</strong></td>
+<td><strong>MQ</strong></td>
+<td><strong>Born</strong></td>
+<td><strong>IP</strong></td>
+<td><strong>Datetime</strong></td>
+<td><strong>Competetion Score</strong></td>
+</tr>
+{BEGIN details_row}
+<tr>
+<td>{$p_active_value}</td>
+<td>{$p_s_id_value}</td>
+<td>{$p_first_value}</td>
+<td>{$p_name_value}</td>
+<td>{$p_zip_value}</td>
+<td>{$p_mail_value}</td>
+<td>{$p_newsaccept_value}</td>
+<td>{$p_win_value}</td>
+<td>{$p_mk_value}</td>
+<td>{$p_born_value}</td>
+<td>{$p_ip_value}</td>
+<td>{$p_datetime_value}</td>
+<td>{$p_tscore_value}</td>
+</tr>
+{END details_row}
+</table>
+{END details_data}

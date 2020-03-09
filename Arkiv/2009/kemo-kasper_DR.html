@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Kemo Kasper Demo</title>
+<!-- SWFObject embed by Geoff Stearns geoff@deconcept.com http://blog.deconcept.com/ -->
+<script type="text/javascript" src="swfobject.js"></script>
+<style type="text/css">
+	
+	/* hide from ie on mac \*/
+	html {
+		height: 100%;
+		overflow: hidden;
+	}
+	
+	#flashcontent {
+		height: 100%;
+		text-align: center;
+	}
+	/* end hide */
+
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	background-color: #000000;
+		/*background-image: url(pattern.gif);*/
+	}
+.style2 {color: #FFFFFF}
+.style4 {font-size: 14px}
+.style5 {font-family: Geneva, Arial, Helvetica, sans-serif}
+.style6 {color: #FFFFFF; font-family: Geneva, Arial, Helvetica, sans-serif;}
+</style>
+
+</head>
+<body>
+	<div class="style4" id="flashcontent">
+		<p class="style5"><span class="style2">It looks like need to upgrade your Flash Player. You can upgrade your Adobe Flash player <a href="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash">here</a>.	<br />If there has been an error, and you do have Flash Player 8, you can enter the site  <a href="beta.html?detectflash=false">here</a>. </span></p>
+	</div>
+	
+	<script type="text/javascript">
+		// <![CDATA[
+		
+		//var so = new SWFObject("kasperBeta.swf", "KemoKasper", "900", "600", "8", "#000000");
+		var so = new SWFObject("kemo-kasper_DR.swf", "KemoKasper", "780", "625", "8", "#000000");
+		//so.addVariable("flashVarText", "this is passed in via FlashVars for example only");
+		so.addParam("scale", "noscale");
+		so.write("flashcontent");
+		
+		// ]]>
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,145 @@
+<html>
+<head>
+<title>Raffle</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+<style>
+.grid_block {  
+margin-top:5px;
+border-collapse: collapse;
+align:center;
+width:95%;
+border:none;
+} 
+.grid_block td { 
+ padding: 5px; 
+ margin: 0px; 
+ border: solid black 1px;
+}
+.grid_block .gridspacing {width:20px;border-top-color:white; border-bottom-color:white;background-color:white}
+@media print 
+{
+	a.pdf {display:none}
+}
+.printpage {page-break-after:always}
+#selpage{margin-left:30px;}
+</style> 
+</head>
+<body style="background-color:white">
+{BEGIN body}
+{BEGIN page}
+{$header}
+{BEGIN mastertable_block}
+<div id="mastertable_block">
+{$showmasterfile}
+</div>
+{END mastertable_block}
+
+<h1>Raffle</h1>
+{BEGIN page_number}
+<div id='selpage'>{mlang_message PAGE1} {$page} {mlang_message PAGE2} {$maxpages} </div>
+{END page_number}
+
+{BEGIN grid_block}
+
+<table align="center" cellpadding=5 class="grid_block">
+{BEGIN grid_header}
+<tr>
+{BEGIN record_header}
+{BEGIN r_id_fieldheadercolumn}
+	<td>
+{BEGIN r_id_fieldheader}
+	<b>r_id</b>
+{END r_id_fieldheader}
+	</td>
+{END r_id_fieldheadercolumn}
+{BEGIN r_name_fieldheadercolumn}
+	<td>
+{BEGIN r_name_fieldheader}
+	<b>Name</b>
+{END r_name_fieldheader}
+	</td>
+{END r_name_fieldheadercolumn}
+{BEGIN r_img_fieldheadercolumn}
+	<td>
+{BEGIN r_img_fieldheader}
+	<b>Image</b>
+{END r_img_fieldheader}
+	</td>
+{END r_img_fieldheadercolumn}
+{BEGIN r_text_fieldheadercolumn}
+	<td>
+{BEGIN r_text_fieldheader}
+	<b>Description</b>
+{END r_text_fieldheader}
+	</td>
+{END r_text_fieldheadercolumn}
+{BEGIN r_date_fieldheadercolumn}
+	<td>
+{BEGIN r_date_fieldheader}
+	<b>Date</b>
+{END r_date_fieldheader}
+	</td>
+{END r_date_fieldheadercolumn}
+{BEGIN r_p_id_fieldheadercolumn}
+	<td>
+{BEGIN r_p_id_fieldheader}
+	<b>Player</b>
+{END r_p_id_fieldheader}
+	</td>
+{END r_p_id_fieldheadercolumn}
+{BEGIN endrecordheader_block}
+	<td class="gridspacing">&nbsp;</td>
+{END endrecordheader_block}
+{END record_header}
+</tr>
+{END grid_header}
+{BEGIN grid_row}
+<tr valign=top {$rowstyle} {$rowattrs}>
+{BEGIN grid_record}
+{BEGIN r_id_fieldcolumn}
+<td {$r_id_style}>
+{$r_id_value}
+</td>
+{END r_id_fieldcolumn}
+{BEGIN r_name_fieldcolumn}
+<td {$r_name_style}>
+{$r_name_value}
+</td>
+{END r_name_fieldcolumn}
+{BEGIN r_img_fieldcolumn}
+<td {$r_img_style}>
+{$r_img_value}
+</td>
+{END r_img_fieldcolumn}
+{BEGIN r_text_fieldcolumn}
+<td {$r_text_style}>
+{$r_text_value}
+</td>
+{END r_text_fieldcolumn}
+{BEGIN r_date_fieldcolumn}
+<td {$r_date_style}>
+{$r_date_value}
+</td>
+{END r_date_fieldcolumn}
+{BEGIN r_p_id_fieldcolumn}
+<td {$r_p_id_style}>
+{$r_p_id_value}
+</td>
+{END r_p_id_fieldcolumn}
+{BEGIN endrecord_block}
+<td class="gridspacing">&nbsp;</td>
+{END endrecord_block}
+{END grid_record}
+</tr>
+{END grid_row}
+<!-- totals row -->
+</table>
+{END grid_block}
+{$footer}
+{END page}
+{END body}
+</body>
+</html>

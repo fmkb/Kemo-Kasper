@@ -1,0 +1,296 @@
+<html>
+<head>
+<title>Questionaire</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+<style>
+.grid_block {  
+margin-top:5px;
+border-collapse: collapse;
+align:center;
+width:95%;
+border:none;
+} 
+.grid_block td { 
+ padding: 5px; 
+ margin: 0px; 
+ border: solid black 1px;
+}
+.grid_block .gridspacing {width:20px;border-top-color:white; border-bottom-color:white;background-color:white}
+@media print 
+{
+	a.pdf {display:none}
+}
+.printpage {page-break-after:always}
+#selpage{margin-left:30px;}
+</style> 
+</head>
+<body style="background-color:white">
+{BEGIN body}
+{BEGIN page}
+{$header}
+
+<h1>Questionaire</h1>
+{BEGIN page_number}
+<div id='selpage'>{mlang_message PAGE1} {$page} {mlang_message PAGE2} {$maxpages} </div>
+{END page_number}
+
+{BEGIN grid_block}
+
+<table align="center" cellpadding=5 class="grid_block">
+{BEGIN grid_header}
+<tr>
+{BEGIN record_header}
+{BEGIN Q1_id_fieldheadercolumn}
+	<td>
+{BEGIN Q1_id_fieldheader}
+	<b>Q1_id</b>
+{END Q1_id_fieldheader}
+	</td>
+{END Q1_id_fieldheadercolumn}
+{BEGIN Q1_work_fieldheadercolumn}
+	<td>
+{BEGIN Q1_work_fieldheader}
+	<b>Q1_work</b>
+{END Q1_work_fieldheader}
+	</td>
+{END Q1_work_fieldheadercolumn}
+{BEGIN Q1_where_fieldheadercolumn}
+	<td>
+{BEGIN Q1_where_fieldheader}
+	<b>Q1_where</b>
+{END Q1_where_fieldheader}
+	</td>
+{END Q1_where_fieldheadercolumn}
+{BEGIN Q1_why_fieldheadercolumn}
+	<td>
+{BEGIN Q1_why_fieldheader}
+	<b>Q1_why</b>
+{END Q1_why_fieldheader}
+	</td>
+{END Q1_why_fieldheadercolumn}
+{BEGIN Q1_rating_fieldheadercolumn}
+	<td>
+{BEGIN Q1_rating_fieldheader}
+	<b>Q1_rating</b>
+{END Q1_rating_fieldheader}
+	</td>
+{END Q1_rating_fieldheadercolumn}
+{BEGIN Q1_speakothers_fieldheadercolumn}
+	<td>
+{BEGIN Q1_speakothers_fieldheader}
+	<b>Q1_speakothers</b>
+{END Q1_speakothers_fieldheader}
+	</td>
+{END Q1_speakothers_fieldheadercolumn}
+{BEGIN Q1_changedme_fieldheadercolumn}
+	<td>
+{BEGIN Q1_changedme_fieldheader}
+	<b>Q1_changedme</b>
+{END Q1_changedme_fieldheader}
+	</td>
+{END Q1_changedme_fieldheadercolumn}
+{BEGIN Q1_playoften_fieldheadercolumn}
+	<td>
+{BEGIN Q1_playoften_fieldheader}
+	<b>Q1_playoften</b>
+{END Q1_playoften_fieldheader}
+	</td>
+{END Q1_playoften_fieldheadercolumn}
+{BEGIN Q1_infolevel_fieldheadercolumn}
+	<td>
+{BEGIN Q1_infolevel_fieldheader}
+	<b>Q1_infolevel</b>
+{END Q1_infolevel_fieldheader}
+	</td>
+{END Q1_infolevel_fieldheadercolumn}
+{BEGIN Q1_SNotice_fieldheadercolumn}
+	<td>
+{BEGIN Q1_SNotice_fieldheader}
+	<b>Q1_SNotice</b>
+{END Q1_SNotice_fieldheader}
+	</td>
+{END Q1_SNotice_fieldheadercolumn}
+{BEGIN Q1_SNoticewhere_fieldheadercolumn}
+	<td>
+{BEGIN Q1_SNoticewhere_fieldheader}
+	<b>Q1_SNoticewhere</b>
+{END Q1_SNoticewhere_fieldheader}
+	</td>
+{END Q1_SNoticewhere_fieldheadercolumn}
+{BEGIN Q1_SNoticemainsponsor_fieldheadercolumn}
+	<td>
+{BEGIN Q1_SNoticemainsponsor_fieldheader}
+	<b>Q1_SNoticemainsponsor</b>
+{END Q1_SNoticemainsponsor_fieldheader}
+	</td>
+{END Q1_SNoticemainsponsor_fieldheadercolumn}
+{BEGIN Q1_SNoticeteam_fieldheadercolumn}
+	<td>
+{BEGIN Q1_SNoticeteam_fieldheader}
+	<b>Q1_SNoticeteam</b>
+{END Q1_SNoticeteam_fieldheader}
+	</td>
+{END Q1_SNoticeteam_fieldheadercolumn}
+{BEGIN Q1_SNoticeother_fieldheadercolumn}
+	<td>
+{BEGIN Q1_SNoticeother_fieldheader}
+	<b>Q1_SNoticeother</b>
+{END Q1_SNoticeother_fieldheader}
+	</td>
+{END Q1_SNoticeother_fieldheadercolumn}
+{BEGIN Q1_Shavechangedview_fieldheadercolumn}
+	<td>
+{BEGIN Q1_Shavechangedview_fieldheader}
+	<b>Q1_Shavechangedview</b>
+{END Q1_Shavechangedview_fieldheader}
+	</td>
+{END Q1_Shavechangedview_fieldheadercolumn}
+{BEGIN Q1_Sbuyproducts_fieldheadercolumn}
+	<td>
+{BEGIN Q1_Sbuyproducts_fieldheader}
+	<b>Q1_Sbuyproducts</b>
+{END Q1_Sbuyproducts_fieldheader}
+	</td>
+{END Q1_Sbuyproducts_fieldheadercolumn}
+{BEGIN Q1_Snameothers_fieldheadercolumn}
+	<td>
+{BEGIN Q1_Snameothers_fieldheader}
+	<b>Q1_Snameothers</b>
+{END Q1_Snameothers_fieldheader}
+	</td>
+{END Q1_Snameothers_fieldheadercolumn}
+{BEGIN Q1_Comments_fieldheadercolumn}
+	<td>
+{BEGIN Q1_Comments_fieldheader}
+	<b>Q1_Comments</b>
+{END Q1_Comments_fieldheader}
+	</td>
+{END Q1_Comments_fieldheadercolumn}
+{BEGIN Q1_p_id_fieldheadercolumn}
+	<td>
+{BEGIN Q1_p_id_fieldheader}
+	<b>Q1_p_id</b>
+{END Q1_p_id_fieldheader}
+	</td>
+{END Q1_p_id_fieldheadercolumn}
+{BEGIN endrecordheader_block}
+	<td class="gridspacing">&nbsp;</td>
+{END endrecordheader_block}
+{END record_header}
+</tr>
+{END grid_header}
+{BEGIN grid_row}
+<tr valign=top {$rowstyle} {$rowattrs}>
+{BEGIN grid_record}
+{BEGIN Q1_id_fieldcolumn}
+<td {$Q1_id_style}>
+{$Q1_id_value}
+</td>
+{END Q1_id_fieldcolumn}
+{BEGIN Q1_work_fieldcolumn}
+<td {$Q1_work_style}>
+{$Q1_work_value}
+</td>
+{END Q1_work_fieldcolumn}
+{BEGIN Q1_where_fieldcolumn}
+<td {$Q1_where_style}>
+{$Q1_where_value}
+</td>
+{END Q1_where_fieldcolumn}
+{BEGIN Q1_why_fieldcolumn}
+<td {$Q1_why_style}>
+{$Q1_why_value}
+</td>
+{END Q1_why_fieldcolumn}
+{BEGIN Q1_rating_fieldcolumn}
+<td {$Q1_rating_style}>
+{$Q1_rating_value}
+</td>
+{END Q1_rating_fieldcolumn}
+{BEGIN Q1_speakothers_fieldcolumn}
+<td {$Q1_speakothers_style}>
+{$Q1_speakothers_value}
+</td>
+{END Q1_speakothers_fieldcolumn}
+{BEGIN Q1_changedme_fieldcolumn}
+<td {$Q1_changedme_style}>
+{$Q1_changedme_value}
+</td>
+{END Q1_changedme_fieldcolumn}
+{BEGIN Q1_playoften_fieldcolumn}
+<td {$Q1_playoften_style}>
+{$Q1_playoften_value}
+</td>
+{END Q1_playoften_fieldcolumn}
+{BEGIN Q1_infolevel_fieldcolumn}
+<td {$Q1_infolevel_style}>
+{$Q1_infolevel_value}
+</td>
+{END Q1_infolevel_fieldcolumn}
+{BEGIN Q1_SNotice_fieldcolumn}
+<td {$Q1_SNotice_style}>
+{$Q1_SNotice_value}
+</td>
+{END Q1_SNotice_fieldcolumn}
+{BEGIN Q1_SNoticewhere_fieldcolumn}
+<td {$Q1_SNoticewhere_style}>
+{$Q1_SNoticewhere_value}
+</td>
+{END Q1_SNoticewhere_fieldcolumn}
+{BEGIN Q1_SNoticemainsponsor_fieldcolumn}
+<td {$Q1_SNoticemainsponsor_style}>
+{$Q1_SNoticemainsponsor_value}
+</td>
+{END Q1_SNoticemainsponsor_fieldcolumn}
+{BEGIN Q1_SNoticeteam_fieldcolumn}
+<td {$Q1_SNoticeteam_style}>
+{$Q1_SNoticeteam_value}
+</td>
+{END Q1_SNoticeteam_fieldcolumn}
+{BEGIN Q1_SNoticeother_fieldcolumn}
+<td {$Q1_SNoticeother_style}>
+{$Q1_SNoticeother_value}
+</td>
+{END Q1_SNoticeother_fieldcolumn}
+{BEGIN Q1_Shavechangedview_fieldcolumn}
+<td {$Q1_Shavechangedview_style}>
+{$Q1_Shavechangedview_value}
+</td>
+{END Q1_Shavechangedview_fieldcolumn}
+{BEGIN Q1_Sbuyproducts_fieldcolumn}
+<td {$Q1_Sbuyproducts_style}>
+{$Q1_Sbuyproducts_value}
+</td>
+{END Q1_Sbuyproducts_fieldcolumn}
+{BEGIN Q1_Snameothers_fieldcolumn}
+<td {$Q1_Snameothers_style}>
+{$Q1_Snameothers_value}
+</td>
+{END Q1_Snameothers_fieldcolumn}
+{BEGIN Q1_Comments_fieldcolumn}
+<td {$Q1_Comments_style}>
+{$Q1_Comments_value}
+</td>
+{END Q1_Comments_fieldcolumn}
+{BEGIN Q1_p_id_fieldcolumn}
+<td {$Q1_p_id_style}>
+{$Q1_p_id_value}
+</td>
+{END Q1_p_id_fieldcolumn}
+{BEGIN endrecord_block}
+<td class="gridspacing">&nbsp;</td>
+{END endrecord_block}
+{END grid_record}
+</tr>
+{END grid_row}
+<!-- totals row -->
+</table>
+{END grid_block}
+{$footer}
+{END page}
+{END body}
+</body>
+</html>

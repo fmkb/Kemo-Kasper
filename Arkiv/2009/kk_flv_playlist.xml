@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<playlist version="1" xmlns="http://xspf.org/ns/0/">
+	<trackList>
+		<track>
+			<title>Kunst</title>
+			<creator>ODP</creator>
+			<location>http://www.webtarget.dk/Kunst3_NEW.flv</location>
+			<image>filmpreview5.png</image>
+			<info>http://www.fmkb.dk</info>
+		</track>
+		<track>
+			<title>Jagten</title>
+			<creator>ODP</creator>
+			<location>http://www.webtarget.dk/Jagt3_NEW.flv</location>
+			<image>filmpreview5.png</image>
+			<info>http://www.fmkb.dk</info>
+		</track>
+		<track>
+			<title>Elevator</title>
+			<creator>ODP</creator>
+			<location>http://www.webtarget.dk/Elevator_NEW.flv</location>
+			<image>filmpreview5.png</image>
+			<info>http://www.fmkb.dk</info>
+		</track>
+		<track>
+			<title>Den Lange</title>
+			<creator>Anden</creator>
+			<location>http://www.webtarget.dk/denlange1.flv</location>
+			<image>filmpreview1.png</image>
+			<info>http://www.fmkb.dk</info>
+		</track>
+		<track>
+			<title>Det vi hører</title>
+			<creator>Anden</creator>
+			<location>http://www.webtarget.dk/detvihorer.flv</location>
+			<info>http://www.fmkb.dk</info>
+			<image>filmpreview2.png</image>
+		</track>
+		<track>
+			<title>T-Shirt</title>
+			<creator>Anden</creator>
+			<location>http://www.webtarget.dk/tshirtfinal.flv</location>
+			<info>http://www.fmkb.dk</info>
+			<image>filmpreview3.png</image>
+		</track>
+		<track>
+			<title>Sokker der taler</title>
+			<creator>Anden</creator>
+			<location>http://www.webtarget.dk/sockerfinal.flv</location>
+			<info>http://www.fmkb.dk</info>
+			<image>filmpreview4.png</image>
+		</track>
+	</trackList>
+</playlist>
+

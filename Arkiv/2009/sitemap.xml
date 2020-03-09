@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.google.com/schemas/sitemap/0.84"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.google.com/schemas/sitemap/0.84
+http://www.google.com/schemas/sitemap/0.84/sitemap.xsd">
+
+  <url>
+    <loc>http://www.kemo-kasper.dk/</loc>
+    <lastmod>2007-10-09T10:41:15+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.kemo-kasper.dk/?WIN=Yes</loc>
+    <lastmod>2007-10-09T10:41:20+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.kemo-kasper.dk/?DFO=Yes</loc>
+    <lastmod>2007-10-09T10:41:20+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.kemo-kasper.dk/?SB=Yes</loc>
+    <lastmod>2007-10-09T10:41:17+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.kemo-kasper.dk/?PR=Yes</loc>
+    <lastmod>2007-10-09T10:41:17+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>

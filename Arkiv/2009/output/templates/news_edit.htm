@@ -1,0 +1,129 @@
+<head><title>News</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+<style>
+#center_block {width:400px;margin:0 auto;}
+#contents_block {text-align:center;}
+#header_block {white-space:nowrap;height:31px;padding:5px;text-align:center;}
+#footer_block {height:15px;}
+#fields_block {width:100%}
+#buttons_block {padding-bottom:5px;white-space:nowrap;text-align:center;}
+#required_block {text-align:left;padding:5px}
+#message_block {padding:5px 5px;text-align:center;}
+
+</style>
+</head>
+<body>
+{$header}
+{BEGIN body}
+
+<TABLE align=center id="center_block" cellpadding=0 cellspacing=0><tr><td>
+
+<b class="xtop"><b class="xb1b"></b><b class="xb2b"></b><b class="xb3b"></b><b class="xb4b"></b></b>
+<div id="header_block" class="upeditmenu">
+News, {mlang_message EDIT_RECORD} [
+ID: {$show_key1}
+]
+</div>
+<div class="main_table_border2" style="border: 1px solid #516C81;">
+<TABLE CELLPADDING=0 CELLSPACING=0 align=center border=0 class="main_table_border">
+{BEGIN message_block}
+<div id="message_block" class=downedit>{$message}</div>
+{END message_block}
+
+{BEGIN n_active_fieldblock}
+<tr style="padding:3px">
+<td class=editshade_b width=150 style="padding-left:15px;">Active</td>
+<td width=250 class=editshade_lb style="padding-left:10px;">
+    {$n_active_editcontrol}
+    </td></tr>
+{END n_active_fieldblock}
+{BEGIN n_start_fieldblock}
+<tr style="padding:3px">
+<td class=editshade_b width=150 style="padding-left:15px;">Start</td>
+<td width=250 class=editshade_lb style="padding-left:10px;">
+    {$n_start_editcontrol}
+    </td></tr>
+{END n_start_fieldblock}
+{BEGIN n_end_fieldblock}
+<tr style="padding:3px">
+<td class=editshade_b width=150 style="padding-left:15px;">End</td>
+<td width=250 class=editshade_lb style="padding-left:10px;">
+    {$n_end_editcontrol}
+    </td></tr>
+{END n_end_fieldblock}
+{BEGIN n_date_fieldblock}
+<tr style="padding:3px">
+<td class=editshade_b width=150 style="padding-left:15px;">Date</td>
+<td width=250 class=editshade_lb style="padding-left:10px;">
+    {$n_date_editcontrol}
+    </td></tr>
+{END n_date_fieldblock}
+{BEGIN n_head_fieldblock}
+<tr style="padding:3px">
+<td class=editshade_b width=150 style="padding-left:15px;">Headline</td>
+<td width=250 class=editshade_lb style="padding-left:10px;">
+    {$n_head_editcontrol}
+    </td></tr>
+{END n_head_fieldblock}
+{BEGIN n_teaser_fieldblock}
+<tr style="padding:3px">
+<td class=editshade_b width=150 style="padding-left:15px;">Teaser</td>
+<td width=250 class=editshade_lb style="padding-left:10px;">
+    {$n_teaser_editcontrol}
+    </td></tr>
+{END n_teaser_fieldblock}
+{BEGIN n_text_fieldblock}
+<tr style="padding:3px">
+<td class=editshade_b width=150 style="padding-left:15px;">Text</td>
+<td width=250 class=editshade_lb style="padding-left:10px;">
+    {$n_text_editcontrol}
+    </td></tr>
+{END n_text_fieldblock}
+{BEGIN n_file_fieldblock}
+<tr style="padding:3px">
+<td class=editshade_b width=150 style="padding-left:15px;">File upload</td>
+<td width=250 class=editshade_lb style="padding-left:10px;">
+    {$n_file_editcontrol}
+    </td></tr>
+{END n_file_fieldblock}
+{BEGIN n_type_fieldblock}
+<tr style="padding:3px">
+<td class=editshade_b width=150 style="padding-left:15px;">News Type</td>
+<td width=250 class=editshade_lb style="padding-left:10px;">
+    {$n_type_editcontrol}
+    </td></tr>
+{END n_type_fieldblock}
+{BEGIN n_country_fieldblock}
+<tr style="padding:3px">
+<td class=editshade_b width=150 style="padding-left:15px;">Country</td>
+<td width=250 class=editshade_lb style="padding-left:10px;">
+    {$n_country_editcontrol}
+    </td></tr>
+{END n_country_fieldblock}
+</table>
+
+<div class="downedit" id="buttons_block">
+<div id="required_block" ><img src="images/icon_required.gif"> - {mlang_message REQUIRED_FIELD}</div>
+{BEGIN save_button}
+<span class=buttonborder><input class=button type=submit value="{mlang_message SAVE}" name=submit1></span>
+{END save_button}
+{BEGIN reset_button}
+<span class=buttonborder><input class=button type=reset value="{mlang_message RESET}"></span>
+{END reset_button}
+{BEGIN back_button}
+<span class=buttonborder><input class=button type=button value="{mlang_message BACK_TO_LIST}" {$backbutton_attrs}></span>
+{END back_button}
+</div>
+</div>
+<b class="xbottom"><b class="xb4b"></b><b class="xb3b"></b><b class="xb2b"></b><b class="xb1b"></b></b>
+
+</td></tr>
+</table>
+{$footer}
+{END body}
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<iframe id="iframe" style="position:absolute;
+               border:none;
+			   left:-1px; 
+			   top:-1px; 
+			   filter:alpha(opacity=0);
+			   z-index:-1;"> </iframe>
+Questionaire<br>
+{mlang_message DETAILS_FOUND}: <strong>{$row_count}.</strong>
+{BEGIN display_first}
+<span>{mlang_message DISPLAYING_FIRST}: <strong>{$display_count}</strong>.</span>
+{END display_first}
+
+{BEGIN details_data}
+<table cellpadding=1 cellspacing=1 border=0  class="detailtable">
+<tr>
+<td><strong>Q1_id</strong></td>
+<td><strong>Q1_work</strong></td>
+<td><strong>Q1_where</strong></td>
+<td><strong>Q1_why</strong></td>
+<td><strong>Q1_rating</strong></td>
+<td><strong>Q1_speakothers</strong></td>
+<td><strong>Q1_changedme</strong></td>
+<td><strong>Q1_playoften</strong></td>
+<td><strong>Q1_infolevel</strong></td>
+<td><strong>Q1_SNotice</strong></td>
+<td><strong>Q1_SNoticewhere</strong></td>
+<td><strong>Q1_SNoticemainsponsor</strong></td>
+<td><strong>Q1_SNoticeteam</strong></td>
+<td><strong>Q1_SNoticeother</strong></td>
+<td><strong>Q1_Shavechangedview</strong></td>
+<td><strong>Q1_Sbuyproducts</strong></td>
+<td><strong>Q1_Snameothers</strong></td>
+<td><strong>Q1_Comments</strong></td>
+<td><strong>Q1_p_id</strong></td>
+</tr>
+{BEGIN details_row}
+<tr>
+<td>{$Q1_id_value}</td>
+<td>{$Q1_work_value}</td>
+<td>{$Q1_where_value}</td>
+<td>{$Q1_why_value}</td>
+<td>{$Q1_rating_value}</td>
+<td>{$Q1_speakothers_value}</td>
+<td>{$Q1_changedme_value}</td>
+<td>{$Q1_playoften_value}</td>
+<td>{$Q1_infolevel_value}</td>
+<td>{$Q1_SNotice_value}</td>
+<td>{$Q1_SNoticewhere_value}</td>
+<td>{$Q1_SNoticemainsponsor_value}</td>
+<td>{$Q1_SNoticeteam_value}</td>
+<td>{$Q1_SNoticeother_value}</td>
+<td>{$Q1_Shavechangedview_value}</td>
+<td>{$Q1_Sbuyproducts_value}</td>
+<td>{$Q1_Snameothers_value}</td>
+<td>{$Q1_Comments_value}</td>
+<td>{$Q1_p_id_value}</td>
+</tr>
+{END details_row}
+</table>
+{END details_data}

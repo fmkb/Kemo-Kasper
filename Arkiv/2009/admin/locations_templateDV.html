@@ -1,0 +1,86 @@
+<!-- Edit this file to change the layout of the detail view form -->
+
+<br>
+<table border=1 bordercolor=navy cellpadding=0 cellspacing=0>
+	<tr>
+		<td>
+			<div class=TableTitle><%%DETAIL_VIEW_TITLE%%></div>
+			</td>
+		</tr>
+	<tr>
+		<td>
+			<table>
+				<tr>
+					<td colspan=2></td>
+					<td rowspan=6 valign=top>
+						<div><%%UPDATE_BUTTON%%></div>
+						<div><%%DELETE_BUTTON%%></div>
+						<div><%%DESELECT_BUTTON%%></div>
+						<br>
+						<div><%%INSERT_BUTTON%%></div>
+						</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">L_active</div>
+						</td>
+					<td class=TableBody width=300 valign=top><%%COMBO(l_active)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">L_name</div>
+						</td>
+					<td class=TableBody width=300 valign=top><input size= 30 type=text class=TextBox name=l_name value="<%%VALUE(l_name)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">L_adr</div>
+						</td>
+					<td class=TableBody width=300 valign=top><input size= 30 type=text class=TextBox name=l_adr value="<%%VALUE(l_adr)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">L_zip</div>
+						</td>
+					<td class=TableBody width=300 valign=top><%%COMBO(l_zip)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">L_mail</div>
+						</td>
+					<td class=TableBody width=300 valign=top><input size= 30 type=text class=TextBox name=l_mail value="<%%VALUE(l_mail)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">L_desc</div>
+						</td>
+					<td class=TableBody width=300 valign=top><textarea class=TextBox name=l_desc cols=50 rows=3><%%VALUE(l_desc)%%></textarea>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">L_phone1</div>
+						</td>
+					<td class=TableBody width=300 valign=top><input size= 30 type=text class=TextBox name=l_phone1 value="<%%VALUE(l_phone1)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">L_phone2</div>
+						</td>
+					<td class=TableBody width=300 valign=top><input size= 30 type=text class=TextBox name=l_phone2 value="<%%VALUE(l_phone2)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">L_open</div>
+						</td>
+					<td class=TableBody width=300 valign=top><input size= 30 type=text class=TextBox name=l_open value="<%%VALUE(l_open)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">L_close</div>
+						</td>
+					<td class=TableBody width=300 valign=top><input size= 30 type=text class=TextBox name=l_close value="<%%VALUE(l_close)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>

@@ -1,0 +1,207 @@
+<html>
+<head>
+<title>Accept news Chart</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+<style>
+#height100 {height:100%;display:table;}
+#search_block div {padding:5px 7px;}
+#global_block {padding:5px 12px;height:100%}
+#search_block_center {padding:3px 5px;text-align:center;}
+#center_block {text-align:center;padding:4px;}
+#center_block_caption {text-align:center;padding:4px;}
+#left_block { position:absolute;width:200px; left:20px; overflow:hidden;margin-top:10px}
+#right_block { padding:10px 0px 0px 220px;width:10%}
+#toplinks_block {padding:2px 5px}
+#toplinks_block > * {margin:4px 6px;vertical-align:middle;}
+#menu_block {clear:left;padding:10px;}
+#menu_block div {float:left;white-space:nowrap;}
+#menu_block div div {margin-right:1px;float:none;}
+#details_block, #pages_block, #records_pp_block {white-space:nowrap;padding:5px 7px;text-align:center;}
+#chart_block {padding:13px 10px 9px 10px;text-align:left}
+.menuitem {padding:6px 18px 10px 13px}
+.menuitem_active {padding:6px 18px 11px 13px}
+.message_block {text-align:center;}
+.grid_recordheader {padding:0 5px 5px}
+.grid_recordheader * {margin:0px 5px; vertical-align:middle}
+#grid_block {margin-top:10px;}
+.headerlist_right2 *,.headerlist * {vertical-align:middle}
+</style>
+</head>
+<body topmargin=5 {$bodyattrs}>
+{BEGIN body}
+{$header}
+
+<div id="height100">
+<b class="xtop"><b class="xb1b"></b><b class="xb2b"></b><b class="xb3b"></b><b class="xb4b"></b></b>
+{BEGIN toplinks_block}
+<div id="toplinks_block" class="upeditmenu">
+<span><font style="FONT-FAMILY: Verdana, Arial;">{mlang_message LOGGED_AS}</font>&nbsp;<b>{$username}</b>&nbsp;</span>
+<span class=buttonborder><input type=button class=button value="{mlang_message LOG_OUT}" {$logoutlink_attrs}></span>
+
+
+
+{BEGIN asearch_link}
+<span class=buttonborder><input type=button class=button value="{mlang_message ADVANCED_SEARCH}" {$asearchlink_attrs}></span>
+{END asearch_link}
+
+{BEGIN languages_block}
+<span>
+<b>{mlang_message LANGUAGE}:</b>&nbsp;
+	<select {$langselector_attrs}>
+		<option value="Danish" {$Danish_langattrs}>Danish</option>
+		<option value="English" {$English_langattrs}>English</option>
+		<option value="French" {$French_langattrs}>French</option>
+		<option value="German" {$German_langattrs}>German</option>
+		<option value="Norwegian(Bokmal)" {$Norwegian_Bokmal__langattrs}>Norwegian(Bokmal)</option>
+		<option value="Spanish" {$Spanish_langattrs}>Spanish</option>
+		<option value="Swedish" {$Swedish_langattrs}>Swedish</option>
+	</select>
+</span>	
+{END languages_block}
+{END toplinks_block}
+</div>
+<div class="main_table_border2 main_table" id="global_block" style="border: 1px solid #516C81;">
+    <div id="left_block">
+        <b class="xtop"><b class="xb1b1"></b><b class="xb2b1"></b><b class="xb3b1"></b><b class="xb4b1"></b></b>
+        <div class="menu_table">
+                        {BEGIN menu_block}
+                            {BEGIN player_tablelink}
+                <div id="menu_block">
+                <span>
+                 <img src="include/img/arrow_search.gif" border=0> 
+                </span>
+                <span>&nbsp;&nbsp;<a {$player_tablelink_attrs}
+                 class="tablelinkssearch">Players</a>
+                </span>
+                </div>
+                {END player_tablelink}
+                {BEGIN Dialog_tablelink}
+                <div id="menu_block">
+                <span>
+                 <img src="include/img/arrow_search.gif" border=0> 
+                </span>
+                <span>&nbsp;&nbsp;<a {$Dialog_tablelink_attrs}
+                 class="tablelinkssearch">Dialog</a>
+                </span>
+                </div>
+                {END Dialog_tablelink}
+                {BEGIN sponsor_tablelink}
+                <div id="menu_block">
+                <span>
+                 <img src="include/img/arrow_search.gif" border=0> 
+                </span>
+                <span>&nbsp;&nbsp;<a {$sponsor_tablelink_attrs}
+                 class="tablelinkssearch">Sponsors</a>
+                </span>
+                </div>
+                {END sponsor_tablelink}
+                {BEGIN teams_tablelink}
+                <div id="menu_block">
+                <span>
+                 <img src="include/img/arrow_search.gif" border=0> 
+                </span>
+                <span>&nbsp;&nbsp;<a {$teams_tablelink_attrs}
+                 class="tablelinkssearch">Teams</a>
+                </span>
+                </div>
+                {END teams_tablelink}
+                {BEGIN top_tablelink}
+                <div id="menu_block">
+                <span>
+                 <img src="include/img/arrow_search.gif" border=0> 
+                </span>
+                <span>&nbsp;&nbsp;<a {$top_tablelink_attrs}
+                 class="tablelinkssearch">Topscores</a>
+                </span>
+                </div>
+                {END top_tablelink}
+                {BEGIN news_tablelink}
+                <div id="menu_block">
+                <span>
+                 <img src="include/img/arrow_search.gif" border=0> 
+                </span>
+                <span>&nbsp;&nbsp;<a {$news_tablelink_attrs}
+                 class="tablelinkssearch">News</a>
+                </span>
+                </div>
+                {END news_tablelink}
+                {BEGIN raffle_tablelink}
+                <div id="menu_block">
+                <span>
+                 <img src="include/img/arrow_search.gif" border=0> 
+                </span>
+                <span>&nbsp;&nbsp;<a {$raffle_tablelink_attrs}
+                 class="tablelinkssearch">Raffle</a>
+                </span>
+                </div>
+                {END raffle_tablelink}
+                {BEGIN mails_tablelink}
+                <div id="menu_block">
+                <span>
+                 <img src="include/img/arrow_search.gif" border=0> 
+                </span>
+                <span>&nbsp;&nbsp;<a {$mails_tablelink_attrs}
+                 class="tablelinkssearch">Texts</a>
+                </span>
+                </div>
+                {END mails_tablelink}
+                {BEGIN xcountries_tablelink}
+                <div id="menu_block">
+                <span>
+                 <img src="include/img/arrow_search.gif" border=0> 
+                </span>
+                <span>&nbsp;&nbsp;<a {$xcountries_tablelink_attrs}
+                 class="tablelinkssearch">xcountries</a>
+                </span>
+                </div>
+                {END xcountries_tablelink}
+                {BEGIN MQ_Chart_tablelink}
+                <div id="menu_block">
+                <span>
+                 <img src="include/img/arrow_search.gif" border=0> 
+                </span>
+                <span>&nbsp;&nbsp;<a {$MQ_Chart_tablelink_attrs}
+                 class="tablelinkssearch">MQ Chart</a>
+                </span>
+                </div>
+                {END MQ_Chart_tablelink}
+                {BEGIN Accept_news_Chart_tablelink}
+                <div id="menu_block">
+                <span>
+                 <img src="include/img/arrow_search2.gif" border=0> 
+                </span>
+                <span>&nbsp;&nbsp;<a {$Accept_news_Chart_tablelink_attrs}
+                 class="highlight-tablesearch" >Accept news Chart</a>
+                </span>
+                </div>
+                {END Accept_news_Chart_tablelink}
+            {END menu_block}
+        </div>
+        <b class="xbottom"><b class="xb4b1"></b><b class="xb3b1"></b><b class="xb2b1"></b><b class="xb1b1"></b></b>
+    </div>
+
+    <div id="right_block">
+        
+        <table class=list_table1><tr><td>
+        <div class=list_table>
+        
+        <div class=blackshade2 id="center_block_caption">
+        Accept&nbsp;news&nbsp;Chart
+        </div>
+        {BEGIN chart_block}
+        <div class=blackshade id="chart_block">
+{$Accept_news_Chart_chart 700 530}
+        </div>
+        {END chart_block}
+</div>
+</td></tr></table>
+</div>
+</div>
+<b class="xbottom"><b class="xb4b"></b><b class="xb3b"></b><b class="xb2b"></b><b class="xb1b"></b></b>
+{$footer}
+{END body}
+</body>
+</html>

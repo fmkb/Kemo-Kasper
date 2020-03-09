@@ -1,0 +1,27 @@
+<edit_controls>
+	<jscode>{$linkdata}</jscode>
+	<control 
+	field="d_datetime">
+		{$d_datetime_editcontrol}
+		</control>
+	<control 
+	field="d_msg_type">
+		{$d_msg_type_editcontrol}
+		</control>
+	<control 
+	field="d_from_p_id">
+	    <nobr>
+	{$d_from_p_id_editcontrol}
+	    <font color="red">*</font>
+	</nobr>
+	</control>
+	<control 
+	field="d_to_p_id">
+		{$d_to_p_id_editcontrol}
+		</control>
+	<control 
+	field="d_message">
+		{$d_message_editcontrol}
+		</control>
+	<message status="{$status}">{$message}</message>
+</edit_controls>

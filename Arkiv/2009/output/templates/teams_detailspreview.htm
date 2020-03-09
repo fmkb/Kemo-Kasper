@@ -1,0 +1,30 @@
+<iframe id="iframe" style="position:absolute;
+               border:none;
+			   left:-1px; 
+			   top:-1px; 
+			   filter:alpha(opacity=0);
+			   z-index:-1;"> </iframe>
+Teams<br>
+{mlang_message DETAILS_FOUND}: <strong>{$row_count}.</strong>
+{BEGIN display_first}
+<span>{mlang_message DISPLAYING_FIRST}: <strong>{$display_count}</strong>.</span>
+{END display_first}
+
+{BEGIN details_data}
+<table cellpadding=1 cellspacing=1 border=0  class="detailtable">
+<tr>
+<td><strong>Team ID</strong></td>
+<td><strong>Status</strong></td>
+<td><strong>Sponsor</strong></td>
+<td><strong>Name</strong></td>
+</tr>
+{BEGIN details_row}
+<tr>
+<td>{$ts_id_value}</td>
+<td>{$ts_p0_value}</td>
+<td>{$ts_s_id_value}</td>
+<td>{$ts_name_value}</td>
+</tr>
+{END details_row}
+</table>
+{END details_data}

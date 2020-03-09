@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><HTML><HEAD><TITLE>Players</TITLE><META http-equiv=Content-Type content="text/html; charset=windows-1252"><LINK 
+href="include/style.css" type=text/css rel=stylesheet><!--[if IE]><LINK 
+href="include/styleIE.css" type=text/css rel=stylesheet><![endif]--><STYLE>
+#height100 {height:100%;display:table;}
+#search_block div {padding:5px 7px;}
+#global_block {padding:5px 12px;min-height:800px}
+#search_block_center {padding:3px 5px;text-align:center;}
+#center_block {text-align:center;padding:4px;}
+#center_block_caption {text-align:center;padding:4px;}
+#left_block { position:absolute;width:200px; left:20px; overflow:hidden;margin-top:10px}
+#right_block { padding:10px 0px 0px 220px;}
+#toplinks_block {padding:0 5px 5px 5px;}
+#toplinks_block > * {margin:4px 6px;vertical-align:middle;}
+#menu_block {clear:left;padding:10px;}
+#menu_block div {float:left;white-space:nowrap;}
+#menu_block div div {margin-right:1px;float:none;}
+#details_block, #pages_block, #records_pp_block {white-space:nowrap;padding:5px 7px;text-align:center;}
+#recordspp_block {padding:10px;}
+#recordcontrols_block {padding:13px 10px 9px 10px;text-align:left}
+#recordcontrols_block > * {margin:2px 2px;vertical-align:middle}
+.menuitem {padding:6px 18px 10px 13px}
+.menuitem_active {padding:6px 18px 11px 13px}
+.message_block {text-align:center;}
+.grid_recordheader {padding:0 5px 5px}
+.grid_recordheader * {margin:0px 5px; vertical-align:middle}
+#grid_block {margin-top:10px;}
+.headerlist_right2 *,.headerlist * {vertical-align:middle}
+</STYLE><!--[if IE]><STYLE>
+#right_block { width:100%}
+#global_block {height:95%}
+</STYLE><![endif]--><META content="MSHTML 6.00.6000.16788" name=GENERATOR></HEAD><BODY topMargin=5 {$bodyattrs}>{BEGIN body}{$header}<DIV id=height100><B class=xtop><B class=xb1b></B><B class=xb2b></B><B 
+class=xb3b></B><B class=xb4b></B></B>{BEGIN toplinks_block}<DIV class=upeditmenu id=toplinks_block><SPAN><FONT 
+style="FONT-FAMILY: Verdana, Arial">{mlang_message LOGGED_AS}</FONT>&nbsp;<B>{$username}</B>&nbsp;</SPAN><SPAN 
+class=buttonborder><INPUT class=button type=button value="{mlang_message LOG_OUT}" {$logoutlink_attrs}></SPAN>{BEGIN asearch_link}<SPAN class=buttonborder><INPUT class=button type=button value="{mlang_message ADVANCED_SEARCH}" {$asearchlink_attrs}></SPAN>{END asearch_link}{BEGIN export_link}<SPAN class=buttonborder><INPUT class=button type=button value="{mlang_message EXPORT_RESULTS}" {$exportlink_attrs}></SPAN>{END export_link}{BEGIN print_link}<SPAN class=buttonborder><INPUT class=button type=button value="{mlang_message PRINTER_FRIENDLY}" {$printlink_attrs}></SPAN>{END print_link}{BEGIN printall_link}<SPAN class=buttonborder><INPUT class=button type=button value="{mlang_message PRINT_ALL_PAGES}" {$printalllink_attrs}></SPAN>{END printall_link}{BEGIN languages_block}<SPAN><B>{mlang_message LANGUAGE}:</B>&nbsp; <SELECT 
+  {$langselector_attrs}><OPTION value=Danish selected 
+  {$Danish_langattrs}>Danish</OPTION><OPTION value=English 
+  {$English_langattrs}>English</OPTION><OPTION value=French 
+  {$French_langattrs}>French</OPTION><OPTION value=German 
+  {$German_langattrs}>German</OPTION><OPTION value=Norwegian(Bokmal) 
+  {$Norwegian_Bokmal__langattrs}>Norwegian(Bokmal)</OPTION><OPTION value=Spanish 
+  {$Spanish_langattrs}>Spanish</OPTION><OPTION value=Swedish 
+  {$Swedish_langattrs}>Swedish</OPTION></SELECT></SPAN>{END languages_block}</DIV>{END toplinks_block}<DIV class="main_table_border2 main_table" id=global_block 
+style="BORDER-RIGHT: #516c81 1px solid; BORDER-TOP: #516c81 1px solid; BORDER-LEFT: #516c81 1px solid; BORDER-BOTTOM: #516c81 1px solid"><DIV id=left_block><B class=xtop><B class=xb1b1></B><B class=xb2b1></B><B 
+class=xb3b1></B><B class=xb4b1></B></B><DIV class=menu_table>{BEGIN menu_block}{BEGIN player_tablelink}<DIV id=menu_block><SPAN><IMG 
+src="include/img/arrow_search2.gif" border=0></SPAN><SPAN>&nbsp;&nbsp;<A 
+class=highlight-tablesearch {$player_tablelink_attrs}>Players</A></SPAN></DIV>{END player_tablelink}{BEGIN Dialog_tablelink}<DIV id=menu_block><SPAN><IMG 
+src="include/img/arrow_search.gif" border=0></SPAN><SPAN>&nbsp;&nbsp;<A 
+class=tablelinkssearch {$Dialog_tablelink_attrs}>Dialog</A></SPAN></DIV>{END Dialog_tablelink}{BEGIN sponsor_tablelink}<DIV id=menu_block><SPAN><IMG 
+src="include/img/arrow_search.gif" border=0></SPAN><SPAN>&nbsp;&nbsp;<A 
+class=tablelinkssearch {$sponsor_tablelink_attrs}>Sponsors</A></SPAN></DIV>{END sponsor_tablelink}{BEGIN teams_tablelink}<DIV id=menu_block><SPAN><IMG 
+src="include/img/arrow_search.gif" border=0></SPAN><SPAN>&nbsp;&nbsp;<A 
+class=tablelinkssearch {$teams_tablelink_attrs}>Teams</A></SPAN></DIV>{END teams_tablelink}{BEGIN top_tablelink}<DIV id=menu_block><SPAN><IMG 
+src="include/img/arrow_search.gif" border=0></SPAN><SPAN>&nbsp;&nbsp;<A 
+class=tablelinkssearch {$top_tablelink_attrs}>Topscores</A></SPAN></DIV>{END top_tablelink}{BEGIN news_tablelink}<DIV id=menu_block><SPAN><IMG 
+src="include/img/arrow_search.gif" border=0></SPAN><SPAN>&nbsp;&nbsp;<A 
+class=tablelinkssearch {$news_tablelink_attrs}>News</A></SPAN></DIV>{END news_tablelink}{BEGIN raffle_tablelink}<DIV id=menu_block><SPAN><IMG 
+src="include/img/arrow_search.gif" border=0></SPAN><SPAN>&nbsp;&nbsp;<A 
+class=tablelinkssearch {$raffle_tablelink_attrs}>Raffle</A></SPAN></DIV>{END raffle_tablelink}{BEGIN mails_tablelink}<DIV id=menu_block><SPAN><IMG 
+src="include/img/arrow_search.gif" border=0></SPAN><SPAN>&nbsp;&nbsp;<A 
+class=tablelinkssearch {$mails_tablelink_attrs}>Texts</A></SPAN></DIV>{END mails_tablelink}{BEGIN xcountries_tablelink}<DIV id=menu_block><SPAN><IMG 
+src="include/img/arrow_search.gif" border=0></SPAN><SPAN>&nbsp;&nbsp;<A 
+class=tablelinkssearch {$xcountries_tablelink_attrs}>xcountries</A></SPAN></DIV>{END xcountries_tablelink}{BEGIN MQ_Chart_tablelink}<DIV id=menu_block><SPAN><IMG 
+src="include/img/arrow_search.gif" border=0></SPAN><SPAN>&nbsp;&nbsp;<A 
+class=tablelinkssearch {$MQ_Chart_tablelink_attrs}>MQ Chart</A></SPAN></DIV>{END MQ_Chart_tablelink}{BEGIN Accept_news_Chart_tablelink}<DIV id=menu_block><SPAN><IMG 
+src="include/img/arrow_search.gif" border=0></SPAN><SPAN>&nbsp;&nbsp;<A 
+class=tablelinkssearch {$Accept_news_Chart_tablelink_attrs}>Accept news 
+Chart</A></SPAN></DIV>{END Accept_news_Chart_tablelink}{END menu_block}</DIV>{BEGIN search_records_block}<DIV>{BEGIN searchform}<DIV class=menu_table id=search_block><DIV class=blackshade2 id=center_block>{mlang_message SEARCH_FOR}: </DIV><DIV class=blackshade>{BEGIN searchform_field}<SELECT 
+  id=ctlSearchField><option value="">{mlang_message ANY_FIELD}</OPTION><OPTION value=p_active 
+  {$p_active_searchfieldoption}>Status</OPTION><OPTION value=p_s_id 
+  {$p_s_id_searchfieldoption}>Team</OPTION><OPTION value=p_first 
+  {$p_first_searchfieldoption}>First name</OPTION><OPTION value=p_name 
+  {$p_name_searchfieldoption}>Last Name</OPTION><OPTION value=p_adr 
+  {$p_adr_searchfieldoption}>Adress</OPTION><OPTION value=p_zip 
+  {$p_zip_searchfieldoption}>Zip</OPTION><OPTION value=p_country 
+  {$p_country_searchfieldoption}>Country</OPTION><OPTION value=p_mail 
+  {$p_mail_searchfieldoption}>Email</OPTION><OPTION value=p_mobile 
+  {$p_mobile_searchfieldoption}>Mobile</OPTION><OPTION value=p_newsaccept 
+  {$p_newsaccept_searchfieldoption}>Newsaccept</OPTION><OPTION value=p_score 
+  {$p_score_searchfieldoption}>Score</OPTION><OPTION value=p_scorehigh 
+  {$p_scorehigh_searchfieldoption}>Scorehigh</OPTION><OPTION value=p_games 
+  {$p_games_searchfieldoption}>Games Played</OPTION><OPTION value=p_win 
+  {$p_win_searchfieldoption}>Winner</OPTION><OPTION value=p_mk 
+  {$p_mk_searchfieldoption}>MQ</OPTION><OPTION value=p_born 
+  {$p_born_searchfieldoption}>Born</OPTION><OPTION value=p_user 
+  {$p_user_searchfieldoption}>Username</OPTION><OPTION value=p_pwd 
+  {$p_pwd_searchfieldoption}>Password</OPTION><OPTION value=p_ip 
+  {$p_ip_searchfieldoption}>IP</OPTION><OPTION value=p_datetime 
+  {$p_datetime_searchfieldoption}>Datetime</OPTION><OPTION value=p_tscore 
+  {$p_tscore_searchfieldoption}>Competetion Score</OPTION><OPTION value=p_tkills 
+  {$p_tkills_searchfieldoption}>Competetion Kills</OPTION></SELECT>{END searchform_field}</DIV><DIV class=blackshade>{BEGIN searchform_option}<SELECT 
+  id=ctlSearchOption><option value="Contains" {$Contains_searchtypeoption}>{mlang_message CONTAINS}</OPTION><option value="Equals" {$Equals_searchtypeoption}>{mlang_message EQUALS}</OPTION><option value="Starts with ..." {$Starts_with_____searchtypeoption}>{mlang_message STARTS_WITH}</OPTION><option value="More than ..." {$More_than_____searchtypeoption}>{mlang_message MORE_THAN}</OPTION><option value="Less than ..." {$Less_than_____searchtypeoption}>{mlang_message LESS_THAN}</OPTION><option value="Equal or more than ..." {$Equal_or_more_than_____searchtypeoption}>{mlang_message EQUAL_OR_MORE}</OPTION><option value="Equal or less than ..." {$Equal_or_less_than_____searchtypeoption}>{mlang_message EQUAL_OR_LESS}</OPTION><option value="Empty" {$Empty_searchtypeoption}>{mlang_message EMPTY}</OPTION></SELECT>{END searchform_option}</DIV><DIV class=blackshade>{BEGIN searchform_text}<INPUT 
+{$searchfor_attrs}>{END searchform_text}</DIV><DIV class=blackshade id=search_block_center>{BEGIN searchform_search}<SPAN class=buttonborder><INPUT class=button type=button value="{mlang_message SEARCH}" {$searchbutton_attrs}></SPAN>{END searchform_search} 
+&nbsp; {BEGIN searchform_showall}<SPAN class=buttonborder><INPUT class=button type=button value="{mlang_message SHOW_ALL}" {$showallbutton_attrs}></SPAN>{END searchform_showall}</DIV><DIV class=blackshade2 id=details_block>{BEGIN details_block}<SPAN>{mlang_message DETAILS_FOUND}: {$records_found}</SPAN>{END details_block}</DIV><DIV class="menu_text blackshade" id=pages_block>{BEGIN pages_block}<SPAN>{mlang_message PAGE1} {$page} 
+{mlang_message PAGE2} {$maxpages}</SPAN>{END pages_block}</DIV></DIV>{END searchform}<DIV class=menu_table2>{BEGIN recordspp_block}<DIV class="menu_text blackshade" id=recordspp_block>{mlang_message RECORDS_PP}:&nbsp; <SELECT 
+  {$recordspp_attrs}><OPTION value=10 selected 
+  {$rpp10_selected}>10</OPTION><OPTION value=20 
+  {$rpp20_selected}>20</OPTION><OPTION value=30 
+  {$rpp30_selected}>30</OPTION><OPTION value=50 
+  {$rpp50_selected}>50</OPTION><OPTION value=100 
+  {$rpp100_selected}>100</OPTION><OPTION value=500 
+  {$rpp500_selected}>500</OPTION></SELECT></DIV>{END recordspp_block}</DIV></DIV>{END search_records_block}</DIV><DIV id=right_block>{BEGIN mastertable_block}<div id="mastertable_block">{$showmasterfile}<a {$backtomasterlink_attrs} class="toplinks"><b>{mlang_message BACK_TO_MASTER}</b></a><br></div>{END mastertable_block}<DIV class=list_table1><DIV class=list_table><DIV class=blackshade2 id=center_block_caption>Players </DIV>{BEGIN recordcontrols_block}<DIV class=blackshade id=recordcontrols_block>{BEGIN add_link}<SPAN class=buttonborder><INPUT class=button type=button value="{mlang_message ADD_NEW}" {$addlink_attrs}></SPAN>{END add_link}{BEGIN delete_link}<SPAN class=buttonborder><INPUT class=button type=button value="{mlang_message DELETE_SELECTED}" {$deletelink_attrs}></SPAN>{END delete_link}{BEGIN exportselected_link}<SPAN class=buttonborder><INPUT class=button type=button value="{mlang_message EXPORT_SELECTED}" {$exportselectedlink_attrs}></SPAN>{END exportselected_link}{BEGIN printselected_link}<SPAN class=buttonborder><INPUT class=button type=button value="{mlang_message PRINT_SELECTED}" {$printselectedlink_attrs}></SPAN>{END printselected_link}</DIV>{END recordcontrols_block}<DIV style="HEIGHT: 100%">{BEGIN grid_block}<DIV id=grid_block><TABLE class=data cellSpacing=0 cellPadding=3 width="100%" border=0 
+name="maintable">{BEGIN grid_header}<TR vAlign=top>{BEGIN record_header}<TD class=headerlist>&nbsp;</TD>{BEGIN edit_column}<TD class=headerlist align=middle width=50><IMG 
+      src="include/img/icon_edit.gif"></TD>{END edit_column}{BEGIN view_column}<TD class=headerlist align=middle width=50><IMG 
+      src="include/img/icon_view.gif"></TD>{END view_column}{BEGIN checkbox_column}<TD class=headerlist align=middle width=50><INPUT type=checkbox 
+{$checkboxheader_attrs}></TD>{END checkbox_column}{BEGIN Dialog_dtable_column}<TD class=headerlist width=50>&nbsp;</TD>{END Dialog_dtable_column}{BEGIN raffle_dtable_column}<TD class=headerlist width=50>&nbsp;</TD>{END raffle_dtable_column}{BEGIN top_dtable_column}<TD class=headerlist width=50>&nbsp;</TD>{END top_dtable_column}{BEGIN teams_dtable_column}<td width=50 class="headerlist">&nbsp;</td>{END teams_dtable_column}{BEGIN p_active_fieldheadercolumn}<TD class=headerlist align=middle>{BEGIN p_active_fieldheader}<A class=tablelinks 
+      {$p_active_orderlinkattrs}>Status</A>{END p_active_fieldheader}</TD>{END p_active_fieldheadercolumn}{BEGIN p_s_id_fieldheadercolumn}<TD class=headerlist align=middle>{BEGIN p_s_id_fieldheader}<A class=tablelinks 
+      {$p_s_id_orderlinkattrs}>Team</A>{END p_s_id_fieldheader}</TD>{END p_s_id_fieldheadercolumn}{BEGIN p_first_fieldheadercolumn}<TD class=headerlist align=middle>{BEGIN p_first_fieldheader}<A class=tablelinks 
+      {$p_first_orderlinkattrs}>First name</A>{END p_first_fieldheader}</TD>{END p_first_fieldheadercolumn}{BEGIN p_name_fieldheadercolumn}<TD class=headerlist align=middle>{BEGIN p_name_fieldheader}<A class=tablelinks 
+      {$p_name_orderlinkattrs}>Last Name</A>{END p_name_fieldheader}</TD>{END p_name_fieldheadercolumn}{BEGIN p_zip_fieldheadercolumn}<TD class=headerlist align=middle>{BEGIN p_zip_fieldheader}<A class=tablelinks 
+      {$p_zip_orderlinkattrs}>Zip</A>{END p_zip_fieldheader}</TD>{END p_zip_fieldheadercolumn}{BEGIN p_country_fieldheadercolumn}<TD class=headerlist align=middle>{BEGIN p_country_fieldheader}<A class=tablelinks 
+      {$p_country_orderlinkattrs}>Country</A>{END p_country_fieldheader}</TD>{END p_country_fieldheadercolumn}{BEGIN p_mail_fieldheadercolumn}<TD class=headerlist align=middle>{BEGIN p_mail_fieldheader}<A class=tablelinks 
+      {$p_mail_orderlinkattrs}>Email</A>{END p_mail_fieldheader}</TD>{END p_mail_fieldheadercolumn}{BEGIN p_mobile_fieldheadercolumn}<TD class=headerlist align=middle>{BEGIN p_mobile_fieldheader}<A class=tablelinks 
+      {$p_mobile_orderlinkattrs}>Mobile</A>{END p_mobile_fieldheader}</TD>{END p_mobile_fieldheadercolumn}{BEGIN p_newsaccept_fieldheadercolumn}<TD class=headerlist align=middle>{BEGIN p_newsaccept_fieldheader}<A class=tablelinks 
+      {$p_newsaccept_orderlinkattrs}>Newsaccept</A>{END p_newsaccept_fieldheader}</TD>{END p_newsaccept_fieldheadercolumn}{BEGIN p_win_fieldheadercolumn}<TD class=headerlist align=middle>{BEGIN p_win_fieldheader}<A class=tablelinks 
+      {$p_win_orderlinkattrs}>Winner</A>{END p_win_fieldheader}</TD>{END p_win_fieldheadercolumn}{BEGIN p_mk_fieldheadercolumn}<TD class=headerlist align=middle>{BEGIN p_mk_fieldheader}<A class=tablelinks 
+      {$p_mk_orderlinkattrs}>MQ</A>{END p_mk_fieldheader}</TD>{END p_mk_fieldheadercolumn}{BEGIN p_born_fieldheadercolumn}<TD class=headerlist align=middle>{BEGIN p_born_fieldheader}<A class=tablelinks 
+      {$p_born_orderlinkattrs}>Born</A>{END p_born_fieldheader}</TD>{END p_born_fieldheadercolumn}{BEGIN p_ip_fieldheadercolumn}<TD class=headerlist align=middle>{BEGIN p_ip_fieldheader}<A class=tablelinks 
+      {$p_ip_orderlinkattrs}>IP</A>{END p_ip_fieldheader}</TD>{END p_ip_fieldheadercolumn}{BEGIN p_datetime_fieldheadercolumn}<TD class=headerlist align=middle>{BEGIN p_datetime_fieldheader}<A class=tablelinks 
+      {$p_datetime_orderlinkattrs}>Datetime</A>{END p_datetime_fieldheader}</TD>{END p_datetime_fieldheadercolumn}{BEGIN p_time_fieldheadercolumn}<TD class=headerlist align=middle>{BEGIN p_time_fieldheader}<A class=tablelinks 
+      {$p_time_orderlinkattrs}>p_time</A>{$p_time_orderimage}{END p_time_fieldheader}</TD>{END p_time_fieldheadercolumn}{BEGIN p_tscore_fieldheadercolumn}<TD class=headerlist_right2 align=middle>{BEGIN p_tscore_fieldheader}<A class=tablelinks 
+      {$p_tscore_orderlinkattrs}>Competetion Score</A>{END p_tscore_fieldheader}</TD>{END p_tscore_fieldheadercolumn}{BEGIN endrecordheader_block}<TD class=table_right></TD>{END endrecordheader_block}{END record_header}</TR>{END grid_header}{BEGIN grid_row}<TR vAlign=top {$rowattrs} {$rowstyle}>{BEGIN grid_record}<TD>&nbsp;</TD>{BEGIN edit_column}<TD vAlign=middle align=middle>{BEGIN edit_link}<A class=tablelinks {$editlink_attrs}>{mlang_message EDIT}</A>{END edit_link}</TD>{END edit_column}{BEGIN view_column}<TD vAlign=middle align=middle>{BEGIN view_link}<A class=tablelinks {$viewlink_attrs}>{mlang_message VIEW}</A>{END view_link}</TD>{END view_column}{BEGIN checkbox_column}<TD vAlign=middle align=middle>{BEGIN checkbox}<INPUT type=checkbox {$checkbox_attrs}>{END checkbox}</TD>{END checkbox_column}{BEGIN Dialog_dtable_column}<TD class=borderbody vAlign=middle align=middle>{BEGIN Dialog_dtable_link}<A 
+      {$Dialog_dtablelink_attrs}>Dialog{BEGIN Dialog_childcount}({$Dialog_childnumber}) 
+{END Dialog_childcount}</A>{END Dialog_dtable_link}</TD>{END Dialog_dtable_column}{BEGIN raffle_dtable_column}<TD class=borderbody vAlign=middle align=middle>{BEGIN raffle_dtable_link}<A 
+      {$raffle_dtablelink_attrs}>Raffle{BEGIN raffle_childcount}({$raffle_childnumber}) 
+{END raffle_childcount}</A>{END raffle_dtable_link}</TD>{END raffle_dtable_column}{BEGIN top_dtable_column}<TD class=borderbody vAlign=middle align=middle>{BEGIN top_dtable_link}<A {$top_dtablelink_attrs}>Topscores{BEGIN top_childcount}({$top_childnumber}) 
+{END top_childcount}</A>{END top_dtable_link}</TD>{END top_dtable_column}{BEGIN teams_dtable_column}<td align="center" valign=middle class=borderbody>{BEGIN teams_dtable_link}<a  {$teams_dtablelink_attrs}>Teams{BEGIN teams_childcount}({$teams_childnumber})
+{END teams_childcount}</a>{END teams_dtable_link}</td>{END teams_dtable_column}{BEGIN p_active_fieldcolumn}<TD class=borderbody vAlign=middle align=middle {$p_active_style}>{$p_active_value}</TD>{END p_active_fieldcolumn}{BEGIN p_s_id_fieldcolumn}<TD class=borderbody vAlign=middle align=middle {$p_s_id_style}><P align=left>{$p_s_id_value}</P></TD>{END p_s_id_fieldcolumn}{BEGIN p_first_fieldcolumn}<TD class=borderbody vAlign=middle align=middle {$p_first_style}><P align=left>{$p_first_value}</P></TD>{END p_first_fieldcolumn}{BEGIN p_name_fieldcolumn}<TD class=borderbody vAlign=middle align=middle {$p_name_style}><P align=left>{$p_name_value}</P></TD>{END p_name_fieldcolumn}{BEGIN p_zip_fieldcolumn}<TD class=borderbody vAlign=middle align=middle {$p_zip_style}>{$p_zip_value}</TD>{END p_zip_fieldcolumn}{BEGIN p_country_fieldcolumn}<TD class=borderbody vAlign=middle align=middle {$p_country_style}>{$p_country_value}</TD>{END p_country_fieldcolumn}{BEGIN p_mail_fieldcolumn}<TD class=borderbody vAlign=middle align=middle {$p_mail_style}><P align=left>{$p_mail_value}</P></TD>{END p_mail_fieldcolumn}{BEGIN p_mobile_fieldcolumn}<TD class=borderbody vAlign=middle align=middle {$p_mobile_style}>{$p_mobile_value}</TD>{END p_mobile_fieldcolumn}{BEGIN p_newsaccept_fieldcolumn}<TD class=borderbody vAlign=middle align=middle {$p_newsaccept_style}>{$p_newsaccept_value}</TD>{END p_newsaccept_fieldcolumn}{BEGIN p_win_fieldcolumn}<TD class=borderbody vAlign=middle align=middle {$p_win_style}>{$p_win_value}</TD>{END p_win_fieldcolumn}{BEGIN p_mk_fieldcolumn}<TD class=borderbody vAlign=middle align=middle {$p_mk_style}>{$p_mk_value}</TD>{END p_mk_fieldcolumn}{BEGIN p_born_fieldcolumn}<TD class=borderbody vAlign=middle align=middle {$p_born_style}>{$p_born_value}</TD>{END p_born_fieldcolumn}{BEGIN p_ip_fieldcolumn}<TD class=borderbody vAlign=middle align=middle {$p_ip_style}>{$p_ip_value}</TD>{END p_ip_fieldcolumn}{BEGIN p_datetime_fieldcolumn}<TD class=borderbody vAlign=middle align=middle {$p_datetime_style}>{$p_datetime_value}</TD>{END p_datetime_fieldcolumn}{BEGIN p_time_fieldcolumn}<TD class=borderbody vAlign=middle align=middle {$p_time_style}>{$p_time_value}</TD>{END p_time_fieldcolumn}{BEGIN p_tscore_fieldcolumn}<TD class=borderbody vAlign=middle align=middle {$p_tscore_style}><P align=right>{$p_tscore_value}</P></TD>{END p_tscore_fieldcolumn}{BEGIN endrecord_block}<TD class=table_right width=20 {$endrecordblock_attrs}>&nbsp;</TD>{END endrecord_block}{END grid_record}</TR>{END grid_row}</TABLE></DIV>{END grid_block}</DIV>{BEGIN message_block}<DIV class="xboxcontentb message_block">{$message}</DIV>{END message_block}{BEGIN pagination_block}<DIV class="xboxcontentb message_block">{$pagination}</DIV>{END pagination_block}</DIV></DIV></DIV></DIV><B 
+class=xbottom><B class=xb4b></B><B class=xb3b></B><B class=xb2b></B><B 
+class=xb1b></B></B></DIV>{$footer}{END body}</BODY></HTML>

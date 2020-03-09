@@ -1,0 +1,108 @@
+<html>
+<head>
+<title>Status codes: {mlang_message ADV_SEARCH}</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+<style>
+#center_block {margin:0 auto;}
+#contents_block {text-align:center;width:100%}
+#header_block {white-space:nowrap;height:31px;padding-top:5px;}
+#main_block {padding:10px 0;width:100%}
+#inmain_block {margin:0 10px}
+#buttons_block {width:100%;padding-bottom:5px}
+#required_block {text-align:left;padding:5px}
+#buttons_block > * {margin:0 2px}
+#conditions_block {padding:5px;}
+</style>
+<!--[if IE]>
+<style>
+#main_block {padding:10px 10;}
+#inmain_block {margin:0 0px}
+</style>
+<![endif]-->
+</head>
+<body bgcolor=white>
+{$header}
+{BEGIN body}
+{BEGIN contents_block}
+<table align=center id="center_block"><tr><td id="contents_block">
+	
+<b class="xtop"><b class="xb1b"></b><b class="xb2b"></b><b class="xb3b"></b><b class="xb4b"></b></b>
+<div id="header_block" class="upeditmenu">Status codes - {mlang_message ADVANCED_SEARCH}</div>
+
+<div class="main_table_border2">
+<div class="main_table_border">
+
+{BEGIN conditions_block}
+<DIV id="conditions_block" class="loginshade">
+<span class=fieldname>{mlang_message SEARCH_FOR}:</span>
+<input type="radio" name="type" {$all_checkbox}>{mlang_message ALL_CONDITIONS}
+&nbsp;&nbsp;&nbsp;
+<input type="radio" name="type" {$any_checkbox}>{mlang_message ANY_CONDITION}
+</div>
+{END conditions_block}
+<table cellpadding=4 cellspacing=0 border=0 id="fields_block">
+<tr valign=center>
+<td align=center valign=middle class="headerlist">&nbsp;</td>
+<td width=30 align=center valign=middle class=headerlist>NOT</td>
+<td align=center valign=middle class="headerlist">&nbsp; </td>
+<td align=center valign=middle class="headerlist">&nbsp; </td>
+<td align=center valign=middle class="headerlist" style="border-right:0px;">&nbsp;</td></tr>
+
+{BEGIN xs_id_fieldblock}	
+<tr>
+	<td style="padding-left:15px;" class="editshade_b"><b>ID</b>
+	<td align=center style="padding-left:10px;" class="editshade_lb"><input type=checkbox {$xs_id_notbox}></td>
+	
+	<td style="padding-left:10px;" class="editshade_lb">
+	{$searchtype_xs_id}
+	</td>
+	
+	<td width=270 style="padding-left:10px;" class="editshade_lb">{$xs_id_editcontrol}</td>
+
+	<td width=270 style="padding-left:10px;" class="editshade_lb"><span id="second_xs_id">
+	{$xs_id_editcontrol1}
+	</span>&nbsp;</td>
+</tr>
+{END xs_id_fieldblock}
+{BEGIN xs_text_fieldblock}	
+<tr>
+	<td style="padding-left:15px;" class="editshade_b"><b>Description</b>
+	<td align=center style="padding-left:10px;" class="editshade_lb"><input type=checkbox {$xs_text_notbox}></td>
+	
+	<td style="padding-left:10px;" class="editshade_lb">
+	{$searchtype_xs_text}
+	</td>
+	
+	<td width=270 style="padding-left:10px;" class="editshade_lb">{$xs_text_editcontrol}</td>
+
+	<td width=270 style="padding-left:10px;" class="editshade_lb"><span id="second_xs_text">
+	{$xs_text_editcontrol1}
+	</span>&nbsp;</td>
+</tr>
+{END xs_text_fieldblock}
+</table>
+
+<div class="downedit" id="buttons_block">
+ <div id="required_block" ><img src="images/icon_required.gif"> - {mlang_message REQUIRED_FIELD}</div>
+{BEGIN search_button}
+ <span class=buttonborder><input class=button type=button value="{mlang_message SEARCH}" {$searchbutton_attrs}></span>
+{END search_button} 
+{BEGIN reset_button}
+ <span class=buttonborder><input class=button type=button value="{mlang_message RESET}" {$resetbutton_attrs}></span>
+{END reset_button}
+{BEGIN back_button}
+ <span class=buttonborder><input class=button type=button value="{mlang_message BACK_TO_LIST}" {$backbutton_attrs}></span>
+{END back_button}
+</div>
+</div>
+</div>
+<b class="xbottom"><b class="xb4b"></b><b class="xb3b"></b><b class="xb2b"></b><b class="xb1b"></b></b>
+</td></tr></table>
+{END contents_block}
+{END body}
+{$footer}
+</body>
+</html>

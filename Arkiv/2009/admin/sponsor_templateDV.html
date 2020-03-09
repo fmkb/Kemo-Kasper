@@ -1,0 +1,127 @@
+<!-- Edit this file to change the layout of the detail view form -->
+
+<br>
+<table border=1 bordercolor=navy cellpadding=0 cellspacing=0>
+	<tr>
+		<td>
+			<div class=TableTitle><%%DETAIL_VIEW_TITLE%%></div>
+			</td>
+		</tr>
+<tr>
+					<td class=TableHeader colspan=3 height=25>
+						<div class=TableHeader style="text-align: right; height: 100%; padding-right: 3px;">
+							<a href="teams_view.php?FilterField[1]=teams.ts_s_id&FilterOperator[1]=%3C%3D%3E&FilterValue[1]=<%%VALUE(s_id)%%>" style="position: relative; top: 5px; border: 1px solid navy; background-color: #ffffff; text-decoration: none; color: navy; padding: 1 10 1 10;">Teams</a>
+							</div>
+						</td>
+					</tr>
+	<tr>
+		<td>
+			<table>
+				<tr>
+					<td colspan=2></td>
+					<td rowspan=6 valign=top>
+						<div><%%UPDATE_BUTTON%%></div>
+						<div><%%DELETE_BUTTON%%></div>
+						<div><%%DESELECT_BUTTON%%></div>
+						<br>
+						<div><%%INSERT_BUTTON%%></div>
+						</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">Aktiv</div>
+						</td>
+					<td class=TableBody width=300 valign=top><%%COMBO(s_active)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">S_name</div>
+						</td>
+					<td class=TableBody width=300 valign=top><input size= 30 type=text class=TextBox name=s_name value="<%%VALUE(s_name)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">S_contact</div>
+						</td>
+					<td class=TableBody width=300 valign=top><input size= 30 type=text class=TextBox name=s_contact value="<%%VALUE(s_contact)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">S_adr</div>
+						</td>
+					<td class=TableBody width=300 valign=top><input size= 30 type=text class=TextBox name=s_adr value="<%%VALUE(s_adr)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">S_zip</div>
+						</td>
+					<td class=TableBody width=300 valign=top><%%COMBO(s_zip)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">S_phone1</div>
+						</td>
+					<td class=TableBody width=300 valign=top><input size= 30 type=text class=TextBox name=s_phone1 value="<%%VALUE(s_phone1)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">S_phone2</div>
+						</td>
+					<td class=TableBody width=300 valign=top><input size= 30 type=text class=TextBox name=s_phone2 value="<%%VALUE(s_phone2)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">S_total</div>
+						</td>
+					<td class=TableBody width=300 valign=top><input size=10 type=text class=TextBox name=s_total value="<%%VALUE(s_total)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">S_paid</div>
+						</td>
+					<td class=TableBody width=300 valign=top><input size=10 type=text class=TextBox name=s_paid value="<%%VALUE(s_paid)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">S_logo</div>
+						</td>
+					<td class=TableBody width=300 valign=top>
+						<img src="<%%TRANSLATION(ImageFolder)%%><%%VALUE(s_logo)%%>" border=0>
+						<br><%%UPLOADFILE(s_logo)%%>
+						<br><%%REMOVEFILE(s_logo)%%>
+
+						&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">S_banner</div>
+						</td>
+					<td class=TableBody width=300 valign=top>
+						<img src="<%%TRANSLATION(ImageFolder)%%><%%VALUE(s_banner)%%>" border=0>
+						<br><%%UPLOADFILE(s_banner)%%>
+						<br><%%REMOVEFILE(s_banner)%%>
+
+						&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">S_www</div>
+						</td>
+					<td class=TableBody width=300 valign=top><input size=50 type=text class=TextBox name=s_www value="<%%VALUE(s_www)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">S_mail</div>
+						</td>
+					<td class=TableBody width=300 valign=top><input size= 30 type=text class=TextBox name=s_mail value="<%%VALUE(s_mail)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">S_cmt</div>
+						</td>
+					<td class=TableBody width=300 valign=top><textarea class=TextBox name=s_cmt cols=50 rows=3><%%VALUE(s_cmt)%%></textarea>&nbsp;&nbsp;</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>

@@ -1,0 +1,166 @@
+<html>
+<head><title>Sponsors</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+<style>
+#center_block{$id} {width:400px;margin:0 auto;}
+#contents_block{$id} {text-align:center;}
+#header_block{$id} {white-space:nowrap;height:31px;padding:5px;text-align:center;}
+#footer_block{$id} {height:15px;}
+#fields_block{$id} {width:100%}
+#buttons_block{$id} {padding-bottom:5px;white-space:nowrap;text-align:center;}
+#required_block{$id} {text-align:left;padding:5px}
+#message_block{$id} {padding:5px 5px;text-align:center;}
+</style>
+</head>
+<body>
+{$header}
+{BEGIN body}
+
+<TABLE align=center id="center_block{$id}" cellpadding=0 cellspacing=0 border=0><tr><td>
+{BEGIN flybody}
+<b class="xtop"><b class="xb1b"></b><b class="xb2b"></b><b class="xb3b"></b><b class="xb4b"></b></b>
+<div id="header_block{$id}" class="upeditmenu">
+Sponsors, {mlang_message ADD_NEW_RECORD}
+</div>
+<div class="main_table_border2" style="border: 1px solid #516C81;">
+<TABLE CELLPADDING=0 CELLSPACING=0 align=center border=0 class="main_table_border">
+{BEGIN message_block}
+<div id="message_block{$id}" class=downedit>{$message}</div>
+{END message_block}
+
+{BEGIN s_active_fieldblock}
+  <tr style="padding:3px">
+    <td class=editshade_b width=150 style="padding-left:15px;">Status</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$s_active_editcontrol}
+    </td></tr>
+{END s_active_fieldblock}  
+{BEGIN s_name_fieldblock}
+  <tr style="padding:3px">
+    <td class=editshade_b width=150 style="padding-left:15px;">Name</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$s_name_editcontrol}
+    </td></tr>
+{END s_name_fieldblock}  
+{BEGIN s_contact_fieldblock}
+  <tr style="padding:3px">
+    <td class=editshade_b width=150 style="padding-left:15px;">Contact</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$s_contact_editcontrol}
+    </td></tr>
+{END s_contact_fieldblock}  
+{BEGIN s_adr_fieldblock}
+  <tr style="padding:3px">
+    <td class=editshade_b width=150 style="padding-left:15px;">Address</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$s_adr_editcontrol}
+    </td></tr>
+{END s_adr_fieldblock}  
+{BEGIN s_zip_fieldblock}
+  <tr style="padding:3px">
+    <td class=editshade_b width=150 style="padding-left:15px;">Zip</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$s_zip_editcontrol}
+    </td></tr>
+{END s_zip_fieldblock}  
+{BEGIN s_country_fieldblock}
+  <tr style="padding:3px">
+    <td class=editshade_b width=150 style="padding-left:15px;">Country</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$s_country_editcontrol}
+    </td></tr>
+{END s_country_fieldblock}  
+{BEGIN s_phone1_fieldblock}
+  <tr style="padding:3px">
+    <td class=editshade_b width=150 style="padding-left:15px;">Phone 1</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$s_phone1_editcontrol}
+    </td></tr>
+{END s_phone1_fieldblock}  
+{BEGIN s_phone2_fieldblock}
+  <tr style="padding:3px">
+    <td class=editshade_b width=150 style="padding-left:15px;">Phone 2</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$s_phone2_editcontrol}
+    </td></tr>
+{END s_phone2_fieldblock}  
+{BEGIN s_total_fieldblock}
+  <tr style="padding:3px">
+    <td class=editshade_b width=150 style="padding-left:15px;">Amount Sponsored</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$s_total_editcontrol}
+    </td></tr>
+{END s_total_fieldblock}  
+{BEGIN s_paid_fieldblock}
+  <tr style="padding:3px">
+    <td class=editshade_b width=150 style="padding-left:15px;">Amount Paid</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$s_paid_editcontrol}
+    </td></tr>
+{END s_paid_fieldblock}  
+{BEGIN s_logo_fieldblock}
+  <tr style="padding:3px">
+    <td class=editshade_b width=150 style="padding-left:15px;">Banner Ad 468x60</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$s_logo_editcontrol}
+    </td></tr>
+{END s_logo_fieldblock}  
+{BEGIN s_banner_fieldblock}
+  <tr style="padding:3px">
+    <td class=editshade_b width=150 style="padding-left:15px;">Logo</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$s_banner_editcontrol}
+    </td></tr>
+{END s_banner_fieldblock}  
+{BEGIN s_www_fieldblock}
+  <tr style="padding:3px">
+    <td class=editshade_b width=150 style="padding-left:15px;">WWW</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$s_www_editcontrol}
+    </td></tr>
+{END s_www_fieldblock}  
+{BEGIN s_mail_fieldblock}
+  <tr style="padding:3px">
+    <td class=editshade_b width=150 style="padding-left:15px;">Email</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$s_mail_editcontrol}
+    </td></tr>
+{END s_mail_fieldblock}  
+{BEGIN s_cmt_fieldblock}
+  <tr style="padding:3px">
+    <td class=editshade_b width=150 style="padding-left:15px;">Comment</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$s_cmt_editcontrol}
+    </td></tr>
+{END s_cmt_fieldblock}  
+</table>
+
+<div class="downedit" id="buttons_block{$id}">
+<div id="required_block{$id}" ><img src="images/icon_required.gif"> - {mlang_message REQUIRED_FIELD}</div>
+{BEGIN save_button}
+<span class=buttonborder><input class=button type=submit value="{mlang_message SAVE}" name=submit1></span>
+{END save_button}
+{BEGIN reset_button}
+<span class=buttonborder><input class=button type=reset value="{mlang_message RESET}"></span>
+{END reset_button}
+{BEGIN cancel_button}
+<span class=buttonborder><input class=button type=button value="{mlang_message CANCEL}" {$cancelbutton_attrs}></span>
+{END cancel_button}
+{BEGIN back_button}
+<span class=buttonborder><input class=button type=button value="{mlang_message BACK_TO_LIST}" {$backbutton_attrs}></span>
+{END back_button}
+</div>
+
+</div>
+<b class="xbottom"><b class="xb4b"></b><b class="xb3b"></b><b class="xb2b"></b><b class="xb1b"></b></b>
+{END flybody}
+</td></tr>
+</table>
+{$footer}
+{END body}
+
+</body>
+</html>

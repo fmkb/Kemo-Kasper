@@ -1,0 +1,170 @@
+<?xml version="1.0"?>
+
+<coffeecupchat
+  version="6.0"
+  siteurl=""
+  mainwidth="740"
+  mainheight="515"
+  bkdobk="true"
+  bkdogradient="false"
+  bkfillclr="0xFFFFFF"
+  bkfillalpha="100"
+  bkgradclr="0x808080"
+  bkgradalpha="100"
+  bkgradangle="70"
+  adminname="Admin"
+  bkdoimg="false"
+  bkimg=""
+  bkdobdr="false"
+  bkbdrsolid="true"
+  bkbdrcolor="0x000000"
+
+  ispublicroom="true"
+  tfx="130"
+  tfy="268"
+  tfw="322"
+  tfh="21"
+  tfalpha="100"
+  tfinittext=""
+  tfbkcolor="0xFF6600"
+  tffontcolor="0xFFFFFF"
+  tffntweight="normal"
+  tffntstyle="normal"
+  tffntname="Arial"
+  tfmaxchar="0"
+
+  cfx="0"
+  cfy="44"
+  cfw="740"
+  cfh="220"
+  cfalpha="100"
+  cfinittext=""
+  cfbkcolor="0xFF6600"
+  cffontcolor="0x000000"
+  cffntweight="normal"
+  cffntstyle="normal"
+  cffntname="Arial"
+  cfmaxchar="0"
+
+  sound="rolliclick.mp3"
+  btnx="460"
+  btny="270"
+  btnw="50"
+  btnh="20"
+  btnimage=""
+  btnalpha="100"
+  btninittext="Send"
+  btnbkcolor="0xFFFFFF"
+  btnfontcolor="0x000000"
+  btnfntweight="normal"
+  btnfntstyle="normal"
+  btnfntsize="12"
+  btnfntname="Arial"
+  htmlswf="&lt;object classid=&quot;clsid:d27cdb6e-ae6d-11cf-96b8-444553540000&quot;
+ codebase=&quot;http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0&quot;
+ width=&quot;740&quot; height=&quot;515&quot; id=&quot;CoffeeCup&quot; align=&quot;middle&quot;&gt;
+&lt;param name=&quot;movie&quot; value=&quot;chat.swf&quot;/&gt;
+&lt;param name=&quot;quality&quot; value=&quot;high&quot; /&gt;
+&lt;param name=&quot;scale&quot; value=&quot;noscale&quot; /&gt;
+&lt;param name=&quot;salign&quot; value=&quot;lt&quot; /&gt;
+&lt;param name=&quot;bgcolor&quot; value=&quot;#ffffff&quot; /&gt;
+&lt;embed src=&quot;chat.swf&quot; quality=&quot;high&quot; bgcolor=&quot;#ffffff&quot; width=&quot;740&quot; height=&quot;515&quot;
+ name=&quot;CoffeeCup&quot; scale=&quot;noscale&quot; salign=&quot;lt&quot; align=&quot;middle&quot; type=&quot;application/x-shockwave-flash&quot;
+ pluginspage=&quot;http://www.macromedia.com/go/getflashplayer&quot; /&gt;&lt;/object&gt;"
+  adminswf="&lt;object classid=&quot;clsid:d27cdb6e-ae6d-11cf-96b8-444553540000&quot; codebase=&quot;http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0&quot; width=&quot;550&quot; height=&quot;400&quot; id=&quot;admin&quot; align=&quot;middle&quot;&gt;&lt;param name=&quot;allowScriptAccess&quot; value=&quot;sameDomain&quot; /&gt;&lt;param name=&quot;movie&quot; value=&quot;admin.swf&quot; /&gt;&lt;param name=&quot;FlashVars&quot; VALUE=&quot;phppath=http://www.kemo-kasper.dk/chat/chat.php&quot;/&gt;
+&lt;param name=&quot;quality&quot; value=&quot;high&quot; /&gt;&lt;param name=&quot;bgcolor&quot; value=&quot;#ffffff&quot; /&gt;&lt;embed src=&quot;admin.swf&quot; FlashVars=&quot;phppath=http://www.kemo-kasper.dk/chat/chat.php&quot; quality=&quot;high&quot; bgcolor=&quot;#ffffff&quot; width=&quot;550&quot; height=&quot;400&quot; name=&quot;admin&quot; align=&quot;middle&quot; allowScriptAccess=&quot;sameDomain&quot; type=&quot;application/x-shockwave-flash&quot; pluginspage=&quot;http://www.macromedia.com/go/getflashplayer&quot; /&gt;&lt;/object&gt;"
+  phppath="http://www.kemo-kasper.dk/chat/chat.php"
+  chatpath="http://www.kemo-kasper.dk/chat/chat.html"
+  welcomemsg="Velkommen til Kemo Kasper Chat"
+  unmessage="LiveChat Unavailable."
+>
+
+<image 
+  x="0"
+  y="0"
+  path="bund.jpg"
+></image>
+
+<image 
+  x="0"
+  y="0"
+  path="billede.jpg"
+></image>
+
+<image 
+  x="420"
+  y="250"
+  path="kk-cartoon03.jpg"
+></image>
+
+<label 
+  lblx="210"
+  lblw="450"
+  lblh="44"
+  lbly="0"
+  lblalpha="100"
+  lbltext="Kemo Kasper Chat for alle"
+  lblfntsize="24"
+  lblfontcolor="0x000000"
+  lblfntweight="normal"
+  lblfntstyle="normal"
+  lblfntname="Arial Black"
+></label>
+
+<label 
+  lblx="10"
+  lblw="199"
+  lblh="14"
+  lbly="300"
+  lblalpha="100"
+  lbltext="Velkommen til Kemo Kasper Chat rummet."
+  lblfntsize="10"
+  lblfontcolor="0x000000"
+  lblfntweight="normal"
+  lblfntstyle="normal"
+  lblfntname="Arial"
+></label>
+
+<label 
+  lblx="10"
+  lblw="228"
+  lblh="14"
+  lbly="340"
+  lblalpha="100"
+  lbltext="Du bør holde en god tone og føre en anstændig"
+  lblfntsize="10"
+  lblfontcolor="0x000000"
+  lblfntweight="normal"
+  lblfntstyle="normal"
+  lblfntname="Arial"
+></label>
+
+<label 
+  lblx="10"
+  lblw="40"
+  lblh="14"
+  lbly="360"
+  lblalpha="100"
+  lbltext="samtale."
+  lblfntsize="10"
+  lblfontcolor="0x000000"
+  lblfntweight="normal"
+  lblfntstyle="normal"
+  lblfntname="Arial"
+></label>
+
+<label 
+  lblx="10"
+  lblw="111"
+  lblh="15"
+  lbly="270"
+  lblalpha="100"
+  lbltext="Skriv din besked her"
+  lblfntsize="11"
+  lblfontcolor="0x000000"
+  lblfntweight="normal"
+  lblfntstyle="normal"
+  lblfntname="Arial"
+></label>
+
+</coffeecupchat>

@@ -1,0 +1,104 @@
+<html>
+<head>
+<title>Texts</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+<style>
+.grid_block {  
+margin-top:5px;
+border-collapse: collapse;
+align:center;
+width:95%;
+border:none;
+} 
+.grid_block td { 
+ padding: 5px; 
+ margin: 0px; 
+ border: solid black 1px;
+}
+.grid_block .gridspacing {width:20px;border-top-color:white; border-bottom-color:white;background-color:white}
+@media print 
+{
+	a.pdf {display:none}
+}
+.printpage {page-break-after:always}
+#selpage{margin-left:30px;}
+</style> 
+</head>
+<body style="background-color:white">
+{BEGIN body}
+{BEGIN page}
+{$header}
+
+<h1>Texts</h1>
+{BEGIN page_number}
+<div id='selpage'>{mlang_message PAGE1} {$page} {mlang_message PAGE2} {$maxpages} </div>
+{END page_number}
+
+{BEGIN grid_block}
+
+<table align="center" cellpadding=5 class="grid_block">
+{BEGIN grid_header}
+<tr>
+{BEGIN record_header}
+{BEGIN m_id_fieldheadercolumn}
+	<td>
+{BEGIN m_id_fieldheader}
+	<b>ID</b>
+{END m_id_fieldheader}
+	</td>
+{END m_id_fieldheadercolumn}
+{BEGIN m_name_fieldheadercolumn}
+	<td>
+{BEGIN m_name_fieldheader}
+	<b>Name</b>
+{END m_name_fieldheader}
+	</td>
+{END m_name_fieldheadercolumn}
+{BEGIN m_body_fieldheadercolumn}
+	<td>
+{BEGIN m_body_fieldheader}
+	<b>Text</b>
+{END m_body_fieldheader}
+	</td>
+{END m_body_fieldheadercolumn}
+{BEGIN endrecordheader_block}
+	<td class="gridspacing">&nbsp;</td>
+{END endrecordheader_block}
+{END record_header}
+</tr>
+{END grid_header}
+{BEGIN grid_row}
+<tr valign=top {$rowstyle} {$rowattrs}>
+{BEGIN grid_record}
+{BEGIN m_id_fieldcolumn}
+<td {$m_id_style}>
+{$m_id_value}
+</td>
+{END m_id_fieldcolumn}
+{BEGIN m_name_fieldcolumn}
+<td {$m_name_style}>
+{$m_name_value}
+</td>
+{END m_name_fieldcolumn}
+{BEGIN m_body_fieldcolumn}
+<td {$m_body_style}>
+{$m_body_value}
+</td>
+{END m_body_fieldcolumn}
+{BEGIN endrecord_block}
+<td class="gridspacing">&nbsp;</td>
+{END endrecord_block}
+{END grid_record}
+</tr>
+{END grid_row}
+<!-- totals row -->
+</table>
+{END grid_block}
+{$footer}
+{END page}
+{END body}
+</body>
+</html>

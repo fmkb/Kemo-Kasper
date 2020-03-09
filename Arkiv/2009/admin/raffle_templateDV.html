@@ -1,0 +1,61 @@
+<!-- Edit this file to change the layout of the detail view form -->
+
+<br>
+<table border=1 bordercolor=navy cellpadding=0 cellspacing=0>
+	<tr>
+		<td>
+			<div class=TableTitle><%%DETAIL_VIEW_TITLE%%></div>
+			</td>
+		</tr>
+	<tr>
+		<td>
+			<table>
+				<tr>
+					<td colspan=2></td>
+					<td rowspan=6 valign=top>
+						<div><%%UPDATE_BUTTON%%></div>
+						<div><%%DELETE_BUTTON%%></div>
+						<div><%%DESELECT_BUTTON%%></div>
+						<br>
+						<div><%%INSERT_BUTTON%%></div>
+						</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">R_name</div>
+						</td>
+					<td class=TableBody width=300 valign=top><input size=50 type=text class=TextBox name=r_name value="<%%VALUE(r_name)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">R_img</div>
+						</td>
+					<td class=TableBody width=300 valign=top>
+						<img src="<%%TRANSLATION(ImageFolder)%%><%%VALUE(r_img)%%>" border=0>
+						<br><%%UPLOADFILE(r_img)%%>
+						<br><%%REMOVEFILE(r_img)%%>
+
+						&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">R_text</div>
+						</td>
+					<td class=TableBody width=300 valign=top><textarea class=TextBox name=r_text cols=50 rows=3><%%VALUE(r_text)%%></textarea>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">R_date</div>
+						</td>
+					<td class=TableBody width=300 valign=top><%%COMBO(r_date)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">R_p_id</div>
+						</td>
+					<td class=TableBody width=300 valign=top><input size=10 type=text class=TextBox name=r_p_id value="<%%VALUE(r_p_id)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>

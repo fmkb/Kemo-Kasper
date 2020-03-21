@@ -1,0 +1,16 @@
+PODS:
+  - Appirater (2.0.2)
+  - cocos2d (2.1-rc2)
+  - CWLSynthesizeSingleton (0.0.1)
+
+DEPENDENCIES:
+  - Appirater (~> 2.0.2)
+  - cocos2d (~> 2.1-rc2)
+  - CWLSynthesizeSingleton (~> 0.0.1)
+
+SPEC CHECKSUMS:
+  Appirater: 32fb9089615b5e542c7ad7b5749741a8aed55290
+  cocos2d: 32f616ec53315008dfbff3d2f6cc064c44615ad8
+  CWLSynthesizeSingleton: 50ade66f768e4518c9fab5d16faec285cbf4c086
+
+COCOAPODS: 0.25.0

@@ -48,42 +48,56 @@ public class MainMenuNavigation : MonoBehaviour
         eventsCanvas.gameObject.SetActive(false);
         profileCanvas.gameObject.SetActive(false);
         goBackButton.gameObject.SetActive(false);
+        goToLoginMenuButton.gameObject.SetActive(true);
+        this.GetComponent<LogOut>().logOut.gameObject.SetActive(true);
     }
 
     public void OpenGame1LaunchCanvas()
     {
         game1LaunchCanvas.gameObject.SetActive(true);
         goBackButton.gameObject.SetActive(true);
+        goToLoginMenuButton.gameObject.SetActive(false);
+        this.GetComponent<LogOut>().logOut.gameObject.SetActive(false);
     }
 
     public void OpenGame2LaunchCanvas()
     {
         game2LaunchCanvas.gameObject.SetActive(true);
         goBackButton.gameObject.SetActive(true);
+        goToLoginMenuButton.gameObject.SetActive(false);
+        this.GetComponent<LogOut>().logOut.gameObject.SetActive(false);
     }
 
     public void OpenHigscoresCanvas()
     {
         higscoresCanvas.gameObject.SetActive(true);
         goBackButton.gameObject.SetActive(true);
+        goToLoginMenuButton.gameObject.SetActive(false);
+        this.GetComponent<LogOut>().logOut.gameObject.SetActive(false);
     }
 
     public void OpenComicsCanvas()
     {
         comicsCanvas.gameObject.SetActive(true);
         goBackButton.gameObject.SetActive(true);
+        goToLoginMenuButton.gameObject.SetActive(false);
+        this.GetComponent<LogOut>().logOut.gameObject.SetActive(false);
     }
 
     public void OpenEventCanvas()
     {
         eventsCanvas.gameObject.SetActive(true);
         goBackButton.gameObject.SetActive(true);
+        goToLoginMenuButton.gameObject.SetActive(false);
+        this.GetComponent<LogOut>().logOut.gameObject.SetActive(false);
     }
 
     public void OpenProfileCanvas()
     {
         profileCanvas.gameObject.SetActive(true);
         goBackButton.gameObject.SetActive(true);
+        goToLoginMenuButton.gameObject.SetActive(false);
+        this.GetComponent<LogOut>().logOut.gameObject.SetActive(false);
     }
 
     public void GoBackToLoginMenu()

@@ -9,7 +9,6 @@ public class MainMenuNoLoginNavigation : MonoBehaviour
     public Button game1Button;
     public Button game2Button;
     public Button highscoresButton;
-    public Button comicsButton;
     public Button eventsButton;
 
     public Button goBackButton;
@@ -19,7 +18,6 @@ public class MainMenuNoLoginNavigation : MonoBehaviour
     public GameObject game1LaunchCanvas;
     public GameObject game2LaunchCanvas;
     public GameObject higscoresCanvas;
-    public GameObject comicsCanvas;
     public GameObject eventsCanvas;
 
     void Start()
@@ -31,7 +29,6 @@ public class MainMenuNoLoginNavigation : MonoBehaviour
         game1Button.onClick.AddListener(OpenGame1LaunchCanvas);
         game2Button.onClick.AddListener(OpenGame2LaunchCanvas);
         highscoresButton.onClick.AddListener(OpenHigscoresCanvas);
-        comicsButton.onClick.AddListener(OpenComicsCanvas);
         eventsButton.onClick.AddListener(OpenEventCanvas);
         goToLoginMenuButton.onClick.AddListener(GoBackToLoginMenu);
     }
@@ -41,7 +38,6 @@ public class MainMenuNoLoginNavigation : MonoBehaviour
         game1LaunchCanvas.gameObject.SetActive(false);
         game2LaunchCanvas.gameObject.SetActive(false);
         higscoresCanvas.gameObject.SetActive(false);
-        comicsCanvas.gameObject.SetActive(false);
         eventsCanvas.gameObject.SetActive(false);
         goBackButton.gameObject.SetActive(false);
     }
@@ -61,12 +57,6 @@ public class MainMenuNoLoginNavigation : MonoBehaviour
     public void OpenHigscoresCanvas()
     {
         higscoresCanvas.gameObject.SetActive(true);
-        goBackButton.gameObject.SetActive(true);
-    }
-
-    public void OpenComicsCanvas()
-    {
-        comicsCanvas.gameObject.SetActive(true);
         goBackButton.gameObject.SetActive(true);
     }
 

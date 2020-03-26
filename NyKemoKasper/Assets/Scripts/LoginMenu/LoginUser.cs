@@ -28,7 +28,7 @@ public class LoginUser : MonoBehaviour
     void Start()
     {
         submitButton.onClick.AddListener(CreateToken);
-        warning.gameObject.SetActive(false);
+        RemoveWarning();
 
         GetToken();
 
@@ -38,26 +38,41 @@ public class LoginUser : MonoBehaviour
         }
     }
 
+    public void RemoveWarning()
+    {
+        warning.gameObject.SetActive(false);
+    }
+
+    public void EmptyFields()
+    {
+        passwordInput.text = "";
+        emailInput.text = "";
+    }
+
     public void CreateToken()
     {
-        if (emailInput.text != "" && passwordInput.text != "")
+        if (emailInput.gameObject.activeInHierarchy)
         {
+            if (emailInput.text != "" && passwordInput.text != "")
+            {
 
-            loginCredentials.Email = emailInput.text;
-            loginCredentials.Password = passwordInput.text;
+                loginCredentials.Email = emailInput.text;
+                loginCredentials.Password = passwordInput.text;
 
-            string path = Application.dataPath + "/Resources/Login/LoginCredentials.json";
-            string prefs = JsonUtility.ToJson(loginCredentials, true);
+                string path = Application.dataPath + "/Resources/Login/LoginCredentials.json";
+                string prefs = JsonUtility.ToJson(loginCredentials, true);
 
-            File.WriteAllText(path, prefs);
+                File.WriteAllText(path, prefs);
 
-            isLoggedIn = true;
-            GameObject.Find("LoginMenuScripts").GetComponent<LoginMenuNavigation>().OpenMainMenuLogin();
-        }
-        else
-        {
-            passwordInput.text = "";
-            warning.gameObject.SetActive(true);
+                isLoggedIn = true;
+                GameObject.Find("LoginMenuScripts").GetComponent<LoginMenuNavigation>().OpenMainMenuLogin();
+                RemoveWarning();
+            }
+            else
+            {
+                passwordInput.text = "";
+                warning.gameObject.SetActive(true);
+            }
         }
     }
 

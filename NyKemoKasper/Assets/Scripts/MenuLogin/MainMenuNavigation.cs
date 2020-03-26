@@ -9,7 +9,6 @@ public class MainMenuNavigation : MonoBehaviour
     public Button game1Button;
     public Button game2Button;
     public Button highscoresButton;
-    public Button comicsButton;
     public Button eventsButton;
     public Button profileButton;
 
@@ -20,7 +19,6 @@ public class MainMenuNavigation : MonoBehaviour
     public GameObject game1LaunchCanvas;
     public GameObject game2LaunchCanvas;
     public GameObject higscoresCanvas;
-    public GameObject comicsCanvas;
     public GameObject eventsCanvas;
     public GameObject profileCanvas;
 
@@ -33,7 +31,6 @@ public class MainMenuNavigation : MonoBehaviour
         game1Button.onClick.AddListener(OpenGame1LaunchCanvas);
         game2Button.onClick.AddListener(OpenGame2LaunchCanvas);
         highscoresButton.onClick.AddListener(OpenHigscoresCanvas);
-        comicsButton.onClick.AddListener(OpenComicsCanvas);
         eventsButton.onClick.AddListener(OpenEventCanvas);
         profileButton.onClick.AddListener(OpenProfileCanvas);
         goToLoginMenuButton.onClick.AddListener(GoBackToLoginMenu);
@@ -44,7 +41,6 @@ public class MainMenuNavigation : MonoBehaviour
         game1LaunchCanvas.gameObject.SetActive(false);
         game2LaunchCanvas.gameObject.SetActive(false);
         higscoresCanvas.gameObject.SetActive(false);
-        comicsCanvas.gameObject.SetActive(false);
         eventsCanvas.gameObject.SetActive(false);
         profileCanvas.gameObject.SetActive(false);
         goBackButton.gameObject.SetActive(false);
@@ -75,15 +71,7 @@ public class MainMenuNavigation : MonoBehaviour
         goToLoginMenuButton.gameObject.SetActive(false);
         this.GetComponent<LogOut>().logOut.gameObject.SetActive(false);
     }
-
-    public void OpenComicsCanvas()
-    {
-        comicsCanvas.gameObject.SetActive(true);
-        goBackButton.gameObject.SetActive(true);
-        goToLoginMenuButton.gameObject.SetActive(false);
-        this.GetComponent<LogOut>().logOut.gameObject.SetActive(false);
-    }
-
+    
     public void OpenEventCanvas()
     {
         eventsCanvas.gameObject.SetActive(true);

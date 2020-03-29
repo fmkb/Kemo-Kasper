@@ -38,29 +38,29 @@ public class MainMenuNoLoginNavigation : MonoBehaviour
         game1LaunchCanvas.gameObject.SetActive(false);
         game2LaunchCanvas.gameObject.SetActive(false);
         higscoresCanvas.gameObject.SetActive(false);
-        goBackButton.gameObject.SetActive(false);
         hamburger.gameObject.SetActive(false);
         hamburgerButton.gameObject.SetActive(true);
+        HideGoBackButton();
     }
 
     public void OpenGame1LaunchCanvas()
     {
         game1LaunchCanvas.gameObject.SetActive(true);
-        goBackButton.gameObject.SetActive(true);
+        ShowGoBackButton();
         hamburgerButton.gameObject.SetActive(false);
     }
 
     public void OpenGame2LaunchCanvas()
     {
         game2LaunchCanvas.gameObject.SetActive(true);
-        goBackButton.gameObject.SetActive(true);
+        ShowGoBackButton();
         hamburgerButton.gameObject.SetActive(false);
     }
 
     public void OpenHigscoresCanvas()
     {
         higscoresCanvas.gameObject.SetActive(true);
-        goBackButton.gameObject.SetActive(true);
+        ShowGoBackButton();
         hamburgerButton.gameObject.SetActive(false);
     }
 
@@ -73,5 +73,15 @@ public class MainMenuNoLoginNavigation : MonoBehaviour
     public void OpenHamburger()
     {
         hamburger.SetActive(!hamburger.activeInHierarchy);
+    }
+
+    public void HideGoBackButton()
+    {
+        goBackButton.gameObject.SetActive(false);
+    }
+
+    public void ShowGoBackButton()
+    {
+        goBackButton.gameObject.SetActive(true);
     }
 }

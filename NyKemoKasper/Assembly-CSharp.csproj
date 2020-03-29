@@ -62,12 +62,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Highscore.cs" />
     <Compile Include="Assets\Scripts\LoginMenu\LoginCredentials.cs" />
     <Compile Include="Assets\Scripts\LoginMenu\LoginMenuNavigation.cs" />
     <Compile Include="Assets\Scripts\LoginMenu\LoginUser.cs" />
     <Compile Include="Assets\Scripts\LoginMenu\RegisterUser.cs" />
+    <Compile Include="Assets\Scripts\MenuLogin\HighscoresLoader.cs" />
     <Compile Include="Assets\Scripts\MenuLogin\LogOut.cs" />
     <Compile Include="Assets\Scripts\MenuLogin\MainMenuNavigation.cs" />
+    <Compile Include="Assets\Scripts\MenuNoLogin\LocalHighscoresLoader.cs" />
     <Compile Include="Assets\Scripts\MenuNoLogin\MainMenuNoLoginNavigation.cs" />
     <Reference Include="Unity.XR.Management">
       <HintPath>C:/Users/mmich/Desktop/KEMO/NyKemoKasper/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>

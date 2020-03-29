@@ -1342,6 +1342,9 @@ MonoBehaviour:
   registerCredentials:
     Email: 
     Password: 
+    Name: 
+    Game1HighestUnlocked: 0
+    Game2HighestUnlocked: 0
   warningPasswordMatch: {fileID: 1786522666}
   warningPasswordReq: {fileID: 684414598}
   warningEmail: {fileID: 1691423822}

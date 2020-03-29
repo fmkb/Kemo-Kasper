@@ -11,6 +11,8 @@ public class MainMenuNavigation : MonoBehaviour
     public Button highscoresButton;
     public Button eventsButton;
     public Button profileButton;
+    public Button profileSettingsButton;
+    public Button hamburgerButton;
 
     public Button goBackButton;
     public Button goToLoginMenuButton;
@@ -21,6 +23,7 @@ public class MainMenuNavigation : MonoBehaviour
     public GameObject higscoresCanvas;
     public GameObject eventsCanvas;
     public GameObject profileCanvas;
+    public GameObject hamburger;
 
     void Start()
     {
@@ -34,6 +37,7 @@ public class MainMenuNavigation : MonoBehaviour
         eventsButton.onClick.AddListener(OpenEventCanvas);
         profileButton.onClick.AddListener(OpenProfileCanvas);
         goToLoginMenuButton.onClick.AddListener(GoBackToLoginMenu);
+        hamburgerButton.onClick.AddListener(OpenHamburger);
     }
 
     public void DisableAllCanvas()
@@ -45,6 +49,8 @@ public class MainMenuNavigation : MonoBehaviour
         profileCanvas.gameObject.SetActive(false);
         goBackButton.gameObject.SetActive(false);
         goToLoginMenuButton.gameObject.SetActive(true);
+        hamburger.gameObject.SetActive(false);
+        hamburgerButton.gameObject.SetActive(true);
         this.GetComponent<LogOut>().logOut.gameObject.SetActive(true);
     }
 
@@ -53,6 +59,7 @@ public class MainMenuNavigation : MonoBehaviour
         game1LaunchCanvas.gameObject.SetActive(true);
         goBackButton.gameObject.SetActive(true);
         goToLoginMenuButton.gameObject.SetActive(false);
+        hamburgerButton.gameObject.SetActive(false);
         this.GetComponent<LogOut>().logOut.gameObject.SetActive(false);
     }
 
@@ -61,6 +68,7 @@ public class MainMenuNavigation : MonoBehaviour
         game2LaunchCanvas.gameObject.SetActive(true);
         goBackButton.gameObject.SetActive(true);
         goToLoginMenuButton.gameObject.SetActive(false);
+        hamburgerButton.gameObject.SetActive(false);
         this.GetComponent<LogOut>().logOut.gameObject.SetActive(false);
     }
 
@@ -69,6 +77,7 @@ public class MainMenuNavigation : MonoBehaviour
         higscoresCanvas.gameObject.SetActive(true);
         goBackButton.gameObject.SetActive(true);
         goToLoginMenuButton.gameObject.SetActive(false);
+        hamburgerButton.gameObject.SetActive(false);
         this.GetComponent<LogOut>().logOut.gameObject.SetActive(false);
     }
     
@@ -77,6 +86,7 @@ public class MainMenuNavigation : MonoBehaviour
         eventsCanvas.gameObject.SetActive(true);
         goBackButton.gameObject.SetActive(true);
         goToLoginMenuButton.gameObject.SetActive(false);
+        hamburgerButton.gameObject.SetActive(false);
         this.GetComponent<LogOut>().logOut.gameObject.SetActive(false);
     }
 
@@ -85,6 +95,7 @@ public class MainMenuNavigation : MonoBehaviour
         profileCanvas.gameObject.SetActive(true);
         goBackButton.gameObject.SetActive(true);
         goToLoginMenuButton.gameObject.SetActive(false);
+        hamburgerButton.gameObject.SetActive(false);
         this.GetComponent<LogOut>().logOut.gameObject.SetActive(false);
     }
 
@@ -92,5 +103,10 @@ public class MainMenuNavigation : MonoBehaviour
     {
         mainCanvas.gameObject.SetActive(false);
         SceneManager.LoadScene("LoginMenu");
+    }
+
+    public void OpenHamburger()
+    {
+        hamburger.SetActive(!hamburger.activeInHierarchy);
     }
 }

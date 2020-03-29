@@ -9,6 +9,7 @@ public class MainMenuNoLoginNavigation : MonoBehaviour
     public Button game1Button;
     public Button game2Button;
     public Button highscoresButton;
+    public Button hamburgerButton;
 
     public Button goBackButton;
     public Button goToLoginMenuButton;
@@ -17,6 +18,7 @@ public class MainMenuNoLoginNavigation : MonoBehaviour
     public GameObject game1LaunchCanvas;
     public GameObject game2LaunchCanvas;
     public GameObject higscoresCanvas;
+    public GameObject hamburger;
 
     void Start()
     {
@@ -28,6 +30,7 @@ public class MainMenuNoLoginNavigation : MonoBehaviour
         game2Button.onClick.AddListener(OpenGame2LaunchCanvas);
         highscoresButton.onClick.AddListener(OpenHigscoresCanvas);
         goToLoginMenuButton.onClick.AddListener(GoBackToLoginMenu);
+        hamburgerButton.onClick.AddListener(OpenHamburger);
     }
 
     public void DisableAllCanvas()
@@ -36,29 +39,39 @@ public class MainMenuNoLoginNavigation : MonoBehaviour
         game2LaunchCanvas.gameObject.SetActive(false);
         higscoresCanvas.gameObject.SetActive(false);
         goBackButton.gameObject.SetActive(false);
+        hamburger.gameObject.SetActive(false);
+        hamburgerButton.gameObject.SetActive(true);
     }
 
     public void OpenGame1LaunchCanvas()
     {
         game1LaunchCanvas.gameObject.SetActive(true);
         goBackButton.gameObject.SetActive(true);
+        hamburgerButton.gameObject.SetActive(false);
     }
 
     public void OpenGame2LaunchCanvas()
     {
         game2LaunchCanvas.gameObject.SetActive(true);
         goBackButton.gameObject.SetActive(true);
+        hamburgerButton.gameObject.SetActive(false);
     }
 
     public void OpenHigscoresCanvas()
     {
         higscoresCanvas.gameObject.SetActive(true);
         goBackButton.gameObject.SetActive(true);
+        hamburgerButton.gameObject.SetActive(false);
     }
 
     public void GoBackToLoginMenu()
     {
         mainCanvas.gameObject.SetActive(false);
         SceneManager.LoadScene("LoginMenu");
+    }
+
+    public void OpenHamburger()
+    {
+        hamburger.SetActive(!hamburger.activeInHierarchy);
     }
 }

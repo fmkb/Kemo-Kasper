@@ -1,7 +1,6 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
-using System.IO;
 using UnityEngine;
+using UnityEngine.Networking;
 using UnityEngine.UI;
 
 [System.Serializable]
@@ -14,28 +13,30 @@ public class LoginUser : MonoBehaviour
     public Button submitButton;
 
     private LoginCredentials loginCredentials = new LoginCredentials();
-
-    [SerializeField]
+    
     private string email;
-
-    [SerializeField]
+    
     private string password;
 
     public bool isLoggedIn;
 
     public GameObject warning;
 
+    public string message;
+
     void Start()
     {
         submitButton.onClick.AddListener(CreateToken);
         RemoveWarning();
-
+        message = ""; 
         GetToken();
 
         if(isLoggedIn)
         {
             DisplayButtonName(email);
         }
+
+        StartCoroutine(GetRequest("http://api.kemo-kasper.dk/hello.json"));
     }
 
     public void RemoveWarning()
@@ -55,14 +56,8 @@ public class LoginUser : MonoBehaviour
         {
             if (emailInput.text != "" && passwordInput.text != "")
             {
-
-                loginCredentials.Email = emailInput.text;
-                loginCredentials.Password = passwordInput.text;
-
-                string path = Application.dataPath + "/Resources/Login/LoginCredentials.json";
-                string prefs = JsonUtility.ToJson(loginCredentials, true);
-
-                File.WriteAllText(path, prefs);
+                PlayerPrefs.SetString("Email", emailInput.text);
+                PlayerPrefs.SetString("Password", passwordInput.text);
 
                 isLoggedIn = true;
                 GameObject.Find("LoginMenuScripts").GetComponent<LoginMenuNavigation>().OpenMainMenuLogin();
@@ -78,8 +73,9 @@ public class LoginUser : MonoBehaviour
 
     public void GetToken()
     {
-        string json = File.ReadAllText(Application.dataPath + "/Resources/Login/LoginCredentials.json");
-        loginCredentials = JsonUtility.FromJson<LoginCredentials>(json);
+        loginCredentials.Email = PlayerPrefs.GetString("Email");
+        loginCredentials.Password = PlayerPrefs.GetString("Password");
+
         if (loginCredentials.Email == "" || loginCredentials.Password == "")
         {
             isLoggedIn = false;
@@ -95,5 +91,26 @@ public class LoginUser : MonoBehaviour
     public void DisplayButtonName(string name)
     {
         loginButton.transform.GetChild(0).GetComponent<Text>().text = "Spil som " + email;
+    }
+
+    IEnumerator GetRequest(string uri)
+    {
+        using (UnityWebRequest webRequest = UnityWebRequest.Get(uri))
+        {
+            yield return webRequest.SendWebRequest();
+
+            string[] pages = uri.Split('/');
+            int page = pages.Length - 1;
+
+            if (webRequest.isNetworkError)
+            {
+                Debug.Log(pages[page] + ": Error: " + webRequest.error);
+            }
+            else
+            {
+                Debug.Log(pages[page] + ":\nReceived: " + webRequest.downloadHandler.text);
+
+            }
+        }
     }
 }

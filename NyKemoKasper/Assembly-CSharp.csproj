@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Highscore.cs" />
+    <Compile Include="Assets\Scripts\LevelUnlocker.cs" />
     <Compile Include="Assets\Scripts\LoginMenu\LoginCredentials.cs" />
     <Compile Include="Assets\Scripts\LoginMenu\LoginMenuNavigation.cs" />
     <Compile Include="Assets\Scripts\LoginMenu\LoginUser.cs" />

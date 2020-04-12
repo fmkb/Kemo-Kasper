@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -37,6 +36,7 @@ public class RegisterUser : MonoBehaviour
 
     public void RemoveWarnings()
     {
+        // hiding all the warnings
         warningPasswordMatch.gameObject.SetActive(false);
         warningPasswordReq.gameObject.SetActive(false);
         warningEmail.gameObject.SetActive(false);
@@ -45,6 +45,7 @@ public class RegisterUser : MonoBehaviour
 
     public void EmptyFields()
     {
+        // emptying all the fields
         emailField.text = "";
         passwordField.text = "";
         passwordRepeatField.text = "";
@@ -53,6 +54,7 @@ public class RegisterUser : MonoBehaviour
 
     public void RegisterNewUser()
     {
+        // checking if the right canvas is open
         if (emailField.gameObject.activeInHierarchy)
         {
             RemoveWarnings();
@@ -72,6 +74,9 @@ public class RegisterUser : MonoBehaviour
                 isAllOk = true;
             }
 
+            // checking if there is no user using given email address yet
+
+            // if every condition is met, then create an account
             if (isAllOk)
             {
                 EmptyFields();
@@ -80,12 +85,15 @@ public class RegisterUser : MonoBehaviour
                 registerConfirmation.SetActive(true);
                 StartCoroutine(Countdown());
                 isAllOk = false;
+
+                // sending data with the new account to the website here
             }
         }
     }
 
     private bool ArePasswordsTheSame()
     {
+        // checking if passwords from both fields are the same
         if (passwordField.text == passwordRepeatField.text)
         {
             warningPasswordMatch.SetActive(false);
@@ -102,6 +110,7 @@ public class RegisterUser : MonoBehaviour
 
     private bool ArePasswordRequirementMet()
     {
+        // checking if the password requirement are met
         if (passwordField.text.Length > 6)
         {
             warningPasswordReq.SetActive(false);
@@ -122,6 +131,7 @@ public class RegisterUser : MonoBehaviour
 
     private bool AreNoneFieldsEmpty()
     {
+        // checking if there are no empty fields
         if (emailField.text.Length > 0 && nameField.text.Length > 0)
         {
             warningFieldsEmpty.SetActive(false);
@@ -138,6 +148,7 @@ public class RegisterUser : MonoBehaviour
 
     private bool IsEmailCorrect()
     {
+        // checking if entered email ís an email address
         if (emailField.text.Contains("@"))
         {
             warningEmail.SetActive(false);
@@ -154,6 +165,7 @@ public class RegisterUser : MonoBehaviour
 
     private IEnumerator Countdown()
     {
+        // coroutine disabling the register confirmation after 3 seconds
         yield return new WaitForSeconds(3);
         registerConfirmation.SetActive(false);
     }

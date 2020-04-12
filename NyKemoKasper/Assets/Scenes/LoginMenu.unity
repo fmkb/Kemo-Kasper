@@ -1339,10 +1339,9 @@ MonoBehaviour:
   passwordInput: {fileID: 1819996912}
   loginButton: {fileID: 1153943547}
   submitButton: {fileID: 1072022025}
-  email: 
-  password: 
   isLoggedIn: 0
   warning: {fileID: 1419907822}
+  message: 
 --- !u!114 &466089103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3594,7 +3593,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1419907823
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4910,7 +4909,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 30188f5a70ad41b49b9b02f64e2bfd7e, type: 3}
+  m_Texture: {fileID: 2800000, guid: c9dd7b845fbf54f4d9034c84533a50a7, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0

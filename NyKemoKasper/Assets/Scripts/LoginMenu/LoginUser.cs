@@ -36,16 +36,19 @@ public class LoginUser : MonoBehaviour
             DisplayButtonName(email);
         }
 
-        StartCoroutine(GetRequest("http://api.kemo-kasper.dk/hello.json"));
+        // getting a request from the website
+        StartCoroutine(GetRequest("https://api.kemo-kasper.dk/hello.json"));
     }
 
     public void RemoveWarning()
     {
+        // disabling the warning
         warning.gameObject.SetActive(false);
     }
 
     public void EmptyFields()
     {
+        // emptying the input fields
         passwordInput.text = "";
         emailInput.text = "";
     }
@@ -54,10 +57,19 @@ public class LoginUser : MonoBehaviour
     {
         if (emailInput.gameObject.activeInHierarchy)
         {
-            if (emailInput.text != "" && passwordInput.text != "")
+            // if the email input is not empty and the password is at lesat 6 characters
+            if (emailInput.text != "" && passwordInput.text.Length > 6)
             {
+                // checking for existing account here
+
+                // creating a login token, so the user is logged in automatically the next time
+                int game1HighestLVL = 1;
+                int game2HighestLVL = 1;
+
                 PlayerPrefs.SetString("Email", emailInput.text);
                 PlayerPrefs.SetString("Password", passwordInput.text);
+                PlayerPrefs.SetInt("Game1HighestLVLLogin", game1HighestLVL);
+                PlayerPrefs.SetInt("Game2HighestLVLLogin", game2HighestLVL);
 
                 isLoggedIn = true;
                 GameObject.Find("LoginMenuScripts").GetComponent<LoginMenuNavigation>().OpenMainMenuLogin();
@@ -65,6 +77,7 @@ public class LoginUser : MonoBehaviour
             }
             else
             {
+                // if email field is empty or password is too short or a user couldn't be found in the database, display warning
                 passwordInput.text = "";
                 warning.gameObject.SetActive(true);
             }
@@ -73,15 +86,18 @@ public class LoginUser : MonoBehaviour
 
     public void GetToken()
     {
+        // getting the login token from playerprefs
         loginCredentials.Email = PlayerPrefs.GetString("Email");
         loginCredentials.Password = PlayerPrefs.GetString("Password");
 
+        // if either email or password is empty, do not log in
         if (loginCredentials.Email == "" || loginCredentials.Password == "")
         {
             isLoggedIn = false;
         }
         else
         {
+            // if was logged in before and the token exists, automatically log in
             email = loginCredentials.Email;
             password = loginCredentials.Password;
             isLoggedIn = true;
@@ -90,6 +106,7 @@ public class LoginUser : MonoBehaviour
 
     public void DisplayButtonName(string name)
     {
+        // change the text of the start button to say name of the player on it
         loginButton.transform.GetChild(0).GetComponent<Text>().text = "Spil som " + email;
     }
 

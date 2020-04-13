@@ -63,6 +63,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Highscore.cs" />
+    <Compile Include="Assets\Scripts\LanguageManager.cs" />
+    <Compile Include="Assets\Scripts\LanguageUpdater.cs" />
     <Compile Include="Assets\Scripts\LevelUnlocker.cs" />
     <Compile Include="Assets\Scripts\LoginMenu\LoginCredentials.cs" />
     <Compile Include="Assets\Scripts\LoginMenu\LoginMenuNavigation.cs" />
@@ -71,6 +73,7 @@
     <Compile Include="Assets\Scripts\MenuLogin\HighscoresLoader.cs" />
     <Compile Include="Assets\Scripts\MenuLogin\LogOut.cs" />
     <Compile Include="Assets\Scripts\MenuLogin\MainMenuNavigation.cs" />
+    <Compile Include="Assets\Scripts\MenuLogin\ProfileManager.cs" />
     <Compile Include="Assets\Scripts\MenuNoLogin\LocalHighscoresLoader.cs" />
     <Compile Include="Assets\Scripts\MenuNoLogin\MainMenuNoLoginNavigation.cs" />
     <Reference Include="Unity.XR.Management">

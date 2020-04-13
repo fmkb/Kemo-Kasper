@@ -24,14 +24,19 @@ public class LoginUser : MonoBehaviour
 
     public string message;
 
+    public GameObject textIfUnlogged;
+    public GameObject textIfLogged;
+
     void Start()
     {
         submitButton.onClick.AddListener(CreateToken);
         RemoveWarning();
         message = ""; 
         GetToken();
+        textIfLogged.SetActive(false);
+        textIfUnlogged.SetActive(true);
 
-        if(isLoggedIn)
+        if (isLoggedIn)
         {
             DisplayButtonName(email);
         }
@@ -63,9 +68,11 @@ public class LoginUser : MonoBehaviour
                 // checking for existing account here
 
                 // creating a login token, so the user is logged in automatically the next time
+                string name = "";
                 int game1HighestLVL = 1;
                 int game2HighestLVL = 1;
 
+                PlayerPrefs.SetString("Name", name);
                 PlayerPrefs.SetString("Email", emailInput.text);
                 PlayerPrefs.SetString("Password", passwordInput.text);
                 PlayerPrefs.SetInt("Game1HighestLVLLogin", game1HighestLVL);
@@ -106,8 +113,21 @@ public class LoginUser : MonoBehaviour
 
     public void DisplayButtonName(string name)
     {
-        // change the text of the start button to say name of the player on it
-        loginButton.transform.GetChild(0).GetComponent<Text>().text = "Spil som " + email;
+        textIfLogged.SetActive(true);
+        textIfUnlogged.SetActive(false);
+
+        if (PlayerPrefs.HasKey("Name"))
+        {
+            textIfLogged.transform.GetChild(0).GetComponent<Text>().text += PlayerPrefs.GetString("Name");
+            textIfLogged.transform.GetChild(1).GetComponent<Text>().text += PlayerPrefs.GetString("Name");
+            textIfLogged.transform.GetChild(2).GetComponent<Text>().text += PlayerPrefs.GetString("Name");
+        }
+        else
+        {
+            textIfLogged.transform.GetChild(0).GetComponent<Text>().text += PlayerPrefs.GetString("Email");
+            textIfLogged.transform.GetChild(1).GetComponent<Text>().text += PlayerPrefs.GetString("Email");
+            textIfLogged.transform.GetChild(2).GetComponent<Text>().text += PlayerPrefs.GetString("Email");
+        }
     }
 
     IEnumerator GetRequest(string uri)

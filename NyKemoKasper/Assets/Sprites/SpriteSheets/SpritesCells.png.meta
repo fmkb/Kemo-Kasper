@@ -1,0 +1,5540 @@
+fileFormatVersion: 2
+guid: 704267902c4856645b71bb29c23a2239
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1198911052492174373
+    second: CellWalk_5
+  - first:
+      213: 9169024507522698176
+    second: CellWalk_12
+  - first:
+      213: -3554142517310872085
+    second: SpritesCells_2
+  - first:
+      213: -5542240601629596820
+    second: CellWalk_15
+  - first:
+      213: 8852071062537075966
+    second: CellWalk_22
+  - first:
+      213: 8740725748891064799
+    second: CellWalk_36
+  - first:
+      213: -4662296816765043056
+    second: CellWalk_33
+  - first:
+      213: -1524939354827297977
+    second: CellWalk_11
+  - first:
+      213: 893655860051069966
+    second: SpritesCells_8
+  - first:
+      213: 7018882880080276802
+    second: CellSpawn_27
+  - first:
+      213: 7206906047397560290
+    second: CellWalk_10
+  - first:
+      213: 463913148485070331
+    second: CellWalk_17
+  - first:
+      213: -3620210053079129074
+    second: CellWalk_18
+  - first:
+      213: -6356379329959186278
+    second: CellWalk_19
+  - first:
+      213: -1160211379854208986
+    second: CellWalk_32
+  - first:
+      213: 8930212102176233737
+    second: CellWalk_34
+  - first:
+      213: 1549588537701779194
+    second: CellWalk_35
+  - first:
+      213: 8044959678344464507
+    second: CellWalk_37
+  - first:
+      213: -9021220329545215165
+    second: CellWalk_38
+  - first:
+      213: 3784028240113714210
+    second: CellSpawn_28
+  - first:
+      213: -3511005670814345801
+    second: CellWalk_0
+  - first:
+      213: -4007092744609063567
+    second: SpritesCells_21
+  - first:
+      213: -6609125589926502829
+    second: CellWalk_3
+  - first:
+      213: 8177043413837727247
+    second: CellSpawn_21
+  - first:
+      213: 5767529245035378377
+    second: CellWalk_1
+  - first:
+      213: 1260188137070348189
+    second: SpritesCells_25
+  - first:
+      213: 1067234333637136843
+    second: CellWalk_2
+  - first:
+      213: 8338998888756081309
+    second: SpritesCells_27
+  - first:
+      213: 8801707227415050253
+    second: SpritesCells_28
+  - first:
+      213: -8485058949392489575
+    second: CellDestroy_16
+  - first:
+      213: -5683531736739527539
+    second: RedCell_0
+  - first:
+      213: -2142877081048982077
+    second: RedCell_1
+  - first:
+      213: 781280885252782776
+    second: RedCell_5
+  - first:
+      213: -1591254619586155003
+    second: CellOther_7
+  - first:
+      213: -3349464876717412929
+    second: CellDestroy_17
+  - first:
+      213: 6856535378306573626
+    second: CellOther_0
+  - first:
+      213: 2121148706965110335
+    second: CellOther_1
+  - first:
+      213: -1876636475402579548
+    second: CellOther_2
+  - first:
+      213: -6132218689913373578
+    second: CellOther_4
+  - first:
+      213: 189752746176816876
+    second: CellDestroy_18
+  - first:
+      213: -7187835603941957416
+    second: CellDestroy_19
+  - first:
+      213: -9025766781478994016
+    second: SpritesCells_41
+  - first:
+      213: 7097776105692253999
+    second: CellDestroy_20
+  - first:
+      213: -5516392708620422046
+    second: CellIdle_5
+  - first:
+      213: -360188718636761183
+    second: CellYellow_11
+  - first:
+      213: -4681953768466928860
+    second: CellIdle_9
+  - first:
+      213: 7821925178879996910
+    second: SpritesCells_46
+  - first:
+      213: -6801691983398668023
+    second: CellYellow_0
+  - first:
+      213: -8382078977430719433
+    second: CellYellow_1
+  - first:
+      213: -3189558523221426127
+    second: CellYellow_2
+  - first:
+      213: 8668493831615891012
+    second: CellYellow_3
+  - first:
+      213: -4728390506102368970
+    second: CellYellow_4
+  - first:
+      213: 7760052989938008961
+    second: CellYellow_5
+  - first:
+      213: -3602688468832030254
+    second: CellYellow_6
+  - first:
+      213: 3292552482800644798
+    second: CellYellow_7
+  - first:
+      213: 1103701513728562683
+    second: CellYellow_8
+  - first:
+      213: -3055793944587862382
+    second: CellYellow_9
+  - first:
+      213: 8580477333487064938
+    second: CellYellow_10
+  - first:
+      213: 4538549915902398885
+    second: CellYellow_12
+  - first:
+      213: 2538606305172451247
+    second: CellYellow_13
+  - first:
+      213: 8375372118009479474
+    second: CellYellow_14
+  - first:
+      213: -4717363838295300748
+    second: CellIdle_10
+  - first:
+      213: -4157774864087649119
+    second: SpritesCells_62
+  - first:
+      213: -8105378126233959832
+    second: CellSpawn_26
+  - first:
+      213: -4278478814543255399
+    second: SpritesCells_64
+  - first:
+      213: -5193746268824809164
+    second: CellIdle_15
+  - first:
+      213: -2380920345542365461
+    second: CellSpawn_19
+  - first:
+      213: -7036461616394294190
+    second: CellSpawn_29
+  - first:
+      213: -4523426631457904154
+    second: CellSpawn_30
+  - first:
+      213: -8678100747694159352
+    second: CellSpawn_31
+  - first:
+      213: -4659936219794390100
+    second: CellSpawn_6
+  - first:
+      213: -2207536411440634195
+    second: CellIdle_16
+  - first:
+      213: 4021671988786362235
+    second: CellSpawn_10
+  - first:
+      213: 6240964542246171311
+    second: CellSpawn_11
+  - first:
+      213: -6117696771779128120
+    second: CellSpawn_12
+  - first:
+      213: 7909367357224826676
+    second: CellSpawn_13
+  - first:
+      213: -4982308148993620659
+    second: CellSpawn_14
+  - first:
+      213: -7536507348262571353
+    second: CellSpawn_15
+  - first:
+      213: 8066016584324041497
+    second: CellSpawn_16
+  - first:
+      213: -1462190467892604675
+    second: CellSpawn_17
+  - first:
+      213: 8971118977098163115
+    second: CellSpawn_18
+  - first:
+      213: -814123509625608420
+    second: CellSpawn_20
+  - first:
+      213: 8788444879440406265
+    second: CellSpawn_22
+  - first:
+      213: 99383867219951187
+    second: CellSpawn_23
+  - first:
+      213: 3714427898027153724
+    second: CellSpawn_24
+  - first:
+      213: 9071374038201416763
+    second: CellSpawn_25
+  - first:
+      213: 5565514606527776114
+    second: CellSpawn_0
+  - first:
+      213: 8145744040956951136
+    second: CellSpawn_1
+  - first:
+      213: -6391299073832581513
+    second: CellSpawn_2
+  - first:
+      213: 369941634817948087
+    second: CellSpawn_3
+  - first:
+      213: -7107191461042554727
+    second: CellSpawn_4
+  - first:
+      213: 5224898394917666969
+    second: CellSpawn_5
+  - first:
+      213: 6226557638373630716
+    second: CellSpawn_7
+  - first:
+      213: 6451231904599211452
+    second: CellSpawn_8
+  - first:
+      213: 4110433623082315453
+    second: CellSpawn_9
+  - first:
+      213: -870268480501744898
+    second: CellIdle_17
+  - first:
+      213: 2312480187191837425
+    second: CellIdle_19
+  - first:
+      213: -7293423397275015310
+    second: CellIdle_20
+  - first:
+      213: 1310853144664289592
+    second: CellIdle_51
+  - first:
+      213: 1291249156430179941
+    second: CellIdle_50
+  - first:
+      213: 6593074518072342199
+    second: CellIdle_48
+  - first:
+      213: 8503670771189154166
+    second: CellIdle_47
+  - first:
+      213: -41610460062023660
+    second: CellIdle_46
+  - first:
+      213: -7473719597839155731
+    second: CellIdle_45
+  - first:
+      213: -4263857538064082249
+    second: CellDestroy_11
+  - first:
+      213: -2718162515296599978
+    second: CellDestroy_12
+  - first:
+      213: 8162730645294203409
+    second: CellDestroy_13
+  - first:
+      213: -6407679985051385404
+    second: CellIdle_44
+  - first:
+      213: 355147638659042446
+    second: CellIdle_42
+  - first:
+      213: -5994017026351586039
+    second: CellDestroy_0
+  - first:
+      213: 2111072192273336963
+    second: CellDestroy_4
+  - first:
+      213: -4373388864085685336
+    second: CellDestroy_8
+  - first:
+      213: 8816779351291180259
+    second: CellDestroy_9
+  - first:
+      213: -8637478785085817338
+    second: CellDestroy_10
+  - first:
+      213: 1713426343072802252
+    second: CellDestroy_15
+  - first:
+      213: 1910013932881887995
+    second: CellIdle_38
+  - first:
+      213: 8856896742963157096
+    second: CellIdle_35
+  - first:
+      213: 3201654073678215725
+    second: SpritesCells_117
+  - first:
+      213: -123004333779120710
+    second: SpritesCells_118
+  - first:
+      213: 5133861198207793247
+    second: SpritesCells_119
+  - first:
+      213: 1971976527063093447
+    second: CellDestroy_5
+  - first:
+      213: -4411614129887269418
+    second: CellDestroy_6
+  - first:
+      213: -1532092347021541079
+    second: CellDestroy_7
+  - first:
+      213: 4342283749489164391
+    second: CellDestroy_14
+  - first:
+      213: 2000085622824051267
+    second: SpritesCells_124
+  - first:
+      213: -4295261890197356068
+    second: SpritesCells_125
+  - first:
+      213: -7430126317764873599
+    second: SpritesCells_126
+  - first:
+      213: 6950841556154635495
+    second: SpritesCells_127
+  - first:
+      213: -3034998356913063445
+    second: SpritesCells_128
+  - first:
+      213: 1528877334522067308
+    second: CellDestroy_1
+  - first:
+      213: -3447448271516508043
+    second: CellDestroy_2
+  - first:
+      213: 1956858730166799516
+    second: CellDestroy_3
+  - first:
+      213: -9161804228722584064
+    second: SpritesCells_132
+  - first:
+      213: 1300146961434290460
+    second: SpritesCells_133
+  - first:
+      213: -6862490286400327344
+    second: SpritesCells_134
+  - first:
+      213: -6894473258205836801
+    second: SpritesCells_135
+  - first:
+      213: 4142765839539606704
+    second: SpritesCells_136
+  - first:
+      213: 1973767406245234944
+    second: SpritesCells_137
+  - first:
+      213: -302609700206017422
+    second: SpritesCells_138
+  - first:
+      213: 1679542911277398078
+    second: SpritesCells_139
+  - first:
+      213: 3120219036966324839
+    second: SpritesCells_140
+  - first:
+      213: 5751056235819731500
+    second: SpritesCells_141
+  - first:
+      213: 5495892427677186468
+    second: SpritesCells_142
+  - first:
+      213: 3539081719068914591
+    second: SpritesCells_143
+  - first:
+      213: -3347377425559372475
+    second: SpritesCells_144
+  - first:
+      213: -768506512708650391
+    second: SpritesCells_145
+  - first:
+      213: -7463461111541841159
+    second: SpritesCells_146
+  - first:
+      213: 2194482103332781522
+    second: SpritesCells_147
+  - first:
+      213: 1701526714692804393
+    second: SpritesCells_148
+  - first:
+      213: 3094503027829503840
+    second: SpritesCells_149
+  - first:
+      213: -3561499178936986510
+    second: SpritesCells_150
+  - first:
+      213: 8585276359706356114
+    second: SpritesCells_151
+  - first:
+      213: 3440087290719665566
+    second: SpritesCells_152
+  - first:
+      213: 2575030673676693604
+    second: SpritesCells_153
+  - first:
+      213: -1292076271190089312
+    second: CellDuplicate_7
+  - first:
+      213: 3052304049273239459
+    second: CellDuplicate_8
+  - first:
+      213: 881161743658654910
+    second: CellDuplicate_9
+  - first:
+      213: -5883828118499798826
+    second: CellDuplicate_10
+  - first:
+      213: -8056610640674144702
+    second: CellDuplicate_0
+  - first:
+      213: 5392754747906501756
+    second: CellDuplicate_1
+  - first:
+      213: -3629191782035171727
+    second: CellDuplicate_2
+  - first:
+      213: -1489949355259963318
+    second: CellDuplicate_3
+  - first:
+      213: -7632769170050118043
+    second: CellDuplicate_4
+  - first:
+      213: 7934962077702880828
+    second: CellDuplicate_5
+  - first:
+      213: 4086063152843694777
+    second: CellDuplicate_6
+  - first:
+      213: 729820126644602055
+    second: CellDuplicate_11
+  - first:
+      213: -6449071621163379422
+    second: CellDuplicate_12
+  - first:
+      213: 1231598307986947470
+    second: CellDuplicate_13
+  - first:
+      213: -8920676210728764846
+    second: CellDuplicate_14
+  - first:
+      213: 7124520452751642232
+    second: SpritesCells_169
+  - first:
+      213: -9040190487124523952
+    second: SpritesCells_170
+  - first:
+      213: 2516043421158088252
+    second: SpritesCells_171
+  - first:
+      213: -2206848353089257170
+    second: CellIdle_18
+  - first:
+      213: 8355815071056452697
+    second: SpritesCells_173
+  - first:
+      213: 97892313690629811
+    second: SpritesCells_174
+  - first:
+      213: 5479451492406036964
+    second: CellIdle_0
+  - first:
+      213: 4670497152592910759
+    second: CellIdle_1
+  - first:
+      213: 1662971242246340463
+    second: CellIdle_2
+  - first:
+      213: 4053870817888319893
+    second: CellIdle_3
+  - first:
+      213: -5712832800362948061
+    second: CellIdle_4
+  - first:
+      213: 7365204307283352680
+    second: CellIdle_6
+  - first:
+      213: -4768484880360808557
+    second: SpritesCells_181
+  - first:
+      213: -7104075545454775565
+    second: CellIdle_7
+  - first:
+      213: -3214688805432995563
+    second: CellIdle_8
+  - first:
+      213: -9049183743105796197
+    second: CellIdle_11
+  - first:
+      213: -8617400424403069977
+    second: CellIdle_12
+  - first:
+      213: 2020696849680543927
+    second: CellIdle_13
+  - first:
+      213: 7716868950439059342
+    second: CellIdle_14
+  - first:
+      213: 141773446914327434
+    second: CellIdle_21
+  - first:
+      213: -5755633503366841454
+    second: CellIdle_22
+  - first:
+      213: -1236097285651750336
+    second: CellIdle_23
+  - first:
+      213: -1972131479456867504
+    second: CellIdle_24
+  - first:
+      213: 3770378963646148449
+    second: CellIdle_25
+  - first:
+      213: -3923935726176493875
+    second: CellIdle_26
+  - first:
+      213: 6499126022543848712
+    second: CellIdle_27
+  - first:
+      213: 4560055103596751019
+    second: CellIdle_28
+  - first:
+      213: -1250051961243258456
+    second: CellIdle_29
+  - first:
+      213: 554031405425570491
+    second: SpritesCells_197
+  - first:
+      213: -8157029171051621788
+    second: SpritesCells_198
+  - first:
+      213: 854605311242197859
+    second: SpritesCells_199
+  - first:
+      213: -8003877914804003276
+    second: SpritesCells_200
+  - first:
+      213: -1426720640616576113
+    second: SpritesCells_201
+  - first:
+      213: -7128420323962968609
+    second: SpritesCells_202
+  - first:
+      213: -615662619668287493
+    second: SpritesCells_203
+  - first:
+      213: -7926075160025958081
+    second: SpritesCells_204
+  - first:
+      213: 2275954562413980865
+    second: CellIdle_31
+  - first:
+      213: -2618519237461462495
+    second: SpritesCells_206
+  - first:
+      213: -8707817632535351552
+    second: SpritesCells_207
+  - first:
+      213: 5512426871219963799
+    second: CellIdle_41
+  - first:
+      213: 8617422030537202075
+    second: CellIdle_49
+  - first:
+      213: -4148468916799196897
+    second: CellIdle_52
+  - first:
+      213: -3379761919796864497
+    second: CellIdle_30
+  - first:
+      213: 3410442969880146199
+    second: CellIdle_32
+  - first:
+      213: 7424235547031483745
+    second: CellIdle_33
+  - first:
+      213: 929114659757009449
+    second: CellIdle_34
+  - first:
+      213: -3530950811567021421
+    second: CellIdle_36
+  - first:
+      213: 7561169499015478846
+    second: CellIdle_37
+  - first:
+      213: 1039226928337436499
+    second: CellIdle_39
+  - first:
+      213: -5670864411359013081
+    second: CellIdle_40
+  - first:
+      213: -2037795045367531557
+    second: CellIdle_43
+  - first:
+      213: 6307120900855452384
+    second: SpritesCells_220
+  - first:
+      213: 1038442585889045354
+    second: SpritesCells_221
+  - first:
+      213: 36380336130840208
+    second: SpritesCells_222
+  - first:
+      213: 1917572162458832772
+    second: CellWalk_4
+  - first:
+      213: 3829922944719416946
+    second: CellWalk_6
+  - first:
+      213: -8304589458397356348
+    second: CellWalk_7
+  - first:
+      213: 6218620933587393619
+    second: CellWalk_8
+  - first:
+      213: -4678689004655173586
+    second: CellWalk_9
+  - first:
+      213: -7357556861720561757
+    second: CellWalk_13
+  - first:
+      213: -5354180390213633425
+    second: CellWalk_14
+  - first:
+      213: -6693391278379333135
+    second: CellWalk_16
+  - first:
+      213: -8156203253437609260
+    second: CellWalk_20
+  - first:
+      213: 8843000544139397763
+    second: CellWalk_21
+  - first:
+      213: 5119279260008983100
+    second: CellWalk_23
+  - first:
+      213: -4770908063234764377
+    second: CellWalk_24
+  - first:
+      213: -7743586166699012964
+    second: CellWalk_25
+  - first:
+      213: 8354418560147740154
+    second: CellWalk_26
+  - first:
+      213: -7183233328012799942
+    second: CellWalk_27
+  - first:
+      213: 3749103438551417830
+    second: CellWalk_28
+  - first:
+      213: 7994121221274043716
+    second: CellWalk_29
+  - first:
+      213: -7130687143505242619
+    second: CellWalk_30
+  - first:
+      213: -755593659425100752
+    second: CellWalk_31
+  - first:
+      213: 102780543683395813
+    second: RedCell_2
+  - first:
+      213: 1071861824142003804
+    second: RedCell_3
+  - first:
+      213: -1581325819401527345
+    second: RedCell_4
+  - first:
+      213: -826110300721055754
+    second: CellOther_3
+  - first:
+      213: 1469264100573773169
+    second: CellOther_5
+  - first:
+      213: 5704861241527574605
+    second: CellOther_6
+  - first:
+      213: 695089345558653874
+    second: CellOther_8
+  - first:
+      213: 2145956157616366411
+    second: SpritesCells_249
+  - first:
+      213: 6674211953722181667
+    second: SpritesCells_250
+  - first:
+      213: 5024284999693089326
+    second: SpritesCells_251
+  - first:
+      213: 3399256936281482004
+    second: SpritesCells_252
+  - first:
+      213: -584103975414638571
+    second: SpritesCells_253
+  - first:
+      213: 5535445110592134260
+    second: SpritesCells_254
+  - first:
+      213: 1810756163129892922
+    second: SpritesCells_255
+  - first:
+      213: 7163068759694140184
+    second: SpritesCells_256
+  - first:
+      213: -4361466664244500487
+    second: SpritesCells_257
+  - first:
+      213: -4942702170145201561
+    second: SpritesCells_258
+  - first:
+      213: -6641026971649896536
+    second: SpritesCells_259
+  - first:
+      213: 3344337952964690910
+    second: SpritesCells_260
+  - first:
+      213: 3486036285557700219
+    second: SpritesCells_261
+  - first:
+      213: -216257218282316101
+    second: SpritesCells_262
+  - first:
+      213: 1087201880135988558
+    second: SpritesCells_263
+  - first:
+      213: -6158624741459320223
+    second: SpritesCells_264
+  - first:
+      213: -3160974376395644129
+    second: SpritesCells_265
+  - first:
+      213: -3184756348964265373
+    second: SpritesCells_266
+  - first:
+      213: -983722851999699934
+    second: SpritesCells_267
+  - first:
+      213: 7997887193053211091
+    second: SpritesCells_268
+  - first:
+      213: 6156797198476783769
+    second: SpritesCells_269
+  - first:
+      213: 6531847356109338977
+    second: SpritesCells_270
+  - first:
+      213: 3403266086954970248
+    second: SpritesCells_271
+  - first:
+      213: -3305600314257965758
+    second: SpritesCells_272
+  - first:
+      213: 3894518509949905081
+    second: SpritesCells_273
+  - first:
+      213: 8288765570743593225
+    second: SpritesCells_274
+  - first:
+      213: -4604727042832950552
+    second: SpritesCells_275
+  - first:
+      213: 1240230140969563213
+    second: SpritesCells_276
+  - first:
+      213: -2377754302945742698
+    second: SpritesCells_277
+  - first:
+      213: 9138878778554122403
+    second: SpritesCells_278
+  - first:
+      213: 5018175661618859746
+    second: SpritesCells_279
+  - first:
+      213: 1607117536642471730
+    second: SpritesCells_280
+  - first:
+      213: 3639186949041782429
+    second: SpritesCells_281
+  - first:
+      213: 3620601742870006336
+    second: SpritesCells_282
+  - first:
+      213: -4816869355540685023
+    second: SpritesCells_283
+  - first:
+      213: -9103389535385065387
+    second: SpritesCells_284
+  - first:
+      213: 883783818486853034
+    second: SpritesCells_285
+  - first:
+      213: -8625310933241953825
+    second: SpritesCells_286
+  - first:
+      213: 7615185517561508932
+    second: SpritesCells_287
+  - first:
+      213: 4111289014611921819
+    second: SpritesCells_288
+  - first:
+      213: 6302600734189138382
+    second: SpritesCells_289
+  - first:
+      213: 6408395177993010087
+    second: SpritesCells_290
+  - first:
+      213: 8448879086872694224
+    second: SpritesCells_291
+  - first:
+      213: 4586805109454972994
+    second: SpritesCells_292
+  - first:
+      213: -6435279978721697507
+    second: SpritesCells_293
+  - first:
+      213: 8264599476532599657
+    second: SpritesCells_294
+  - first:
+      213: 2038212496680226870
+    second: SpritesCells_295
+  - first:
+      213: 2460228773016411605
+    second: SpritesCells_296
+  - first:
+      213: 6236872977280260137
+    second: SpritesCells_297
+  - first:
+      213: -4536242542674588434
+    second: SpritesCells_298
+  - first:
+      213: 8653538303875181351
+    second: SpritesCells_299
+  - first:
+      213: -6083906583694809269
+    second: SpritesCells_300
+  - first:
+      213: -2308581637491985641
+    second: SpritesCells_301
+  - first:
+      213: -1383166956541511209
+    second: SpritesCells_302
+  - first:
+      213: -6868130977227048846
+    second: SpritesCells_303
+  - first:
+      213: -2326740314915974730
+    second: SpritesCells_304
+  - first:
+      213: -6563315740078292474
+    second: SpritesCells_305
+  - first:
+      213: -8104677946583688294
+    second: SpritesCells_306
+  - first:
+      213: -218879912087914524
+    second: SpritesCells_307
+  - first:
+      213: -3642887919956222106
+    second: SpritesCells_308
+  - first:
+      213: -4193745639032245733
+    second: SpritesCells_309
+  - first:
+      213: -2447616414246192924
+    second: SpritesCells_310
+  - first:
+      213: 5155008366065963914
+    second: SpritesCells_311
+  - first:
+      213: 7845450364274975300
+    second: SpritesCells_312
+  - first:
+      213: -2253445819352137100
+    second: SpritesCells_313
+  - first:
+      213: -8520407763905737007
+    second: SpritesCells_314
+  - first:
+      213: 2190497097094456808
+    second: SpritesCells_315
+  - first:
+      213: 6621482022095001939
+    second: SpritesCells_316
+  - first:
+      213: -4549940586624036123
+    second: SpritesCells_317
+  - first:
+      213: -8340235629625316690
+    second: SpritesCells_318
+  - first:
+      213: -8954215202377240412
+    second: SpritesCells_319
+  - first:
+      213: 6454405450773774297
+    second: SpritesCells_320
+  - first:
+      213: 1744278079805506586
+    second: SpritesCells_321
+  - first:
+      213: -1405666845490628035
+    second: SpritesCells_322
+  - first:
+      213: 8373897308482386651
+    second: SpritesCells_323
+  - first:
+      213: 1695751596714560805
+    second: SpritesCells_324
+  - first:
+      213: -7112833313476216060
+    second: SpritesCells_325
+  - first:
+      213: -7890084708437881377
+    second: SpritesCells_326
+  - first:
+      213: 4537953029717401470
+    second: SpritesCells_327
+  - first:
+      213: 2725542741181145070
+    second: SpritesCells_328
+  - first:
+      213: 2235438699952426359
+    second: SpritesCells_329
+  - first:
+      213: 8594030158772604342
+    second: SpritesCells_330
+  - first:
+      213: 568508232979436585
+    second: SpritesCells_331
+  - first:
+      213: 690525302205232789
+    second: SpritesCells_332
+  - first:
+      213: 3859098664011302518
+    second: SpritesCells_333
+  - first:
+      213: -1515933953553890184
+    second: SpritesCells_334
+  - first:
+      213: -3556376493587036529
+    second: SpritesCells_335
+  - first:
+      213: 7156944279349034500
+    second: SpritesCells_336
+  - first:
+      213: 8968022778584421861
+    second: SpritesCells_337
+  - first:
+      213: -6640085322901638833
+    second: SpritesCells_338
+  - first:
+      213: 1647577574513826763
+    second: SpritesCells_339
+  - first:
+      213: 7568086202055043228
+    second: SpritesCells_340
+  - first:
+      213: 1824111129984196804
+    second: SpritesCells_341
+  - first:
+      213: 5671860734208473653
+    second: SpritesCells_342
+  - first:
+      213: 4724751434901460042
+    second: SpritesCells_343
+  - first:
+      213: 5196561716408660905
+    second: SpritesCells_344
+  - first:
+      213: 926521306900890497
+    second: SpritesCells_345
+  - first:
+      213: -6555154808356032032
+    second: SpritesCells_346
+  - first:
+      213: 6260251389962602621
+    second: SpritesCells_347
+  - first:
+      213: 3025279203590379562
+    second: SpritesCells_348
+  - first:
+      213: 116961654863421796
+    second: SpritesCells_349
+  - first:
+      213: 6114028849671589737
+    second: SpritesCells_350
+  - first:
+      213: 5738445389548892602
+    second: SpritesCells_351
+  - first:
+      213: 962016710163418696
+    second: SpritesCells_352
+  - first:
+      213: 8662396193217414483
+    second: SpritesCells_353
+  - first:
+      213: -2305065076121841397
+    second: SpritesCells_354
+  - first:
+      213: -7073046976762632331
+    second: SpritesCells_355
+  - first:
+      213: 4941117215694964023
+    second: SpritesCells_356
+  - first:
+      213: 5403440300986076164
+    second: SpritesCells_357
+  - first:
+      213: -3508328682123914496
+    second: SpritesCells_358
+  - first:
+      213: -5440208579574957015
+    second: SpritesCells_359
+  - first:
+      213: 6043492795497241217
+    second: SpritesCells_360
+  - first:
+      213: -1676766193643081910
+    second: SpritesCells_361
+  - first:
+      213: 6193891950215735774
+    second: SpritesCells_362
+  - first:
+      213: -8915993240286393695
+    second: SpritesCells_363
+  - first:
+      213: 4505309123690296181
+    second: SpritesCells_364
+  - first:
+      213: 7103899151989094812
+    second: SpritesCells_365
+  - first:
+      213: 2585191553270349559
+    second: SpritesCells_366
+  - first:
+      213: -4218659119376077716
+    second: SpritesCells_367
+  - first:
+      213: 9142045675032875049
+    second: SpritesCells_368
+  - first:
+      213: 32712745416217724
+    second: SpritesCells_369
+  - first:
+      213: 480459923487209278
+    second: SpritesCells_370
+  - first:
+      213: -6826514520773867986
+    second: SpritesCells_371
+  - first:
+      213: -540729395890741651
+    second: SpritesCells_372
+  - first:
+      213: 1855619536339755685
+    second: SpritesCells_373
+  - first:
+      213: -7405729519375877762
+    second: SpritesCells_374
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CellWalk_5
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 735
+        width: 55
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdb0ae6ffbc9c5fe0800000000000000
+      internalID: -1198911052492174373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellWalk_12
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 743
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cbcdb3c53bee3f70800000000000000
+      internalID: 9169024507522698176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesCells_2
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 813
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be5a29e06362daec0800000000000000
+      internalID: -3554142517310872085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellWalk_15
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 744
+        width: 55
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c63ee1079810613b0800000000000000
+      internalID: -5542240601629596820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellWalk_22
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 743
+        width: 55
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efc79092bbfd8da70800000000000000
+      internalID: 8852071062537075966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellWalk_33
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 743
+        width: 56
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09ef84f3fb13c4fb0800000000000000
+      internalID: -4662296816765043056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellWalk_11
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 740
+        width: 54
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b618b7cb356dae0800000000000000
+      internalID: -1524939354827297977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesCells_8
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 811
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c4ac91547e66c00800000000000000
+      internalID: 893655860051069966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellWalk_10
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 738
+        width: 58
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2effeb4cdd2140460800000000000000
+      internalID: 7206906047397560290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellWalk_17
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 743
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfde516fc86207600800000000000000
+      internalID: 463913148485070331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellWalk_18
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 742
+        width: 58
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04abed232e62cdc0800000000000000
+      internalID: -3620210053079129074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellWalk_19
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 742
+        width: 55
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a90b52c4daa99c7a0800000000000000
+      internalID: -6356379329959186278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellWalk_32
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 741
+        width: 61
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6209c67a5e916efe0800000000000000
+      internalID: -1160211379854208986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellWalk_34
+      rect:
+        serializedVersion: 2
+        x: 1957
+        y: 744
+        width: 56
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 909db17b79c7eeb70800000000000000
+      internalID: 8930212102176233737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellWalk_35
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 741
+        width: 56
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af64bb1a09e318510800000000000000
+      internalID: 1549588537701779194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellWalk_37
+      rect:
+        serializedVersion: 2
+        x: 2130
+        y: 741
+        width: 61
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b780014143075af60800000000000000
+      internalID: 8044959678344464507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellWalk_38
+      rect:
+        serializedVersion: 2
+        x: 2195
+        y: 741
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 343dce028ef2ec280800000000000000
+      internalID: -9021220329545215165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellWalk_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 731
+        width: 67
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b59abac1f6664fc0800000000000000
+      internalID: -3511005670814345801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesCells_21
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 794
+        width: 11
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17d18871162f368c0800000000000000
+      internalID: -4007092744609063567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellWalk_3
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 733
+        width: 55
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35e9c78ea4ba744a0800000000000000
+      internalID: -6609125589926502829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellWalk_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 731
+        width: 58
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c6b20a6a416a0050800000000000000
+      internalID: 5767529245035378377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesCells_25
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 778
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d974d341f661d7110800000000000000
+      internalID: 1260188137070348189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellWalk_2
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 732
+        width: 58
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc1da84d8f39fce00800000000000000
+      internalID: 1067234333637136843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesCells_27
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 732
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d92fea2be431ab370800000000000000
+      internalID: 8338998888756081309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesCells_28
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 728
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d08ff030712f52a70800000000000000
+      internalID: 8801707227415050253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedCell_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 645
+        width: 63
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d844bf18ff90021b0800000000000000
+      internalID: -5683531736739527539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedCell_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 645
+        width: 63
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cddfb2f5a8f242e0800000000000000
+      internalID: -2142877081048982077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedCell_5
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 648
+        width: 63
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ba7b4363daa7da00800000000000000
+      internalID: 781280885252782776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellOther_7
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 657
+        width: 62
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50e2e54ba5abae9e0800000000000000
+      internalID: -1591254619586155003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellOther_0
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 653
+        width: 60
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a35acdd599e472f50800000000000000
+      internalID: 6856535378306573626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellOther_1
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 653
+        width: 58
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3e3f6ab285df6d10800000000000000
+      internalID: 2121148706965110335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellOther_2
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 655
+        width: 58
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a196178119d4f5e0800000000000000
+      internalID: -1876636475402579548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellOther_4
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 657
+        width: 63
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67cb3b6679bf5eaa0800000000000000
+      internalID: -6132218689913373578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesCells_41
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 686
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0af7c6ccee80eb280800000000000000
+      internalID: -9025766781478994016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellYellow_11
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 540
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1af7d8dc44a500bf0800000000000000
+      internalID: -360188718636761183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellYellow_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 540
+        width: 90
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90976e19d298b91a0800000000000000
+      internalID: -6801691983398668023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellYellow_1
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 541
+        width: 92
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 734f8f6849fdcab80800000000000000
+      internalID: -8382078977430719433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellYellow_2
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 538
+        width: 92
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13041111c696cb3d0800000000000000
+      internalID: -3189558523221426127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellYellow_3
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 540
+        width: 94
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4464123563dac4870800000000000000
+      internalID: 8668493831615891012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellYellow_4
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 540
+        width: 95
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 635507403e1616eb0800000000000000
+      internalID: -4728390506102368970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellYellow_5
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 537
+        width: 94
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 183867f641f31bb60800000000000000
+      internalID: 7760052989938008961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellYellow_6
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 535
+        width: 94
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d1fedaeceda00ec0800000000000000
+      internalID: -3602688468832030254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellYellow_7
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 536
+        width: 94
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb2b9a5d90f71bd20800000000000000
+      internalID: 3292552482800644798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellYellow_8
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 538
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf51ad7dda2215f00800000000000000
+      internalID: 1103701513728562683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellYellow_9
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 539
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29efc020993a795d0800000000000000
+      internalID: -3055793944587862382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellYellow_10
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 542
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6799c96caaf31770800000000000000
+      internalID: 8580477333487064938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellYellow_12
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 543
+        width: 93
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a1ddbc2a1b2cfe30800000000000000
+      internalID: 4538549915902398885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellYellow_13
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 544
+        width: 93
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fafee540cf0fa3320800000000000000
+      internalID: 2538606305172451247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellYellow_14
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 549
+        width: 92
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2318aa3119c4b3470800000000000000
+      internalID: 8375372118009479474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesCells_62
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 578
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a4f10a3acd9c46c0800000000000000
+      internalID: -4157774864087649119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellSpawn_26
+      rect:
+        serializedVersion: 2
+        x: 1523
+        y: 469
+        width: 61
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8628a9fc989e38f80800000000000000
+      internalID: -8105378126233959832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesCells_64
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 529
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9986d10cf2acf94c0800000000000000
+      internalID: -4278478814543255399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellSpawn_19
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 467
+        width: 56
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bee62757f8545fed0800000000000000
+      internalID: -2380920345542365461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellSpawn_29
+      rect:
+        serializedVersion: 2
+        x: 1707
+        y: 471
+        width: 57
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25ca52fc077795e90800000000000000
+      internalID: -7036461616394294190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellSpawn_30
+      rect:
+        serializedVersion: 2
+        x: 1766
+        y: 473
+        width: 57
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e9e860e17f8931c0800000000000000
+      internalID: -4523426631457904154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellSpawn_31
+      rect:
+        serializedVersion: 2
+        x: 1825
+        y: 474
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80a43a83951319780800000000000000
+      internalID: -8678100747694159352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellSpawn_6
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 462
+        width: 52
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca3cd2f82b4945fb0800000000000000
+      internalID: -4659936219794390100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellSpawn_10
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 460
+        width: 49
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b77ffb6bd59dfc730800000000000000
+      internalID: 4021671988786362235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellSpawn_11
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 460
+        width: 56
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa234646f2c5c9650800000000000000
+      internalID: 6240964542246171311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellSpawn_12
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 450
+        width: 59
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c41d82f233991ba0800000000000000
+      internalID: -6117696771779128120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellSpawn_13
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 461
+        width: 56
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 437b47da4b7b3cd60800000000000000
+      internalID: 7909367357224826676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellSpawn_14
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 461
+        width: 54
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4583b9c2294bdab0800000000000000
+      internalID: -4982308148993620659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellSpawn_15
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 462
+        width: 54
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a230b33f72f86790800000000000000
+      internalID: -7536507348262571353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellSpawn_16
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 466
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91b4b0d095f30ff60800000000000000
+      internalID: 8066016584324041497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellSpawn_17
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 467
+        width: 67
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df09c47348145bbe0800000000000000
+      internalID: -1462190467892604675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellSpawn_18
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 464
+        width: 62
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba3a3bbbd21df7c70800000000000000
+      internalID: 8971118977098163115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellSpawn_20
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 467
+        width: 57
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c17a87d3bf6a3b4f0800000000000000
+      internalID: -814123509625608420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellSpawn_22
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 466
+        width: 59
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f6652ffd04d6f970800000000000000
+      internalID: 8788444879440406265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellSpawn_23
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 470
+        width: 62
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35ebc06c915116100800000000000000
+      internalID: 99383867219951187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellSpawn_24
+      rect:
+        serializedVersion: 2
+        x: 1397
+        y: 467
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3995bd4e7c4c8330800000000000000
+      internalID: 3714427898027153724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellSpawn_25
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 469
+        width: 59
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3c32b320aef3ed70800000000000000
+      internalID: 9071374038201416763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellSpawn_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 461
+        width: 47
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 275065a1c0eac3d40800000000000000
+      internalID: 5565514606527776114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellSpawn_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 461
+        width: 47
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06a7e781c0f7b0170800000000000000
+      internalID: 8145744040956951136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellSpawn_2
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 461
+        width: 47
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7760deada5b8d47a0800000000000000
+      internalID: -6391299073832581513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellSpawn_3
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 463
+        width: 48
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b973f2f4fb422500800000000000000
+      internalID: 369941634817948087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellSpawn_4
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 463
+        width: 49
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9987edd850f2e5d90800000000000000
+      internalID: -7107191461042554727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellSpawn_5
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 463
+        width: 50
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99083905861928840800000000000000
+      internalID: 5224898394917666969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellSpawn_7
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 463
+        width: 49
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf261c0be2d296650800000000000000
+      internalID: 6226557638373630716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellSpawn_8
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 460
+        width: 48
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbd7d45bc31678950800000000000000
+      internalID: 6451231904599211452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellSpawn_9
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 461
+        width: 48
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbea4a82a913b0930800000000000000
+      internalID: 4110433623082315453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellDestroy_11
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 325
+        width: 87
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba91d6f82cb3d4c0800000000000000
+      internalID: -4263857538064082249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellDestroy_12
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 329
+        width: 95
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 650c6f10895274ad0800000000000000
+      internalID: -2718162515296599978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellDestroy_13
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 324
+        width: 93
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 112c4fd1648d74170800000000000000
+      internalID: 8162730645294203409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellDestroy_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 322
+        width: 130
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 905abaea549f0dca0800000000000000
+      internalID: -5994017026351586039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellDestroy_4
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 324
+        width: 69
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a48a359f80c4d10800000000000000
+      internalID: 2111072192273336963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellDestroy_8
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 324
+        width: 86
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab0683dff99e43c0800000000000000
+      internalID: -4373388864085685336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellDestroy_9
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 326
+        width: 83
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e4b5b05b1e7b5a70800000000000000
+      internalID: 8816779351291180259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellDestroy_10
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 323
+        width: 89
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60ebcfbeec2812880800000000000000
+      internalID: -8637478785085817338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellDestroy_15
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 322
+        width: 119
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc5a6af4e2057c710800000000000000
+      internalID: 1713426343072802252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellDestroy_5
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 324
+        width: 79
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c01101143edd5b10800000000000000
+      internalID: 1971976527063093447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellDestroy_6
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 325
+        width: 78
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dda9f5925cc6c2c0800000000000000
+      internalID: -4411614129887269418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellDestroy_7
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 322
+        width: 81
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 921cfa4b02aecbae0800000000000000
+      internalID: -1532092347021541079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellDestroy_14
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 326
+        width: 141
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 760c0425014e24c30800000000000000
+      internalID: 4342283749489164391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellDestroy_1
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 327
+        width: 63
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c69755dd5d9a73510800000000000000
+      internalID: 1528877334522067308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellDestroy_2
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 327
+        width: 65
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57069baff043820d0800000000000000
+      internalID: -3447448271516508043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellDestroy_3
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 323
+        width: 68
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9cc63fa5a8282b10800000000000000
+      internalID: 1956858730166799516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellDuplicate_7
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 200
+        width: 95
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a1e0012a7f911ee0800000000000000
+      internalID: -1292076271190089312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellDuplicate_8
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 202
+        width: 102
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a7fa6b6c56fb5a20800000000000000
+      internalID: 3052304049273239459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellDuplicate_9
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 202
+        width: 109
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebc1070ffe38a3c00800000000000000
+      internalID: 881161743658654910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellDuplicate_10
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 200
+        width: 107
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d05d550081785ea0800000000000000
+      internalID: -5883828118499798826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellDuplicate_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 198
+        width: 61
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24e3cfcde4b213090800000000000000
+      internalID: -8056610640674144702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellDuplicate_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 197
+        width: 67
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7ca4c50fd9e6da40800000000000000
+      internalID: 5392754747906501756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellDuplicate_2
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 199
+        width: 71
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 176d6027d4582adc0800000000000000
+      internalID: -3629191782035171727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellDuplicate_3
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 199
+        width: 76
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a48586a94f2a25be0800000000000000
+      internalID: -1489949355259963318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellDuplicate_4
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 200
+        width: 80
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56e0c9641e4f21690800000000000000
+      internalID: -7632769170050118043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellDuplicate_5
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 198
+        width: 85
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3efcabe7f5ae1e60800000000000000
+      internalID: 7934962077702880828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellDuplicate_6
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 199
+        width: 91
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b2af03e9cc94b830800000000000000
+      internalID: 4086063152843694777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellDuplicate_11
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 198
+        width: 107
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c40596d987d02a00800000000000000
+      internalID: 729820126644602055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellDuplicate_12
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 199
+        width: 109
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2251189778b4086a0800000000000000
+      internalID: -6449071621163379422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellDuplicate_13
+      rect:
+        serializedVersion: 2
+        x: 1255
+        y: 197
+        width: 107
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8db885c224871110800000000000000
+      internalID: 1231598307986947470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellDuplicate_14
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 197
+        width: 111
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25afb370044633480800000000000000
+      internalID: -8920676210728764846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesCells_170
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 243
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 054c31126aaca8280800000000000000
+      internalID: -9040190487124523952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_18
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 104
+        width: 68
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2185f08d13bf51e0800000000000000
+      internalID: -2206848353089257170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 92
+        width: 73
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e988d8d91cea0c40800000000000000
+      internalID: 5479451492406036964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_1
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 95
+        width: 75
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a916c83a60f0d040800000000000000
+      internalID: 4670497152592910759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_2
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 94
+        width: 73
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6f78c5b88f041710800000000000000
+      internalID: 1662971242246340463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_3
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 94
+        width: 75
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5993e81d70e324830800000000000000
+      internalID: 4053870817888319893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_4
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 95
+        width: 68
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32a9a2106d0f7b0b0800000000000000
+      internalID: -5712832800362948061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_6
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 95
+        width: 69
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86c1dc18b46763660800000000000000
+      internalID: 7365204307283352680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesCells_181
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 137
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39fd54d0440f2ddb0800000000000000
+      internalID: -4768484880360808557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_7
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 94
+        width: 69
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f2f0af2ee0496d90800000000000000
+      internalID: -7104075545454775565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_8
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 95
+        width: 73
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 511ddb840912363d0800000000000000
+      internalID: -3214688805432995563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_11
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 102
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9770fc8457da6280800000000000000
+      internalID: -9049183743105796197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_12
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 101
+        width: 73
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e3972098f7d86880800000000000000
+      internalID: -8617400424403069977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_13
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 101
+        width: 73
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b0b5f32415fa0c10800000000000000
+      internalID: 2020696849680543927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_14
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 102
+        width: 71
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f5929bc63d71b60800000000000000
+      internalID: 7716868950439059342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_21
+      rect:
+        serializedVersion: 2
+        x: 1564
+        y: 105
+        width: 70
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8349e5e23ea7f100800000000000000
+      internalID: 141773446914327434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_22
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 105
+        width: 69
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29b7b76c2d1ef10b0800000000000000
+      internalID: -5755633503366841454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_23
+      rect:
+        serializedVersion: 2
+        x: 1713
+        y: 106
+        width: 68
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04227ec511088dee0800000000000000
+      internalID: -1236097285651750336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_24
+      rect:
+        serializedVersion: 2
+        x: 1787
+        y: 106
+        width: 67
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05b9b944ed491a4e0800000000000000
+      internalID: -1972131479456867504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_25
+      rect:
+        serializedVersion: 2
+        x: 1859
+        y: 106
+        width: 67
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16febbce0b3135430800000000000000
+      internalID: 3770378963646148449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_26
+      rect:
+        serializedVersion: 2
+        x: 1929
+        y: 106
+        width: 68
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dce19c73f316b89c0800000000000000
+      internalID: -3923935726176493875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_27
+      rect:
+        serializedVersion: 2
+        x: 1999
+        y: 108
+        width: 68
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80539340fa8813a50800000000000000
+      internalID: 6499126022543848712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_28
+      rect:
+        serializedVersion: 2
+        x: 2070
+        y: 110
+        width: 65
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba8671ed4f1984f30800000000000000
+      internalID: 4560055103596751019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_29
+      rect:
+        serializedVersion: 2
+        x: 2138
+        y: 111
+        width: 66
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a1b0534d5ce6aee0800000000000000
+      internalID: -1250051961243258456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_31
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 1
+        width: 60
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cc6d91bd90d59f10800000000000000
+      internalID: 2275954562413980865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_41
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 12
+        width: 71
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79742658803108c40800000000000000
+      internalID: 5512426871219963799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_49
+      rect:
+        serializedVersion: 2
+        x: 1366
+        y: 14
+        width: 71
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b999bc10eab379770800000000000000
+      internalID: 8617422030537202075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_52
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 16
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f113f6cef7dad66c0800000000000000
+      internalID: -4148468916799196897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_30
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1
+        width: 63
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0a9d11d07ca811d0800000000000000
+      internalID: -3379761919796864497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_32
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1
+        width: 67
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7113f62dfc3545f20800000000000000
+      internalID: 3410442969880146199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_33
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 3
+        width: 66
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 165b3ad05ee280760800000000000000
+      internalID: 7424235547031483745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_34
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 4
+        width: 64
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92aac624cd0e4ec00800000000000000
+      internalID: 929114659757009449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_36
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 7
+        width: 67
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 392ab25d1fa8ffec0800000000000000
+      internalID: -3530950811567021421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_37
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 9
+        width: 70
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3ef55b399baee860800000000000000
+      internalID: 7561169499015478846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_39
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 8
+        width: 68
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35fb290a2631c6e00800000000000000
+      internalID: 1039226928337436499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_40
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 11
+        width: 73
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7279a870dda0d41b0800000000000000
+      internalID: -5670864411359013081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_43
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 12
+        width: 69
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd731d3f33c48b3e0800000000000000
+      internalID: -2037795045367531557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesCells_220
+      rect:
+        serializedVersion: 2
+        x: 1818
+        y: 10
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e25ee2fa05678750800000000000000
+      internalID: 6307120900855452384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesCells_222
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 0
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09653e319bf318000800000000000000
+      internalID: 36380336130840208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellWalk_4
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 735
+        width: 55
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48f4986d8b59c9a10800000000000000
+      internalID: 1917572162458832772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellWalk_6
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 736
+        width: 55
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e6e1d50ae962530800000000000000
+      internalID: 3829922944719416946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellWalk_7
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 739
+        width: 55
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ce95ce13eb20cc80800000000000000
+      internalID: -8304589458397356348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellWalk_8
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 738
+        width: 55
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35cd84b9acafc4650800000000000000
+      internalID: 6218620933587393619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellWalk_9
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 739
+        width: 56
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e20a0079325f11fb0800000000000000
+      internalID: -4678689004655173586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellWalk_13
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 744
+        width: 53
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a7786a2405b4e990800000000000000
+      internalID: -7357556861720561757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellWalk_14
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 742
+        width: 56
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a34f18d4122b5b0800000000000000
+      internalID: -5354180390213633425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellWalk_16
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 743
+        width: 55
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f9808d681c4c13a0800000000000000
+      internalID: -6693391278379333135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellWalk_20
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 742
+        width: 54
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4da47faba585fce80800000000000000
+      internalID: -8156203253437609260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellWalk_21
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 744
+        width: 54
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38ac3068426a8ba70800000000000000
+      internalID: 8843000544139397763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellWalk_23
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 743
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3a2cd62d555b0740800000000000000
+      internalID: 5119279260008983100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellWalk_24
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 745
+        width: 55
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a158d2d4645acdb0800000000000000
+      internalID: -4770908063234764377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellWalk_25
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 740
+        width: 57
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9cc64e9861498490800000000000000
+      internalID: -7743586166699012964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellWalk_26
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 740
+        width: 55
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af55986ba6bd0f370800000000000000
+      internalID: 8354418560147740154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellWalk_27
+      rect:
+        serializedVersion: 2
+        x: 1551
+        y: 740
+        width: 56
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a30dc09b857005c90800000000000000
+      internalID: -7183233328012799942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellWalk_28
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 740
+        width: 55
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e38d09b6bd770430800000000000000
+      internalID: 3749103438551417830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellWalk_29
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 740
+        width: 56
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 445837565e2d0fe60800000000000000
+      internalID: 7994121221274043716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellWalk_30
+      rect:
+        serializedVersion: 2
+        x: 1724
+        y: 740
+        width: 57
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 506dceea2d5ba0d90800000000000000
+      internalID: -7130687143505242619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellWalk_31
+      rect:
+        serializedVersion: 2
+        x: 1782
+        y: 741
+        width: 56
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03ced6fe1979385f0800000000000000
+      internalID: -755593659425100752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellWalk_36
+      rect:
+        serializedVersion: 2
+        x: 2073
+        y: 743
+        width: 58
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd913cd12cb4d4970800000000000000
+      internalID: 8740725748891064799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedCell_2
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 644
+        width: 62
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e002142c562d6100800000000000000
+      internalID: 102780543683395813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedCell_3
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 647
+        width: 62
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5e494c66a400ee00800000000000000
+      internalID: 1071861824142003804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedCell_4
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 649
+        width: 63
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf1b64ab800e0ae0800000000000000
+      internalID: -1581325819401527345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellOther_3
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 657
+        width: 56
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f7fa34fe011984f0800000000000000
+      internalID: -826110300721055754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellOther_5
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 658
+        width: 63
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17dfeeb3aefd36410800000000000000
+      internalID: 1469264100573773169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellOther_6
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 658
+        width: 63
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d402522d21dbb2f40800000000000000
+      internalID: 5704861241527574605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellOther_8
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 657
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bbae29b31475a900800000000000000
+      internalID: 695089345558653874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellSpawn_27
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 470
+        width: 56
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24d6143bac4186160800000000000000
+      internalID: 7018882880080276802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellSpawn_28
+      rect:
+        serializedVersion: 2
+        x: 1649
+        y: 471
+        width: 55
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2244600c2a1938430800000000000000
+      internalID: 3784028240113714210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellSpawn_21
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 466
+        width: 58
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f06ceba39a1ba7170800000000000000
+      internalID: 8177043413837727247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellDestroy_16
+      rect:
+        serializedVersion: 2
+        x: 1534
+        y: 311
+        width: 158
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 993263f57d30f3a80800000000000000
+      internalID: -8485058949392489575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellDestroy_17
+      rect:
+        serializedVersion: 2
+        x: 1708
+        y: 322
+        width: 167
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbd6c9bd07f4481d0800000000000000
+      internalID: -3349464876717412929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellDestroy_18
+      rect:
+        serializedVersion: 2
+        x: 1888
+        y: 329
+        width: 169
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce626070e1322a200800000000000000
+      internalID: 189752746176816876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellDestroy_19
+      rect:
+        serializedVersion: 2
+        x: 2075
+        y: 381
+        width: 34
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d0622bd99daf3c90800000000000000
+      internalID: -7187835603941957416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellDestroy_20
+      rect:
+        serializedVersion: 2
+        x: 2126
+        y: 379
+        width: 33
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2fca0333cd508260800000000000000
+      internalID: 7097776105692253999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_5
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 95
+        width: 71
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 264ff110f06d173b0800000000000000
+      internalID: -5516392708620422046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_9
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 97
+        width: 72
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42b2ab78adb560fb0800000000000000
+      internalID: -4681953768466928860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_10
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 99
+        width: 72
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 475a22e259e888eb0800000000000000
+      internalID: -4717363838295300748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_15
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 104
+        width: 73
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 431df21494b1ce7b0800000000000000
+      internalID: -5193746268824809164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_16
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 104
+        width: 72
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da6275f64514d51e0800000000000000
+      internalID: -2207536411440634195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_17
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 104
+        width: 69
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efa79788d6f2ce3f0800000000000000
+      internalID: -870268480501744898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_19
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 105
+        width: 71
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f2c2bb6a74971020800000000000000
+      internalID: 2312480187191837425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_20
+      rect:
+        serializedVersion: 2
+        x: 1493
+        y: 104
+        width: 68
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27766e8ff0e88ca90800000000000000
+      internalID: -7293423397275015310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_51
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 19
+        width: 71
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8313b686df5113210800000000000000
+      internalID: 1310853144664289592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_50
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 17
+        width: 71
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56e2b8534407be110800000000000000
+      internalID: 1291249156430179941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_48
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 15
+        width: 71
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b6b163b75e4f7b50800000000000000
+      internalID: 6593074518072342199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_47
+      rect:
+        serializedVersion: 2
+        x: 1219
+        y: 13
+        width: 72
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6710a93138b130670800000000000000
+      internalID: 8503670771189154166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_46
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 10
+        width: 71
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 410001dc18b2c6ff0800000000000000
+      internalID: -41610460062023660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_45
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 11
+        width: 71
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dedfbeb8f93084890800000000000000
+      internalID: -7473719597839155731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_44
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 10
+        width: 70
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c1c1a0c0095317a0800000000000000
+      internalID: -6407679985051385404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_42
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 12
+        width: 71
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8c471d45ecbde400800000000000000
+      internalID: 355147638659042446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_38
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 9
+        width: 70
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf2c8716d8bb18a10800000000000000
+      internalID: 1910013932881887995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellIdle_35
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 7
+        width: 65
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86812a079a40aea70800000000000000
+      internalID: 8856896742963157096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

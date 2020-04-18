@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class CellSpawner : MonoBehaviour
@@ -21,6 +22,11 @@ public class CellSpawner : MonoBehaviour
         timeToSpawn = 1;
         greenCells = new List<GameObject>();
         StartCoroutine("GreenCellSpawner");
+    }
+
+    private void Update()
+    {
+        greenCells = greenCells.Where(item => item != null).ToList();
     }
 
     IEnumerator GreenCellSpawner()

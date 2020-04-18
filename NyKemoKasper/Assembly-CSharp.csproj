@@ -62,20 +62,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Highscore.cs" />
-    <Compile Include="Assets\Scripts\LanguageManager.cs" />
-    <Compile Include="Assets\Scripts\LanguageUpdater.cs" />
-    <Compile Include="Assets\Scripts\LevelUnlocker.cs" />
-    <Compile Include="Assets\Scripts\LoginMenu\LoginCredentials.cs" />
-    <Compile Include="Assets\Scripts\LoginMenu\LoginMenuNavigation.cs" />
-    <Compile Include="Assets\Scripts\LoginMenu\LoginUser.cs" />
-    <Compile Include="Assets\Scripts\LoginMenu\RegisterUser.cs" />
-    <Compile Include="Assets\Scripts\MenuLogin\HighscoresLoader.cs" />
-    <Compile Include="Assets\Scripts\MenuLogin\LogOut.cs" />
-    <Compile Include="Assets\Scripts\MenuLogin\MainMenuNavigation.cs" />
-    <Compile Include="Assets\Scripts\MenuLogin\ProfileManager.cs" />
-    <Compile Include="Assets\Scripts\MenuNoLogin\LocalHighscoresLoader.cs" />
-    <Compile Include="Assets\Scripts\MenuNoLogin\MainMenuNoLoginNavigation.cs" />
+    <Compile Include="Assets\Scripts\Game1\CellSpawner.cs" />
+    <Compile Include="Assets\Scripts\Game1\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Game1\GreenCellWalk.cs" />
+    <Compile Include="Assets\Scripts\Menus\Highscore.cs" />
+    <Compile Include="Assets\Scripts\Menus\LanguageManager.cs" />
+    <Compile Include="Assets\Scripts\Menus\LanguageUpdater.cs" />
+    <Compile Include="Assets\Scripts\Menus\LevelUnlocker.cs" />
+    <Compile Include="Assets\Scripts\Menus\LoginMenu\LoginCredentials.cs" />
+    <Compile Include="Assets\Scripts\Menus\LoginMenu\LoginMenuNavigation.cs" />
+    <Compile Include="Assets\Scripts\Menus\LoginMenu\LoginUser.cs" />
+    <Compile Include="Assets\Scripts\Menus\LoginMenu\RegisterUser.cs" />
+    <Compile Include="Assets\Scripts\Menus\MenuLogin\HighscoresLoader.cs" />
+    <Compile Include="Assets\Scripts\Menus\MenuLogin\LogOut.cs" />
+    <Compile Include="Assets\Scripts\Menus\MenuLogin\MainMenuNavigation.cs" />
+    <Compile Include="Assets\Scripts\Menus\MenuLogin\ProfileManager.cs" />
+    <Compile Include="Assets\Scripts\Menus\MenuNoLogin\LocalHighscoresLoader.cs" />
+    <Compile Include="Assets\Scripts\Menus\MenuNoLogin\MainMenuNoLoginNavigation.cs" />
     <Reference Include="Unity.XR.Management">
       <HintPath>C:/Users/mmich/Desktop/KEMO/NyKemoKasper/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>
     </Reference>

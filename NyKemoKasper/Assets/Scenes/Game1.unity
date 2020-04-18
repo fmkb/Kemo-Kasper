@@ -178,7 +178,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 5526048114601442636, guid: c290a0cfd584539429dab13c0bdca35d,
+  m_Sprite: {fileID: -4717363838295300748, guid: 704267902c4856645b71bb29c23a2239,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -199,7 +199,7 @@ Transform:
   m_GameObject: {fileID: 47224925}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1221, y: 484, z: -487}
-  m_LocalScale: {x: 127.07428, y: 127.07428, z: 127.07428}
+  m_LocalScale: {x: 197.57509, y: 197.57509, z: 197.57509}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -412,8 +412,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1963677447}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.00013153399, y: -0.00041190357, z: 0.0032750205}
-  m_LocalScale: {x: 0.004417155, y: 0.003470622, z: 0.0031551104}
+  m_LocalPosition: {x: -0.000027, y: 0.000063, z: 0.0032750205}
+  m_LocalScale: {x: 0.0033197263, y: 0.0033469673, z: 0.0031551104}
   m_Children: []
   m_Father: {fileID: 2056080828}
   m_RootOrder: 0
@@ -521,7 +521,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 728.8572
+  orthographic size: 711.26025
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

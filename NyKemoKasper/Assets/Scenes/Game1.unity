@@ -235,7 +235,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &630621625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -324,6 +324,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1281042798}
+  - component: {fileID: 1281042800}
   - component: {fileID: 1281042799}
   m_Layer: 0
   m_Name: GameManager
@@ -362,7 +363,20 @@ MonoBehaviour:
     type: 3}
   greenCellsParent: {fileID: 132745682}
   greenCells: []
+--- !u!114 &1281042800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281042797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50df11c4953c07a4b906e97e091de32e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   maxNumberOfGreenCells: 30
+  greenCellsSpeed: 6
 --- !u!1 &1963677447
 GameObject:
   m_ObjectHideFlags: 0

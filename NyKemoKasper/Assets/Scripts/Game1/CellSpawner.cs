@@ -8,12 +8,16 @@ public class CellSpawner : MonoBehaviour
     public GameObject greenCellsParent;
     public List<GameObject> greenCells;
 
-    public int maxNumberOfGreenCells;
+    private int maxNumberOfGreenCells;
 
     private float timeToSpawn;
 
+    private GameManager gameManager;
+
     void Start()
     {
+        gameManager = FindObjectOfType<GameManager>();
+        maxNumberOfGreenCells = gameManager.maxNumberOfGreenCells;
         timeToSpawn = 1;
         greenCells = new List<GameObject>();
         StartCoroutine("GreenCellSpawner");
@@ -37,7 +41,15 @@ public class CellSpawner : MonoBehaviour
                     cell.transform.SetParent(greenCellsParent.transform);
                     if (greenCells.Count < maxNumberOfGreenCells / 2)
                     {
-                        timeToSpawn = Random.Range(0.5f, 2.0f);
+                        timeToSpawn = Random.Range(0.5f, 1.5f);
+                    }
+                    else if (greenCells.Count < maxNumberOfGreenCells / 3)
+                    {
+                        timeToSpawn = Random.Range(0.2f, 0.6f);
+                    }
+                    else if (greenCells.Count < maxNumberOfGreenCells / 4)
+                    {
+                        timeToSpawn = Random.Range(0f, 0.3f);
                     }
                     else
                     {
@@ -61,12 +73,15 @@ public class CellSpawner : MonoBehaviour
     {
         foreach (GameObject previousObject in alreadySpawned)
         {
-            float distanceX = Mathf.Abs(objectToSpawn.x - previousObject.transform.position.x);
-            float distanceY = Mathf.Abs(objectToSpawn.y - previousObject.transform.position.y);
-
-            if (distanceX < 150f && distanceY < 100)
+            if (previousObject != null)
             {
-                return true;
+                float distanceX = Mathf.Abs(objectToSpawn.x - previousObject.transform.position.x);
+                float distanceY = Mathf.Abs(objectToSpawn.y - previousObject.transform.position.y);
+
+                if (distanceX < 150f && distanceY < 100)
+                {
+                    return true;
+                }
             }
         }
         return false;

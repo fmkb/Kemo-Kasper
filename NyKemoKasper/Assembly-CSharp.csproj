@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\Game1\CellSpawner.cs" />
     <Compile Include="Assets\Scripts\Game1\GameManager.cs" />
     <Compile Include="Assets\Scripts\Game1\GreenCellWalk.cs" />
+    <Compile Include="Assets\Scripts\Game1\GreenCellsClicker.cs" />
     <Compile Include="Assets\Scripts\Menus\Highscore.cs" />
     <Compile Include="Assets\Scripts\Menus\LanguageManager.cs" />
     <Compile Include="Assets\Scripts\Menus\LanguageUpdater.cs" />

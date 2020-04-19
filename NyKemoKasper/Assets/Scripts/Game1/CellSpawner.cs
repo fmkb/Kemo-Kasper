@@ -22,6 +22,7 @@ public class CellSpawner : MonoBehaviour
         timeToSpawn = 1;
         greenCells = new List<GameObject>();
         StartCoroutine("GreenCellSpawner");
+        StartCoroutine("GreenCellSpawner");
     }
 
     private void Update()
@@ -42,7 +43,6 @@ public class CellSpawner : MonoBehaviour
                 if (greenCells.Count < maxNumberOfGreenCells)
                 {
                     GameObject cell = Instantiate(greenCellPrefab, position, Quaternion.identity);
-                    Debug.Log(position);
                     greenCells.Add(cell);
                     cell.transform.SetParent(greenCellsParent.transform);
                     if (greenCells.Count < maxNumberOfGreenCells / 2)
@@ -51,11 +51,11 @@ public class CellSpawner : MonoBehaviour
                     }
                     else if (greenCells.Count < maxNumberOfGreenCells / 3)
                     {
-                        timeToSpawn = Random.Range(0.2f, 0.6f);
+                        timeToSpawn = Random.Range(0.1f, 0.5f);
                     }
                     else if (greenCells.Count < maxNumberOfGreenCells / 4)
                     {
-                        timeToSpawn = Random.Range(0f, 0.3f);
+                        timeToSpawn = 0;
                     }
                     else
                     {
@@ -70,7 +70,6 @@ public class CellSpawner : MonoBehaviour
             else
             {
                 timeToSpawn = 0;
-                Debug.Log("TOOCLOSE!!!" + position);
             }
         }
     }

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class GreenCellWalk : MonoBehaviour
 {
@@ -18,11 +16,16 @@ public class GreenCellWalk : MonoBehaviour
     
     void Update()
     {
-        rb.velocity = new Vector3(0, -speed*10, 0);
+        rb.velocity = new Vector3(0, -speed * 10, 0);
 
         if(transform.position.y < -630)
         {
             Destroy(this.gameObject);
         }
+    }
+
+    public void ZeroSpeed()
+    {
+        speed = 0;
     }
 }

@@ -35,25 +35,26 @@ public class CellSpawner : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(timeToSpawn);
+            
 
             Vector3 position = new Vector3(Random.Range(-800.0f, 800.0f), Random.Range(-300.0f, 300.0f), -200);
 
             if (!IsTooClose(position, greenCells))
             {
-                if (greenCells.Count < maxNumberOfGreenCells)
+                if (GetNumberOfGreenCells() < maxNumberOfGreenCells)
                 {
                     GameObject cell = Instantiate(greenCellPrefab, position, Quaternion.identity);
                     greenCells.Add(cell);
                     cell.transform.SetParent(greenCellsParent.transform);
-                    if (greenCells.Count < maxNumberOfGreenCells / 2)
+                    if (GetNumberOfGreenCells() < maxNumberOfGreenCells / 2)
                     {
                         timeToSpawn = Random.Range(0.5f, 1.5f);
                     }
-                    else if (greenCells.Count < maxNumberOfGreenCells / 3)
+                    else if (GetNumberOfGreenCells() < maxNumberOfGreenCells / 3)
                     {
                         timeToSpawn = Random.Range(0.1f, 0.5f);
                     }
-                    else if (greenCells.Count < maxNumberOfGreenCells / 4)
+                    else if (GetNumberOfGreenCells() < maxNumberOfGreenCells / 4)
                     {
                         timeToSpawn = 0;
                     }
@@ -90,5 +91,17 @@ public class CellSpawner : MonoBehaviour
             }
         }
         return false;
+    }
+
+    public int GetNumberOfGreenCells()
+    {
+        return greenCells.Count;
+    }
+
+    public void ReplicateGreenCell(Transform origin)
+    {
+        Vector3 position = new Vector3(origin.position.x + 35, origin.position.y, origin.position.z);
+        GameObject replica = Instantiate(greenCellPrefab, position, Quaternion.identity);
+        replica.GetComponent<GreenCellRoutine>().isInstantiatedInReplication = true;
     }
 }

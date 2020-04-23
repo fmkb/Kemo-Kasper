@@ -31,7 +31,7 @@ public class GreenCellsClicker : MonoBehaviour
 
     private void DestroyTheCell()
     {
-        GetComponent<GreenCellWalk>().ZeroSpeed();
+        GetComponent<GreenCellRoutine>().ZeroSpeed();
         GetComponent<Animator>().Play("GreenCellDestroy");
         Destroy(this.gameObject, 0.45f);
     }

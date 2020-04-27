@@ -15,6 +15,8 @@ public class CellSpawner : MonoBehaviour
 
     private GameManager gameManager;
 
+    private bool spawningEnabled;
+
     void Start()
     {
         gameManager = FindObjectOfType<GameManager>();
@@ -23,6 +25,7 @@ public class CellSpawner : MonoBehaviour
         greenCells = new List<GameObject>();
         StartCoroutine("GreenCellSpawner");
         StartCoroutine("GreenCellSpawner");
+        spawningEnabled = true;
     }
 
     private void Update()
@@ -43,9 +46,12 @@ public class CellSpawner : MonoBehaviour
             {
                 if (GetNumberOfGreenCells() < maxNumberOfGreenCells)
                 {
-                    GameObject cell = Instantiate(greenCellPrefab, position, Quaternion.identity);
-                    greenCells.Add(cell);
-                    cell.transform.SetParent(greenCellsParent.transform);
+                    if (spawningEnabled)
+                    {
+                        GameObject cell = Instantiate(greenCellPrefab, position, Quaternion.identity);
+                        greenCells.Add(cell);
+                        cell.transform.SetParent(greenCellsParent.transform);
+                    }
                     if (GetNumberOfGreenCells() < maxNumberOfGreenCells / 2)
                     {
                         timeToSpawn = Random.Range(0.5f, 1.5f);
@@ -103,5 +109,14 @@ public class CellSpawner : MonoBehaviour
         Vector3 position = new Vector3(origin.position.x + 35, origin.position.y, origin.position.z);
         GameObject replica = Instantiate(greenCellPrefab, position, Quaternion.identity);
         replica.GetComponent<GreenCellRoutine>().isInstantiatedInReplication = true;
+    }
+
+    public void KillAllTheCells()
+    {
+        foreach(GameObject cell in greenCells)
+        {
+            spawningEnabled = false;
+            Destroy(cell);
+        }
     }
 }

@@ -32,15 +32,18 @@ public class GreenCellRoutine : MonoBehaviour
 
         isReplicating = false;
 
+
         if (!isInstantiatedInReplication)
         {
             isSpawningProcessFinished = false;
             StartCoroutine("StartCellRoutine");
+            anim.speed = 1;
         }
         else
         {
             isSpawningProcessFinished = true;
             anim.Play("GreenCellWalk");
+            anim.speed = 2;
         }
     }
 
@@ -57,6 +60,7 @@ public class GreenCellRoutine : MonoBehaviour
                     if (randomVal < GetChancesForDuplicating() * chancesForReplication)
                     {
                         StartCoroutine("StartReplicationRoutine");
+                        anim.speed = 1;
                     }
                     else
                     {
@@ -121,12 +125,14 @@ public class GreenCellRoutine : MonoBehaviour
         yield return new WaitForSeconds(1.04f);
         isSpawningProcessFinished = true;
         anim.Play("GreenCellWalk");
+        anim.speed = 2;
     }
 
     IEnumerator StartReplicationRoutine()
     {
         ZeroSpeed();
         anim.Play("GreenCellIdle");
+        anim.speed = 1;
         isReplicating = true;
         yield return new WaitForSeconds(replicationTime);
 
@@ -139,5 +145,6 @@ public class GreenCellRoutine : MonoBehaviour
         RestoreSpeed();
         isReplicating = false;
         anim.Play("GreenCellWalk");
+        anim.speed = 2;
     }
 }

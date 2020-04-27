@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -7,27 +8,34 @@ public class GameManager : MonoBehaviour
     public float greenCellsSpeed;
     public float chancesForReplication;
     public float replicationTime;
+    public int roundTime;
 
     public int numberOfGreenCells;
 
     private CellSpawner cellSpawner;
 
-    public GameObject startScreen, secondScreen;
+    public GameObject startScreen, secondScreen, pauseScreen, defaultScreen, roundFinished, roundSummary;
 
-    public Button backButton, continueButton1, continueButton2;
+    public Button backButton1, continueButton1, continueButton2, pauseButton, restroreButton, backButton2;
 
     void Start()
     {
         Time.timeScale = 0;
 
-        backButton.onClick.AddListener(GoBackToMenu);
+        backButton1.onClick.AddListener(GoBackToMenu);
+        backButton2.onClick.AddListener(GoBackToMenu);
         continueButton1.onClick.AddListener(CloseFirstScreen);
         continueButton2.onClick.AddListener(CloseSecondScreen);
+        pauseButton.onClick.AddListener(PauseGame);
+        restroreButton.onClick.AddListener(RestoreGame);
 
         cellSpawner = FindObjectOfType<CellSpawner>();
 
         startScreen.SetActive(true);
         secondScreen.SetActive(false);
+        defaultScreen.SetActive(false);
+        roundFinished.SetActive(false);
+        roundSummary.SetActive(false);
     }
     
     void Update()
@@ -44,16 +52,61 @@ public class GameManager : MonoBehaviour
     {
         startScreen.SetActive(false);
         secondScreen.SetActive(true);
+
     }
 
     void CloseSecondScreen()
     {
         secondScreen.SetActive(false);
+        defaultScreen.SetActive(true);
         Time.timeScale = 1;
+    }
+
+    void PauseGame()
+    {
+        defaultScreen.SetActive(false);
+        pauseScreen.SetActive(true);
+        Time.timeScale = 0;
+    }
+
+    void RestoreGame()
+    {
+        defaultScreen.SetActive(true);
+        pauseScreen.SetActive(false);
+        Time.timeScale = 1;
+    }
+
+    public void DisplayRoundFinished()
+    {
+        defaultScreen.SetActive(false);
+        roundFinished.SetActive(true);
+        StartCoroutine(Counter(2));
+    }
+
+    void ShowRoundSummary()
+    {
+        roundSummary.SetActive(true);
     }
 
     void GoBackToMenu()
     {
 
+    }
+
+    public bool isGamePaused()
+    {
+        if(pauseScreen.activeInHierarchy)
+        {
+            return true;
+        }
+        return false;
+    }
+
+    public IEnumerator Counter(float time)
+    {
+        cellSpawner.KillAllTheCells();
+        yield return new WaitForSeconds(time);
+        roundFinished.SetActive(false);
+        ShowRoundSummary();
     }
 }

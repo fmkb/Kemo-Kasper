@@ -3,10 +3,12 @@
 public class GreenCellsClicker : MonoBehaviour
 {
     private Collider2D _collider;
+    private GameManager gameManager;
     
     void Start()
     {
         _collider = GetComponent<Collider2D>();
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     void Update()
@@ -31,8 +33,11 @@ public class GreenCellsClicker : MonoBehaviour
 
     private void DestroyTheCell()
     {
-        GetComponent<GreenCellRoutine>().ZeroSpeed();
-        GetComponent<Animator>().Play("GreenCellDestroy");
-        Destroy(this.gameObject, 0.45f);
+        if (!gameManager.isGamePaused())
+        {
+            GetComponent<GreenCellRoutine>().ZeroSpeed();
+            GetComponent<Animator>().Play("GreenCellDestroy");
+            Destroy(this.gameObject, 0.45f);
+        }
     }
 }

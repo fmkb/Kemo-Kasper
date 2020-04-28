@@ -1657,8 +1657,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10.6, y: -0.7}
-  m_SizeDelta: {x: 600.5, y: 77.4}
+  m_AnchoredPosition: {x: 10.6, y: 0}
+  m_SizeDelta: {x: 600.5, y: 75.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &633021987
 MonoBehaviour:
@@ -2694,7 +2694,7 @@ MonoBehaviour:
   greenCellsSpeed: 6
   chancesForReplication: 1
   replicationTime: 5
-  roundTime: 10
+  roundTime: 30
   numberOfGreenCells: 0
   startScreen: {fileID: 1245268804}
   secondScreen: {fileID: 1791739934}
@@ -2722,6 +2722,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeText: {fileID: 1136053588}
   timeBar: {fileID: 633021987}
+  clockIcon: {fileID: 1373862619}
 --- !u!1 &1373862619
 GameObject:
   m_ObjectHideFlags: 0
@@ -2749,7 +2750,7 @@ RectTransform:
   m_GameObject: {fileID: 1373862619}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2967, y: 1.3939526, z: 1.2967}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1136053587}
   m_Father: {fileID: 254303740}
@@ -2757,8 +2758,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -272, y: 581}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -275, y: 587}
+  m_SizeDelta: {x: 135.8, y: 147.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1373862621
 MonoBehaviour:

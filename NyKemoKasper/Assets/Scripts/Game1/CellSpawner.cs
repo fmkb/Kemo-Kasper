@@ -109,6 +109,8 @@ public class CellSpawner : MonoBehaviour
         Vector3 position = new Vector3(origin.position.x + 35, origin.position.y, origin.position.z);
         GameObject replica = Instantiate(greenCellPrefab, position, Quaternion.identity);
         replica.GetComponent<GreenCellRoutine>().isInstantiatedInReplication = true;
+        greenCells.Add(replica);
+        replica.transform.SetParent(greenCellsParent.transform);
     }
 
     public void KillAllTheCells()

@@ -43,7 +43,7 @@ public class GreenCellRoutine : MonoBehaviour
         {
             isSpawningProcessFinished = true;
             anim.Play("GreenCellWalk");
-            anim.speed = 2;
+            anim.speed = speed / 3;
         }
     }
 
@@ -125,7 +125,7 @@ public class GreenCellRoutine : MonoBehaviour
         yield return new WaitForSeconds(1.04f);
         isSpawningProcessFinished = true;
         anim.Play("GreenCellWalk");
-        anim.speed = 2;
+        anim.speed = speed / 3;
     }
 
     IEnumerator StartReplicationRoutine()
@@ -145,6 +145,6 @@ public class GreenCellRoutine : MonoBehaviour
         RestoreSpeed();
         isReplicating = false;
         anim.Play("GreenCellWalk");
-        anim.speed = 2;
+        anim.speed = speed / 3;
     }
 }

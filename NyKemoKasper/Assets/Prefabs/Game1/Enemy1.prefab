@@ -139,6 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d315098f96414249aef2c640ac55b90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isInstantiatedInReplication: 0
 --- !u!114 &-3728271625990093147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,6 +152,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d997614b6bcfd741893e8221549d9f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointsNormalPrefab: {fileID: 5956655190035236196, guid: 30e32d0d75b2a414487fbe7a8366843e,
+    type: 3}
+  pointsBonusPrefab: {fileID: 7471666555802819385, guid: b2ba0aebbdab137469b0ea4591faf9a1,
+    type: 3}
 --- !u!61 &8318533962046018284
 BoxCollider2D:
   m_ObjectHideFlags: 0

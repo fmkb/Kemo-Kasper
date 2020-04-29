@@ -5,14 +5,22 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public int maxNumberOfGreenCells;
+    public int initialNumberOfGreenCells;
     public float greenCellsSpeed;
     public float chancesForReplication;
     public float replicationTime;
     public int roundTime;
 
+    public int timeForBonus;
+    public int amountForBonus;
+
+    public int normalPoints;
+    public int bonusPoints;
+
     public int numberOfGreenCells;
 
     private CellSpawner cellSpawner;
+    private ScoreCounter scoreCounter;
 
     public GameObject startScreen, secondScreen, pauseScreen, defaultScreen, roundFinished, roundSummary;
 
@@ -30,6 +38,7 @@ public class GameManager : MonoBehaviour
         restroreButton.onClick.AddListener(RestoreGame);
 
         cellSpawner = FindObjectOfType<CellSpawner>();
+        scoreCounter = FindObjectOfType<ScoreCounter>();
 
         startScreen.SetActive(true);
         secondScreen.SetActive(false);
@@ -108,5 +117,15 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(time);
         roundFinished.SetActive(false);
         ShowRoundSummary();
+    }
+
+    public void AddTimeStamp()
+    {
+        scoreCounter.AddTimeStamp();
+    }
+
+    public bool CheckForBonus()
+    {
+        return scoreCounter.CheckForBonus();
     }
 }

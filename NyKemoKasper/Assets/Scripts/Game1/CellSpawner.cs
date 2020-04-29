@@ -10,6 +10,7 @@ public class CellSpawner : MonoBehaviour
     public List<GameObject> greenCells;
 
     private int maxNumberOfGreenCells;
+    private int initialNumberOfCells;
 
     private float timeToSpawn;
 
@@ -21,16 +22,38 @@ public class CellSpawner : MonoBehaviour
     {
         gameManager = FindObjectOfType<GameManager>();
         maxNumberOfGreenCells = gameManager.maxNumberOfGreenCells;
+        initialNumberOfCells = gameManager.initialNumberOfGreenCells;
         timeToSpawn = 1;
         greenCells = new List<GameObject>();
         StartCoroutine("GreenCellSpawner");
         StartCoroutine("GreenCellSpawner");
         spawningEnabled = true;
+        SpawnInitialGreenCells();
     }
 
     private void Update()
     {
         greenCells = greenCells.Where(item => item != null).ToList();
+    }
+
+    private void SpawnInitialGreenCells()
+    {
+        for (int i = 0; i < initialNumberOfCells; i++)
+        {
+            Vector3 position = new Vector3(Random.Range(-800.0f, 800.0f), Random.Range(-300.0f, 300.0f), -200);
+            if (!IsTooClose(position, greenCells))
+            {
+                if (GetNumberOfGreenCells() < maxNumberOfGreenCells)
+                {
+                    if (spawningEnabled)
+                    {
+                        GameObject cell = Instantiate(greenCellPrefab, position, Quaternion.identity);
+                        greenCells.Add(cell);
+                        cell.transform.SetParent(greenCellsParent.transform);
+                    }
+                }
+            }
+        }
     }
 
     IEnumerator GreenCellSpawner()

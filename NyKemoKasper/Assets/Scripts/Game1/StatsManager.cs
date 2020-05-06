@@ -75,12 +75,12 @@ public class StatsManager : MonoBehaviour
 
     IEnumerator MoveCellsBar()
     {
-        float elapsedTime = -1;
+        float elapsedTime = 0;
 
         while (elapsedTime <= 2)
         {
             greenCellsBar.rectTransform.localPosition = Vector3.Lerp(greenCellsBar.rectTransform.localPosition,
-            new Vector3(defaultPositionCells2.x - GetProcentCellsLeft() * 460, defaultPositionCells2.y, defaultPositionCells2.z),
+            new Vector3((defaultPositionCells2.x - GetProcentCellsLeft() * 460) / 30, defaultPositionCells2.y, defaultPositionCells2.z),
             (Time.deltaTime));
             
             greenCellsBar.rectTransform.localScale = Vector3.Lerp(greenCellsBar.rectTransform.localScale,

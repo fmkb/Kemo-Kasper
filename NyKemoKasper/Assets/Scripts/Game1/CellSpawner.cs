@@ -22,7 +22,6 @@ public class CellSpawner : MonoBehaviour
     {
         gameManager = FindObjectOfType<GameManager>();
         maxNumberOfGreenCells = gameManager.maxNumberOfGreenCells;
-        initialNumberOfCells = gameManager.initialNumberOfGreenCells;
         timeToSpawn = 1;
         greenCells = new List<GameObject>();
         StartCoroutine("GreenCellSpawner");
@@ -38,6 +37,7 @@ public class CellSpawner : MonoBehaviour
 
     private void SpawnInitialGreenCells()
     {
+        initialNumberOfCells = gameManager.initialNumberOfGreenCells;
         for (int i = 0; i < initialNumberOfCells; i++)
         {
             Vector3 position = new Vector3(Random.Range(-800.0f, 800.0f), Random.Range(-300.0f, 300.0f), -200);
@@ -52,6 +52,10 @@ public class CellSpawner : MonoBehaviour
                         cell.transform.SetParent(greenCellsParent.transform);
                     }
                 }
+            }
+            else
+            {
+                initialNumberOfCells++;
             }
         }
     }
@@ -138,10 +142,17 @@ public class CellSpawner : MonoBehaviour
 
     public void KillAllTheCells()
     {
-        foreach(GameObject cell in greenCells)
+        spawningEnabled = false;
+        foreach (GameObject cell in greenCells)
         {
-            spawningEnabled = false;
             Destroy(cell);
         }
+    }
+
+    public void ReenableSpawning()
+    {
+        spawningEnabled = true;
+        SpawnInitialGreenCells();
+        StartCoroutine("GreenCellSpawner");
     }
 }

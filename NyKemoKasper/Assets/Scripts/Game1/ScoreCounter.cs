@@ -155,8 +155,9 @@ public class ScoreCounter : MonoBehaviour
             totalBonusScore--;
             yield return new WaitForSeconds(speed);
         }
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(0.5f);
         bonusPointsScreen.GetComponent<Animator>().Play("TotalBonusDisappear");
+        yield return new WaitForSeconds(0.5f);
         bonusPointsScreen.SetActive(false);
 
         continueButton.SetActive(true);

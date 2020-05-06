@@ -4,6 +4,8 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    private int lvlNo;
+
     public int maxNumberOfGreenCells;
     public int initialNumberOfGreenCells;
     public float greenCellsSpeed;
@@ -23,27 +25,37 @@ public class GameManager : MonoBehaviour
     private ScoreCounter scoreCounter;
     private StatsManager statsManager;
 
-    public GameObject startScreen, secondScreen, pauseScreen, defaultScreen, roundFinished, roundSummary;
+    public GameObject startScreen, launchScreen1, launchScreen2, launchScreen3, launchScreen4, launchScreenNo, 
+        pauseScreen, defaultScreen, roundFinished, roundSummary;
 
-    public Button backButton1, continueButton1, continueButton2, pauseButton, restroreButton, backButton2;
+    public Button backButton1, continueButton1, pauseButton, restroreButton, backButton2, continueSummaryButton;
 
     void Start()
     {
-        Time.timeScale = 0;
-
-        backButton1.onClick.AddListener(GoBackToMenu);
-        backButton2.onClick.AddListener(GoBackToMenu);
-        continueButton1.onClick.AddListener(CloseFirstScreen);
-        continueButton2.onClick.AddListener(CloseSecondScreen);
-        pauseButton.onClick.AddListener(PauseGame);
-        restroreButton.onClick.AddListener(RestoreGame);
+        lvlNo = 1;
 
         cellSpawner = FindObjectOfType<CellSpawner>();
         scoreCounter = FindObjectOfType<ScoreCounter>();
         statsManager = FindObjectOfType<StatsManager>();
 
+        Time.timeScale = 0;
+
+        backButton1.onClick.AddListener(GoBackToMenu);
+        backButton2.onClick.AddListener(GoBackToMenu);
+        continueButton1.onClick.AddListener(CloseFirstScreen);
+        launchScreen1.transform.GetChild(4).GetComponent<Button>().onClick.AddListener(CloseSecondScreen);
+        launchScreen2.transform.GetChild(4).GetComponent<Button>().onClick.AddListener(CloseSecondScreen);
+        launchScreen3.transform.GetChild(5).GetComponent<Button>().onClick.AddListener(CloseSecondScreen);
+        launchScreen4.transform.GetChild(2).GetComponent<Button>().onClick.AddListener(CloseSecondScreen);
+        pauseButton.onClick.AddListener(PauseGame);
+        restroreButton.onClick.AddListener(RestoreGame);
+        continueSummaryButton.onClick.AddListener(LaunchNewLevel);
+
         startScreen.SetActive(true);
-        secondScreen.SetActive(false);
+        launchScreen1.SetActive(false);
+        launchScreen2.SetActive(false);
+        launchScreen3.SetActive(false);
+        launchScreen4.SetActive(false);
         defaultScreen.SetActive(false);
         roundFinished.SetActive(false);
         roundSummary.SetActive(false);
@@ -62,15 +74,44 @@ public class GameManager : MonoBehaviour
     void CloseFirstScreen()
     {
         startScreen.SetActive(false);
-        secondScreen.SetActive(true);
+        launchScreen1.SetActive(true);
 
     }
 
     void CloseSecondScreen()
     {
-        secondScreen.SetActive(false);
+        launchScreen1.SetActive(false);
+        launchScreen2.SetActive(false);
+        launchScreen3.SetActive(false);
+        launchScreen4.SetActive(false);
         defaultScreen.SetActive(true);
         Time.timeScale = 1;
+        if (lvlNo > 1)
+        {
+            cellSpawner.ReenableSpawning();
+        }
+    }
+
+    void LaunchNewLevel()
+    {
+        lvlNo++;
+        roundSummary.SetActive(false);
+        switch(lvlNo)
+        {
+            case 2: launchScreen2.SetActive(true);
+                    maxNumberOfGreenCells = 50;
+                    initialNumberOfGreenCells = 12;
+                    break;
+            case 3: launchScreen3.SetActive(true);
+                    maxNumberOfGreenCells = 70;
+                    initialNumberOfGreenCells = 15;
+                    break;
+            default: launchScreen4.SetActive(true);
+                    maxNumberOfGreenCells = 90;
+                    initialNumberOfGreenCells = 18;
+                    launchScreenNo.GetComponent<Text>().text = "" +lvlNo;
+                    break;
+        }
     }
 
     void PauseGame()

@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
 
     private CellSpawner cellSpawner;
     private ScoreCounter scoreCounter;
+    private StatsManager statsManager;
 
     public GameObject startScreen, secondScreen, pauseScreen, defaultScreen, roundFinished, roundSummary;
 
@@ -39,6 +40,7 @@ public class GameManager : MonoBehaviour
 
         cellSpawner = FindObjectOfType<CellSpawner>();
         scoreCounter = FindObjectOfType<ScoreCounter>();
+        statsManager = FindObjectOfType<StatsManager>();
 
         startScreen.SetActive(true);
         secondScreen.SetActive(false);
@@ -95,6 +97,8 @@ public class GameManager : MonoBehaviour
     void ShowRoundSummary()
     {
         roundSummary.SetActive(true);
+        statsManager.CalculateCellsLeft();
+        scoreCounter.GetSummary();
     }
 
     void GoBackToMenu()
@@ -127,5 +131,15 @@ public class GameManager : MonoBehaviour
     public bool CheckForBonus()
     {
         return scoreCounter.CheckForBonus();
+    }
+
+    public void IncreaseStats()
+    {
+        statsManager.IncreaseStats();
+    }
+
+    public void DecreaseStats()
+    {
+        statsManager.DecreaseStats();
     }
 }

@@ -77,6 +77,7 @@ public class GreenCellRoutine : MonoBehaviour
         if(transform.position.y < -630)
         {
             Destroy(this.gameObject);
+            gameManager.DecreaseStats();
         }
     }
 

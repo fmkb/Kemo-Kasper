@@ -54,8 +54,11 @@ public class GreenCellsClicker : MonoBehaviour
                 wasCellClicked = true;
                 //Debug.Log("I WAS CLICKED");
                 GetComponent<GreenCellRoutine>().ZeroSpeed();
+                GetComponent<Animator>().gameObject.SetActive(false);
+                GetComponent<Animator>().gameObject.SetActive(true);
                 GetComponent<Animator>().Play("GreenCellDestroy");
                 Destroy(this.gameObject, 0.45f);
+                gameManager.IncreaseStats();
                 gameManager.AddTimeStamp();
                 ShowPoints();
             }

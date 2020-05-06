@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     private CellSpawner cellSpawner;
     private ScoreCounter scoreCounter;
     private StatsManager statsManager;
+    private Timer timer;
 
     public GameObject startScreen, launchScreen1, launchScreen2, launchScreen3, launchScreen4, launchScreenNo, 
         pauseScreen, defaultScreen, roundFinished, roundSummary;
@@ -37,6 +38,7 @@ public class GameManager : MonoBehaviour
         cellSpawner = FindObjectOfType<CellSpawner>();
         scoreCounter = FindObjectOfType<ScoreCounter>();
         statsManager = FindObjectOfType<StatsManager>();
+        timer = FindObjectOfType<Timer>();
 
         Time.timeScale = 0;
 
@@ -89,6 +91,8 @@ public class GameManager : MonoBehaviour
         if (lvlNo > 1)
         {
             cellSpawner.ReenableSpawning();
+            timer.RestartTimer();
+            scoreCounter.continueButton.gameObject.SetActive(false);
         }
     }
 

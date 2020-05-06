@@ -23,6 +23,8 @@ public class ScoreCounter : MonoBehaviour
     public GameObject continueButton;
     public GameObject bonusPointsScreen;
 
+    private Vector3 defaultBonusPos;
+
     void Start()
     {
         gameManager = FindObjectOfType<GameManager>();
@@ -36,6 +38,7 @@ public class ScoreCounter : MonoBehaviour
         totalBonusScore = 0;
         numberCellsKilledPlayer = 0;
         numberCellsKilledKasper = 0;
+        defaultBonusPos = bonusPointsScreen.transform.position;
     }
     
     void Update()
@@ -146,7 +149,9 @@ public class ScoreCounter : MonoBehaviour
 
     private IEnumerator GenerateBonusPoints(float speed)
     {
+        bonusPointsScreen.transform.position = defaultBonusPos;
         bonusPointsScreen.SetActive(true);
+        bonusPointsScreen.GetComponent<Animator>().Play("ButtonAppear");
         while (totalBonusScore > 0)
         {
             bonusPointsScreen.transform.GetChild(0).GetComponent<Text>().text =

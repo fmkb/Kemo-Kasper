@@ -79,4 +79,13 @@ public class Timer : MonoBehaviour
         }
         yield return null;
     }
+
+    public void RestartTimer()
+    {
+        roundTime = gameManager.roundTime;
+        timeBar.rectTransform.position = defaultPosition;
+        timeBar.rectTransform.localScale = defaultScale;
+        StartCoroutine("RoundTimer");
+        StartCoroutine("MoveTimeBar");
+    }
 }

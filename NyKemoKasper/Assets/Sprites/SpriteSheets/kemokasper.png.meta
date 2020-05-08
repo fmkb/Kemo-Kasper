@@ -1,7 +1,259 @@
 fileFormatVersion: 2
 guid: d9ca555193bad67458e4dc35d3bfbcd7
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -5959485656920990375
+    second: Kasper_Attack_0
+  - first:
+      213: -4402337368149017877
+    second: Kasper_Attack_1
+  - first:
+      213: 2370165147840605098
+    second: Kasper_Attack_2
+  - first:
+      213: -1177453648277260606
+    second: Kasper_Attack_3
+  - first:
+      213: 3731874531570563289
+    second: Kasper_Attack_4
+  - first:
+      213: -2022646184483529752
+    second: kemokasper_5
+  - first:
+      213: 7484470840427585890
+    second: Kasper_Attack_5
+  - first:
+      213: 5902554329308293910
+    second: Kasper_Attack_6
+  - first:
+      213: -8615383138378063376
+    second: kemokasper_8
+  - first:
+      213: 6199648860892687594
+    second: kemokasper_9
+  - first:
+      213: -6235162091807667958
+    second: Kasper_Attack_7
+  - first:
+      213: 7389623554292956425
+    second: kemokasper_11
+  - first:
+      213: -2598903138042624252
+    second: kemokasper_12
+  - first:
+      213: -2620889289620861806
+    second: Kasper_Attack_12
+  - first:
+      213: 1553901410999305338
+    second: Kasper_Attack_8
+  - first:
+      213: -2613885614773794704
+    second: Kasper_Attack_9
+  - first:
+      213: -6072541667674930
+    second: kemokasper_16
+  - first:
+      213: 1973382115553738536
+    second: Kasper_Attack_10
+  - first:
+      213: 5886981794932548318
+    second: kemokasper_18
+  - first:
+      213: -72528592324583655
+    second: Kasper_Attack_19
+  - first:
+      213: 437615056768750640
+    second: kemokasper_20
+  - first:
+      213: -1161306712634366455
+    second: kemokasper_21
+  - first:
+      213: -6583546857901320392
+    second: kemokasper_22
+  - first:
+      213: -2388903016566326496
+    second: kemokasper_23
+  - first:
+      213: -76709018180501533
+    second: Kasper_Attack_11
+  - first:
+      213: -8243097835529063492
+    second: Kasper_Attack_13
+  - first:
+      213: -7068082405253297094
+    second: Kasper_Attack_14
+  - first:
+      213: -5162268284341724196
+    second: Kasper_Attack_15
+  - first:
+      213: 6316382888217528622
+    second: Kasper_Attack_16
+  - first:
+      213: -1798885594042977944
+    second: Kasper_Attack_17
+  - first:
+      213: -339927744718191029
+    second: Kasper_Attack_18
+  - first:
+      213: 733423201752480044
+    second: Kasper_Attack_20
+  - first:
+      213: -7156910205501247448
+    second: kemokasper_32
+  - first:
+      213: 1568834361919641070
+    second: kemokasper_33
+  - first:
+      213: -1564990996417122004
+    second: kemokasper_34
+  - first:
+      213: -8946719574185980443
+    second: kemokasper_35
+  - first:
+      213: -2985248725932231610
+    second: Kasper_Attack_21
+  - first:
+      213: 2111235818458035206
+    second: Kasper_Attack_22
+  - first:
+      213: 1207660833947140032
+    second: Kasper_Attack_23
+  - first:
+      213: 5855741986659590106
+    second: Kasper_Attack_24
+  - first:
+      213: 201308591330549808
+    second: Kasper_Attack_25
+  - first:
+      213: 40419215948708935
+    second: Kasper_Attack_26
+  - first:
+      213: 986271212761540943
+    second: Kasper_Attack_27
+  - first:
+      213: 7423122665135893480
+    second: Kasper_Attack_28
+  - first:
+      213: -1797865559935604618
+    second: Kasper_Attack_29
+  - first:
+      213: -8251289918154474463
+    second: Kasper_Attack_30
+  - first:
+      213: 8619756527588533790
+    second: Kasper_Attack_31
+  - first:
+      213: 3990504176617396960
+    second: Kasper_Attack_32
+  - first:
+      213: -2692263072739376679
+    second: Kasper_Attack_33
+  - first:
+      213: -1704151182391081724
+    second: Kasper_Attack_34
+  - first:
+      213: -2203510203764788419
+    second: Kasper_Attack_35
+  - first:
+      213: 630878564662610655
+    second: Kasper_Attack_36
+  - first:
+      213: -296225225981548011
+    second: Kasper_Attack_37
+  - first:
+      213: 1989721184903040347
+    second: Kasper_Attack_38
+  - first:
+      213: -1633023069342971534
+    second: Kasper_Attack_39
+  - first:
+      213: 5575913124204748291
+    second: kemokasper_55
+  - first:
+      213: -8094521052346426249
+    second: Kasper_Attack_41
+  - first:
+      213: -1920623584831492449
+    second: Kasper_Attack_42
+  - first:
+      213: -7274962438614157795
+    second: Kasper_Attack_43
+  - first:
+      213: 126056181082069483
+    second: Kasper_Attack_44
+  - first:
+      213: -4002483741251489908
+    second: Kasper_Attack_45
+  - first:
+      213: 3606371050106192671
+    second: Kasper_Attack_46
+  - first:
+      213: 1763106317199871997
+    second: Kasper_Idle_-5
+  - first:
+      213: 1171126870733397351
+    second: Kasper_Idle_-4
+  - first:
+      213: -383714870177889747
+    second: Kasper_Idle_-3
+  - first:
+      213: -542681371633438121
+    second: Kasper_Idle_-2
+  - first:
+      213: 714633679142341462
+    second: Kasper_Idle_-1
+  - first:
+      213: -4184785244243023314
+    second: Kasper_Idle_0
+  - first:
+      213: -6033475227507532786
+    second: Kasper_Idle_1
+  - first:
+      213: 3323252598405540546
+    second: Kasper_Idle_2
+  - first:
+      213: -6024170023607007795
+    second: Kasper_Idle_3
+  - first:
+      213: 2511512779389171590
+    second: Kasper_Idle_4
+  - first:
+      213: -5373593894161947830
+    second: Kasper_Idle_5
+  - first:
+      213: -2432755463850140212
+    second: Kasper_Idle_6
+  - first:
+      213: -3077700542621705201
+    second: Kasper_Idle_7
+  - first:
+      213: -5264529452952455775
+    second: Kasper_Attack_40
+  - first:
+      213: -6308898923986554867
+    second: kemokasper_76
+  - first:
+      213: 6202437334199853238
+    second: kemokasper_77
+  - first:
+      213: 2124659066299209871
+    second: kemokasper_78
+  - first:
+      213: -822962075947553383
+    second: kemokasper_79
+  - first:
+      213: -3922237918891260899
+    second: kemokasper_80
+  - first:
+      213: 4090419927380129537
+    second: Kasper_Attack_0
+  - first:
+      213: 1680878084216566939
+    second: kemokasper_1
+  - first:
+      213: 4090419927380129537
+    second: kemokasper_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,7 +292,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -71,9 +323,1329 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Kasper_Attack_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 685
+        width: 89
+        height: 513
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95d5037ae57ab4da0800000000000000
+      internalID: -5959485656920990375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_1
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 692
+        width: 93
+        height: 505
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beabc0efc71c7e2c0800000000000000
+      internalID: -4402337368149017877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_2
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 693
+        width: 94
+        height: 497
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aabec00f4a484e020800000000000000
+      internalID: 2370165147840605098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_3
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 693
+        width: 116
+        height: 489
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c632f23528d8afe0800000000000000
+      internalID: -1177453648277260606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_4
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 693
+        width: 120
+        height: 489
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d837983d184ac330800000000000000
+      internalID: 3731874531570563289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_5
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 693
+        width: 111
+        height: 448
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 261a47f239e2ed760800000000000000
+      internalID: 7484470840427585890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_6
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 694
+        width: 101
+        height: 365
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61b6dd1b3e51ae150800000000000000
+      internalID: 5902554329308293910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_7
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 694
+        width: 96
+        height: 323
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0982d0ec114879a0800000000000000
+      internalID: -6235162091807667958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_12
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 688
+        width: 83
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29cc580c31bb0abd0800000000000000
+      internalID: -2620889289620861806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_8
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 692
+        width: 90
+        height: 284
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a748792b911909510800000000000000
+      internalID: 1553901410999305338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_9
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 695
+        width: 84
+        height: 242
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07887efd1ec99bbd0800000000000000
+      internalID: -2613885614773794704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_10
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 694
+        width: 80
+        height: 199
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82f70b3249cd26b10800000000000000
+      internalID: 1973382115553738536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_19
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 572
+        width: 99
+        height: 77
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91f1f6a21a35efef0800000000000000
+      internalID: -72528592324583655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_11
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 688
+        width: 80
+        height: 162
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ef384ced897feef0800000000000000
+      internalID: -76709018180501533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_13
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 690
+        width: 81
+        height: 99
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb3bf704132aa9d80800000000000000
+      internalID: -8243097835529063492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_14
+      rect:
+        serializedVersion: 2
+        x: 1510
+        y: 692
+        width: 83
+        height: 79
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3c40bf208029ed90800000000000000
+      internalID: -7068082405253297094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_15
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 695
+        width: 90
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdbdb84a850fb58b0800000000000000
+      internalID: -5162268284341724196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_16
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 696
+        width: 91
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e29cf8d65cc48a750800000000000000
+      internalID: 6316382888217528622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_17
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 700
+        width: 94
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 861308745131907e0800000000000000
+      internalID: -1798885594042977944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_18
+      rect:
+        serializedVersion: 2
+        x: 1916
+        y: 702
+        width: 100
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b46c5c66485584bf0800000000000000
+      internalID: -339927744718191029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_20
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 577
+        width: 93
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c297c722484ad2a00800000000000000
+      internalID: 733423201752480044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_21
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 576
+        width: 85
+        height: 96
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6443f9ca9144296d0800000000000000
+      internalID: -2985248725932231610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_22
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 578
+        width: 81
+        height: 94
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 604b5448acd9c4d10800000000000000
+      internalID: 2111235818458035206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_23
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 577
+        width: 78
+        height: 94
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cf3298412972c010800000000000000
+      internalID: 1207660833947140032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_24
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 576
+        width: 76
+        height: 94
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf5f23df46c34150800000000000000
+      internalID: 5855741986659590106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_25
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 576
+        width: 74
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 030ed74e8113bc200800000000000000
+      internalID: 201308591330549808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_26
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 576
+        width: 74
+        height: 93
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74cf8b010199f8000800000000000000
+      internalID: 40419215948708935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_27
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 576
+        width: 72
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4968d84170ffad00800000000000000
+      internalID: 986271212761540943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_28
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 576
+        width: 76
+        height: 91
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eb639b0cba340760800000000000000
+      internalID: 7423122665135893480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_29
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 577
+        width: 78
+        height: 90
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 678212a7cc2bc07e0800000000000000
+      internalID: -1797865559935604618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_30
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 578
+        width: 81
+        height: 89
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12cf3a169878d7d80800000000000000
+      internalID: -8251289918154474463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_31
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 581
+        width: 84
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e16e44574e68f9770800000000000000
+      internalID: 8619756527588533790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_32
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 582
+        width: 87
+        height: 86
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea1ef1f76e116730800000000000000
+      internalID: 3990504176617396960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_33
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 585
+        width: 92
+        height: 83
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d1c773eff823aad0800000000000000
+      internalID: -2692263072739376679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_34
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 587
+        width: 90
+        height: 84
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40584025783a958e0800000000000000
+      internalID: -1704151182391081724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_35
+      rect:
+        serializedVersion: 2
+        x: 1467
+        y: 586
+        width: 96
+        height: 83
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d33b6a5f42f8b61e0800000000000000
+      internalID: -2203510203764788419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_36
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 586
+        width: 97
+        height: 83
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fda8f1746b451c800800000000000000
+      internalID: 630878564662610655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_37
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 585
+        width: 93
+        height: 83
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a2cd7f9b893ebf0800000000000000
+      internalID: -296225225981548011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_38
+      rect:
+        serializedVersion: 2
+        x: 1777
+        y: 586
+        width: 96
+        height: 83
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5d073c20e8ec9b10800000000000000
+      internalID: 1989721184903040347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_39
+      rect:
+        serializedVersion: 2
+        x: 1882
+        y: 586
+        width: 98
+        height: 83
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2794bc9ab265659e0800000000000000
+      internalID: -1633023069342971534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_41
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 22
+        width: 77
+        height: 111
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77c58ff4dfb7aaf80800000000000000
+      internalID: -8094521052346426249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_42
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 20
+        width: 91
+        height: 117
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ea1e686039855e0800000000000000
+      internalID: -1920623584831492449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_43
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 18
+        width: 85
+        height: 134
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d16f71cd4342a0b90800000000000000
+      internalID: -7274962438614157795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_44
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 16
+        width: 78
+        height: 151
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be99327cd67dfb100800000000000000
+      internalID: 126056181082069483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_45
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 17
+        width: 74
+        height: 165
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8fad6f4e325478c0800000000000000
+      internalID: -4002483741251489908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_46
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 14
+        width: 82
+        height: 223
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1305d9dc576c0230800000000000000
+      internalID: 3606371050106192671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Idle_-5
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 19
+        width: 82
+        height: 311
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff02f9aadfc77810800000000000000
+      internalID: 1763106317199871997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Idle_-4
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 19
+        width: 85
+        height: 411
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76d9afc1fada04010800000000000000
+      internalID: 1171126870733397351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Idle_-3
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 21
+        width: 87
+        height: 499
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d22030ccb55ccaaf0800000000000000
+      internalID: -383714870177889747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Idle_-2
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 17
+        width: 90
+        height: 498
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7523191fa220878f0800000000000000
+      internalID: -542681371633438121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Idle_-1
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 11
+        width: 95
+        height: 510
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65b4fcd7b83eae900800000000000000
+      internalID: 714633679142341462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 13
+        width: 100
+        height: 510
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2a29970ef7ace5c0800000000000000
+      internalID: -4184785244243023314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 9
+        width: 103
+        height: 507
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c5b4f4f3ac44ca0800000000000000
+      internalID: -6033475227507532786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 9
+        width: 112
+        height: 502
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ca2bd281a09e1e20800000000000000
+      internalID: 3323252598405540546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 1537
+        y: 9
+        width: 107
+        height: 494
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc5095ce749d56ca0800000000000000
+      internalID: -6024170023607007795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 11
+        width: 103
+        height: 498
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6877858f09faad220800000000000000
+      internalID: 2511512779389171590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 1751
+        y: 13
+        width: 93
+        height: 492
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a43e443e2d82d65b0800000000000000
+      internalID: -5373593894161947830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 1852
+        y: 9
+        width: 83
+        height: 497
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd52df7bcd1d3ed0800000000000000
+      internalID: -2432755463850140212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Idle_7
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 11
+        width: 79
+        height: 503
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0c9100b9afc945d0800000000000000
+      internalID: -3077700542621705201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasper_Attack_40
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 18
+        width: 96
+        height: 103
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a5ff2fea52a0f6b0800000000000000
+      internalID: -5264529452952455775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

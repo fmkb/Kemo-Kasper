@@ -34,11 +34,6 @@ public class StatsManager : MonoBehaviour
         max = 860;
         current = 0;
     }
-    
-    void Update()
-    {
-        
-    }
 
     public void IncreaseStats()
     {
@@ -77,7 +72,7 @@ public class StatsManager : MonoBehaviour
     {
         float elapsedTime = 0;
 
-        while (elapsedTime <= 2)
+        while (elapsedTime <= 1)
         {
             greenCellsBar.rectTransform.localPosition = Vector3.Lerp(greenCellsBar.rectTransform.localPosition,
             new Vector3((defaultPositionCells2.x - GetProcentCellsLeft() * 460) / 50, defaultPositionCells2.y, defaultPositionCells2.z),

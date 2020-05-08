@@ -85,13 +85,13 @@ public class ScoreCounter : MonoBehaviour
     {
         float speed = 5.0f;
 
-        StartCoroutine(GenerateNormalPoints(speed / totalNormalScore / 2));
+        StartCoroutine(GenerateNormalPoints(speed / totalNormalScore / 1.5f));
         StartCoroutine(GeneratePlayerKills(speed / numberCellsKilledPlayer));
     }
 
     private IEnumerator GeneratePlayerKills(float speed)
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(1.5f);
 
         while (numberCellsKilledPlayer > 0)
         {
@@ -118,7 +118,7 @@ public class ScoreCounter : MonoBehaviour
 
     private IEnumerator GenerateNormalPoints(float speed)
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(1.5f);
 
         while (totalNormalScore > 0)
         {

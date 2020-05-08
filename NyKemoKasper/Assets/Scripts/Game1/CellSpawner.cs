@@ -108,7 +108,7 @@ public class CellSpawner : MonoBehaviour
         }
     }
 
-    bool IsTooClose(Vector3 objectToSpawn, List<GameObject> alreadySpawned)
+    public bool IsTooClose(Vector3 objectToSpawn, List<GameObject> alreadySpawned)
     {
         foreach (GameObject previousObject in alreadySpawned)
         {

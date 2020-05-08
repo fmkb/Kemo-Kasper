@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     private ScoreCounter scoreCounter;
     private StatsManager statsManager;
     private Timer timer;
+    private KemoKasperRoutine kemoKasperRoutine;
 
     public GameObject startScreen, launchScreen1, launchScreen2, launchScreen3, launchScreen4, launchScreenNo, 
         pauseScreen, defaultScreen, roundFinished, roundSummary;
@@ -38,6 +39,7 @@ public class GameManager : MonoBehaviour
         cellSpawner = FindObjectOfType<CellSpawner>();
         scoreCounter = FindObjectOfType<ScoreCounter>();
         statsManager = FindObjectOfType<StatsManager>();
+        kemoKasperRoutine = FindObjectOfType<KemoKasperRoutine>();
         timer = FindObjectOfType<Timer>();
 
         Time.timeScale = 0;
@@ -94,6 +96,7 @@ public class GameManager : MonoBehaviour
             timer.RestartTimer();
             scoreCounter.continueButton.gameObject.SetActive(false);
         }
+        kemoKasperRoutine.TurnOnCallButton();
     }
 
     void LaunchNewLevel()
@@ -163,6 +166,7 @@ public class GameManager : MonoBehaviour
     public IEnumerator Counter(float time)
     {
         cellSpawner.KillAllTheCells();
+        kemoKasperRoutine.DisableKasper();
         yield return new WaitForSeconds(time);
         roundFinished.SetActive(false);
         ShowRoundSummary();
@@ -186,5 +190,10 @@ public class GameManager : MonoBehaviour
     public void DecreaseStats()
     {
         statsManager.DecreaseStats();
+    }
+
+    public bool AreGreenCellsInPosition(Vector3 position)
+    {
+        return !cellSpawner.IsTooClose(position, cellSpawner.greenCells);
     }
 }

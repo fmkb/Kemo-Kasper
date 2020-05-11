@@ -7966,7 +7966,7 @@ MonoBehaviour:
   greenCellsSpeed: 6
   chancesForReplication: 1
   replicationTime: 5
-  roundTime: 10
+  roundTime: 30
   timeForBonus: 2
   amountForBonus: 6
   normalPoints: 15
@@ -8054,6 +8054,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonCallKasper: {fileID: 2041744585}
   kasperPrefab: {fileID: 153443462904635015, guid: aa188620ed7f3ec468124c51d37a7cfa,
+    type: 3}
+  shockwavePrefab: {fileID: 3363419881048110316, guid: 3e0b48145e9db484e903de31a708b0e0,
+    type: 3}
+  pointPrefab: {fileID: 5956655190035236196, guid: 30e32d0d75b2a414487fbe7a8366843e,
     type: 3}
 --- !u!1 &1282934469
 GameObject:

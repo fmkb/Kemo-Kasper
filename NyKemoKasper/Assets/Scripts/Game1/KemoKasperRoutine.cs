@@ -8,16 +8,26 @@ public class KemoKasperRoutine : MonoBehaviour
     private GameManager gameManager;
     public Button buttonCallKasper;
     public GameObject kasperPrefab;
+    public GameObject shockwavePrefab;
+    public GameObject pointPrefab;
+    private GameObject pointsParent;
+    private List<GameObject> points;
 
     private GameObject kasper;
+    private GameObject shockwave;
     private bool isFacingRight;
+    private float radius;
 
     void Start()
     {
+        radius = 200;
         isFacingRight = true;
         buttonCallKasper.gameObject.SetActive(false);
         gameManager = FindObjectOfType<GameManager>();
         buttonCallKasper.onClick.AddListener(CallKemoKasper);
+
+        points = new List<GameObject>();
+        pointsParent = GameObject.Find("Points");
     }
     
     void Update()
@@ -46,10 +56,23 @@ public class KemoKasperRoutine : MonoBehaviour
     Vector3 GetNewAttackPosition()
     {
         int counter = 1;
+        int minimumNo = 2;
         for (int i = 0; i < counter; i++)
         {
             Vector3 position = new Vector3(Random.Range(-800.0f, 800.0f), Random.Range(-500.0f, 300.0f), -200);
-            if (CheckForGreenCells(position))
+
+            if(counter < 10)
+            {
+                minimumNo = 3;
+            } else if(counter < 20)
+            {
+                minimumNo = 2;
+            } else if(counter < 30)
+            {
+                minimumNo = 1;
+            }
+
+            if (gameManager.HowManyGreenCellsInPosition(position, radius) >= minimumNo)
             {
                if(position.y < kasper.transform.position.y)
                 {
@@ -77,9 +100,17 @@ public class KemoKasperRoutine : MonoBehaviour
         return Vector3.zero;
     }
 
-    bool CheckForGreenCells(Vector3 position)
+    public void ShowPoints(int number)
     {
-        return gameManager.AreGreenCellsInPosition(position);
+        GameObject point = null;
+        if (number > 0)
+        {
+            point = Instantiate(pointPrefab, kasper.transform.position, Quaternion.identity);
+            point.transform.GetChild(0).GetChild(0).GetComponent<TextMesh>().text = "" + number*2/3f*gameManager.normalPoints;
+            points.Add(point);
+            point.transform.SetParent(pointsParent.transform);
+            Destroy(point, 1.15f);
+        }
     }
 
     IEnumerator KasperRoutine()
@@ -113,12 +144,20 @@ public class KemoKasperRoutine : MonoBehaviour
 
             yield return null;
         }
+        yield return new WaitForSeconds(0.5f);
+        if (kasper != null)
+        {
+            gameManager.DestroyGreenCellsInRadius(kasper.transform.position, radius);
+            shockwave = Instantiate(shockwavePrefab, kasper.transform.position, Quaternion.identity);
+            Destroy(shockwave, 21 / 60f);
+        }
         yield return null;
     }
 
     public void DisableKasper()
     {
         Destroy(kasper);
+        Destroy(shockwave);
         StopCoroutine("KasperRoutine");
         isFacingRight = true;
     }

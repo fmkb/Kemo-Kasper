@@ -24,6 +24,8 @@ public class ScoreCounter : MonoBehaviour
     public GameObject bonusPointsScreen;
 
     private Vector3 defaultBonusPos;
+    float countSpeed;
+
 
     void Start()
     {
@@ -32,6 +34,7 @@ public class ScoreCounter : MonoBehaviour
         continueButton.SetActive(false);
         bonusPointsScreen.SetActive(false);
         index = 0;
+        countSpeed = 5.0f;
 
         startTime = System.DateTime.UtcNow;
         totalNormalScore = 0;
@@ -83,15 +86,14 @@ public class ScoreCounter : MonoBehaviour
 
     public void GetSummary()
     {
-        float speed = 5.0f;
-
-        StartCoroutine(GenerateNormalPoints(speed / totalNormalScore / 1.5f));
-        StartCoroutine(GeneratePlayerKills(speed / numberCellsKilledPlayer));
+        StartCoroutine(GeneratePlayerKills(countSpeed / numberCellsKilledPlayer));
     }
 
     private IEnumerator GeneratePlayerKills(float speed)
     {
         yield return new WaitForSeconds(1.5f);
+
+        StartCoroutine(GenerateNormalPoints(countSpeed / totalNormalScore / 2.5f));
 
         while (numberCellsKilledPlayer > 0)
         {
@@ -104,11 +106,13 @@ public class ScoreCounter : MonoBehaviour
 
         if (numberCellsKilledKasper > 0)
         {
-            StartCoroutine(GenerateKilledKasper(speed / numberCellsKilledKasper));
+            StartCoroutine(GenerateKilledKasper(countSpeed / numberCellsKilledKasper));
+            totalNormalScore = (int)((numberCellsKilledKasper + 1) * 2 / 3f * gameManager.normalPoints);
+            StartCoroutine(GenerateNormalPoints(countSpeed / totalNormalScore / 2.5f));
         }
         else if (totalBonusScore > 0)
         {
-            StartCoroutine(GenerateBonusPoints(speed / totalBonusScore));
+            StartCoroutine(GenerateBonusPoints(countSpeed / totalBonusScore / 2.5f));
         }
         else
         {
@@ -118,8 +122,6 @@ public class ScoreCounter : MonoBehaviour
 
     private IEnumerator GenerateNormalPoints(float speed)
     {
-        yield return new WaitForSeconds(1.5f);
-
         while (totalNormalScore > 0)
         {
             yourScore.text = "" + (int.Parse(yourScore.text) + 1);
@@ -137,9 +139,11 @@ public class ScoreCounter : MonoBehaviour
             yield return new WaitForSeconds(speed);
         }
 
+        yield return new WaitForSeconds(1);
+
         if (totalBonusScore > 0)
         {
-            StartCoroutine(GenerateBonusPoints(speed / totalBonusScore));
+            StartCoroutine(GenerateBonusPoints(countSpeed / totalBonusScore / 2.5f));
         }
         else
         {

@@ -92,6 +92,10 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1;
         if (lvlNo > 1)
         {
+            if (lvlNo < 5)
+            {
+                replicationTime = 2 / 3f * replicationTime;
+            }
             cellSpawner.ReenableSpawning();
             timer.RestartTimer();
             scoreCounter.continueButton.gameObject.SetActive(false);
@@ -192,8 +196,19 @@ public class GameManager : MonoBehaviour
         statsManager.DecreaseStats();
     }
 
-    public bool AreGreenCellsInPosition(Vector3 position)
+    public int HowManyGreenCellsInPosition(Vector3 position, float radius)
     {
-        return !cellSpawner.IsTooClose(position, cellSpawner.greenCells);
+        return cellSpawner.HowManyCellsInRadius(position, radius);
+    }
+
+    public void DestroyGreenCellsInRadius(Vector3 position, float radius)
+    {
+        cellSpawner.KillCellsInRadius(position, radius);
+    }
+
+    public void DisplayKasperPoints(int number)
+    {
+        kemoKasperRoutine.ShowPoints(number);
+        scoreCounter.numberCellsKilledKasper += number;
     }
 }

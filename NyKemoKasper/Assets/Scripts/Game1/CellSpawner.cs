@@ -11,6 +11,7 @@ public class CellSpawner : MonoBehaviour
 
     private int maxNumberOfGreenCells;
     private int initialNumberOfCells;
+    private int cellNo;
 
     private float timeToSpawn;
 
@@ -20,6 +21,7 @@ public class CellSpawner : MonoBehaviour
 
     void Start()
     {
+        cellNo = 0;
         gameManager = FindObjectOfType<GameManager>();
         maxNumberOfGreenCells = gameManager.maxNumberOfGreenCells;
         timeToSpawn = 1;
@@ -48,6 +50,8 @@ public class CellSpawner : MonoBehaviour
                     if (spawningEnabled)
                     {
                         GameObject cell = Instantiate(greenCellPrefab, position, Quaternion.identity);
+                        cell.name = "Enemy_" + cellNo;
+                        cellNo++;
                         greenCells.Add(cell);
                         cell.transform.SetParent(greenCellsParent.transform);
                     }
@@ -76,6 +80,8 @@ public class CellSpawner : MonoBehaviour
                     if (spawningEnabled)
                     {
                         GameObject cell = Instantiate(greenCellPrefab, position, Quaternion.identity);
+                        cell.name = "Enemy_" + cellNo;
+                        cellNo++;
                         greenCells.Add(cell);
                         cell.transform.SetParent(greenCellsParent.transform);
                     }
@@ -126,6 +132,25 @@ public class CellSpawner : MonoBehaviour
         return false;
     }
 
+    public int HowManyCellsInRadius(Vector3 position, float radius)
+    {
+        int number = 0;
+        foreach (GameObject greenCell in greenCells)
+        {
+            if (greenCell != null)
+            {
+                float distanceX = Mathf.Abs(position.x - greenCell.transform.position.x);
+                float distanceY = Mathf.Abs(position.y - greenCell.transform.position.y - 100);
+
+                if (distanceX < radius && distanceY < radius)
+                {
+                    number++;
+                }
+            }
+        }
+        return number;
+    }
+
     public int GetNumberOfGreenCells()
     {
         return greenCells.Count;
@@ -149,8 +174,33 @@ public class CellSpawner : MonoBehaviour
         }
     }
 
+    public void KillCellsInRadius(Vector3 position, float radius)
+    {
+        int numberKilled = 0;
+        foreach (GameObject greenCell in greenCells)
+        {
+            if (greenCell != null)
+            {
+                float distanceX = Mathf.Abs(greenCell.transform.position.x - position.x);
+                float distanceY = Mathf.Abs(greenCell.transform.position.y - position.y);
+
+                if (distanceX < radius + 100 && distanceY < radius + 50)
+                {
+                    greenCell.GetComponent<GreenCellRoutine>().ZeroSpeed();
+                    greenCell.GetComponent<Animator>().gameObject.SetActive(false);
+                    greenCell.GetComponent<Animator>().gameObject.SetActive(true);
+                    greenCell.GetComponent<Animator>().Play("GreenCellExplode");
+                    Destroy(greenCell, 1 / 6f);
+                    numberKilled++;
+                }
+            }
+        }
+        gameManager.DisplayKasperPoints(numberKilled);
+    }
+
     public void ReenableSpawning()
     {
+        cellNo = 0;
         spawningEnabled = true;
         SpawnInitialGreenCells();
         StartCoroutine("GreenCellSpawner");

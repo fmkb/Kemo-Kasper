@@ -83,7 +83,10 @@ public class GreenCellRoutine : MonoBehaviour
 
     public void ZeroSpeed()
     {
-        rb.constraints = RigidbodyConstraints2D.FreezePositionY;
+        if (rb != null)
+        {
+            rb.constraints = RigidbodyConstraints2D.FreezePositionY;
+        }
     }
 
     public void RestoreSpeed()

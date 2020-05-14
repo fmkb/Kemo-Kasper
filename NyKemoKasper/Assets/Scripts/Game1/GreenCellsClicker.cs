@@ -11,7 +11,7 @@ public class GreenCellsClicker : MonoBehaviour
     public GameObject pointsBonusPrefab;
     private GameObject pointsParent;
     private List<GameObject> points;
-    private bool wasCellClicked;
+    public bool wasCellClicked;
 
     void Start()
     {
@@ -52,7 +52,6 @@ public class GreenCellsClicker : MonoBehaviour
             if (!wasCellClicked)
             {
                 wasCellClicked = true;
-                //Debug.Log("I WAS CLICKED");
                 GetComponent<GreenCellRoutine>().ZeroSpeed();
                 GetComponent<Animator>().gameObject.SetActive(false);
                 GetComponent<Animator>().gameObject.SetActive(true);

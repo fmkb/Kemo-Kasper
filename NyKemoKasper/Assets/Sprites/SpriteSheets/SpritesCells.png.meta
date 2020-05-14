@@ -1686,9 +1686,9 @@ TextureImporter:
       name: RedCell_1
       rect:
         serializedVersion: 2
-        x: 79
+        x: 80
         y: 645
-        width: 63
+        width: 61
         height: 73
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1876,9 +1876,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 101
-        y: 541
+        y: 540
         width: 92
-        height: 91
+        height: 92
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1896,10 +1896,10 @@ TextureImporter:
       name: CellYellow_2
       rect:
         serializedVersion: 2
-        x: 197
-        y: 538
-        width: 92
-        height: 93
+        x: 199
+        y: 540
+        width: 90
+        height: 92
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1917,7 +1917,7 @@ TextureImporter:
       name: CellYellow_3
       rect:
         serializedVersion: 2
-        x: 293
+        x: 294
         y: 540
         width: 94
         height: 93

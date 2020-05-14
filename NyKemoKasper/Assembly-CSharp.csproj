@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Game1\CellSpawner.cs" />
+    <Compile Include="Assets\Scripts\Game1\CellThrower.cs" />
     <Compile Include="Assets\Scripts\Game1\GameManager.cs" />
     <Compile Include="Assets\Scripts\Game1\GreenCellRoutine.cs" />
     <Compile Include="Assets\Scripts\Game1\GreenCellsClicker.cs" />

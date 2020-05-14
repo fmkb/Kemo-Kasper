@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public float chancesForReplication;
     public float replicationTime;
     public int roundTime;
+    public int maxNumberOfOtherCells;
 
     public int timeForBonus;
     public int amountForBonus;
@@ -90,11 +91,17 @@ public class GameManager : MonoBehaviour
         launchScreen4.SetActive(false);
         defaultScreen.SetActive(true);
         Time.timeScale = 1;
+        cellSpawner.StartSpawningOtherCells();
         if (lvlNo > 1)
         {
             if (lvlNo < 5)
             {
                 replicationTime = 2 / 3f * replicationTime;
+                cellSpawner.StartSpawningMoreGreenCells();
+            }
+            if(lvlNo == 2)
+            {
+                cellSpawner.StartSpawningOtherCells();
             }
             cellSpawner.ReenableSpawning();
             timer.RestartTimer();
@@ -210,5 +217,10 @@ public class GameManager : MonoBehaviour
     {
         kemoKasperRoutine.ShowPoints(number);
         scoreCounter.numberCellsKilledKasper += number;
+    }
+
+    public void AddPointsForBonusCell()
+    {
+        scoreCounter.totalBonusScore += 100;
     }
 }

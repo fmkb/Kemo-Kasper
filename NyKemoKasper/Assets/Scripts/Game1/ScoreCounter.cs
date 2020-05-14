@@ -102,13 +102,9 @@ public class ScoreCounter : MonoBehaviour
             yield return new WaitForSeconds(speed);
         }
 
-        yield return new WaitForSeconds(1);
-
         if (numberCellsKilledKasper > 0)
         {
             StartCoroutine(GenerateKilledKasper(countSpeed / numberCellsKilledKasper));
-            totalNormalScore = (int)((numberCellsKilledKasper + 1) * 2 / 3f * gameManager.normalPoints);
-            StartCoroutine(GenerateNormalPoints(countSpeed / totalNormalScore / 2.5f));
         }
         else if (totalBonusScore > 0)
         {
@@ -132,14 +128,22 @@ public class ScoreCounter : MonoBehaviour
 
     private IEnumerator GenerateKilledKasper(float speed)
     {
+        while(totalNormalScore > 0 || numberCellsKilledPlayer > 0)
+        {
+            yield return new WaitForSeconds(1f);
+        }
+
+        yield return new WaitForSeconds(0.5f);
+
+        totalNormalScore = (int)((numberCellsKilledKasper + 1) * 2 / 3f * gameManager.normalPoints);
+        StartCoroutine(GenerateNormalPoints(countSpeed / totalNormalScore / 2.5f));
+
         while (numberCellsKilledKasper > 0)
         {
             killedByKasper.text = "" + (int.Parse(killedByKasper.text) + 1);
             numberCellsKilledKasper--;
             yield return new WaitForSeconds(speed);
         }
-
-        yield return new WaitForSeconds(1);
 
         if (totalBonusScore > 0)
         {
@@ -153,6 +157,13 @@ public class ScoreCounter : MonoBehaviour
 
     private IEnumerator GenerateBonusPoints(float speed)
     {
+        while (totalNormalScore > 0 || numberCellsKilledKasper > 0)
+        {
+            yield return new WaitForSeconds(1f);
+        }
+
+        yield return new WaitForSeconds(0.5f);
+
         bonusPointsScreen.transform.position = defaultBonusPos;
         bonusPointsScreen.SetActive(true);
         bonusPointsScreen.GetComponent<Animator>().Play("ButtonAppear");

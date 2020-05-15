@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
     private StatsManager statsManager;
     private Timer timer;
     private KemoKasperRoutine kemoKasperRoutine;
+    private TimeCellRoutine timeCellRoutine;
 
     public GameObject startScreen, launchScreen1, launchScreen2, launchScreen3, launchScreen4, launchScreenNo, 
         pauseScreen, defaultScreen, roundFinished, roundSummary;
@@ -42,6 +43,7 @@ public class GameManager : MonoBehaviour
         statsManager = FindObjectOfType<StatsManager>();
         kemoKasperRoutine = FindObjectOfType<KemoKasperRoutine>();
         timer = FindObjectOfType<Timer>();
+        timeCellRoutine = FindObjectOfType<TimeCellRoutine>();
 
         Time.timeScale = 0;
 
@@ -222,5 +224,10 @@ public class GameManager : MonoBehaviour
     public void AddPointsForBonusCell()
     {
         scoreCounter.totalBonusScore += 100;
+    }
+
+    public void AddTime()
+    {
+        timer.AddTime();
     }
 }

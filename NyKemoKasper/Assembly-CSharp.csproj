@@ -62,6 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Game1\BonusCellRoutine.cs" />
     <Compile Include="Assets\Scripts\Game1\CellSpawner.cs" />
     <Compile Include="Assets\Scripts\Game1\CellThrower.cs" />
     <Compile Include="Assets\Scripts\Game1\GameManager.cs" />
@@ -70,6 +71,7 @@
     <Compile Include="Assets\Scripts\Game1\KemoKasperRoutine.cs" />
     <Compile Include="Assets\Scripts\Game1\ScoreCounter.cs" />
     <Compile Include="Assets\Scripts\Game1\StatsManager.cs" />
+    <Compile Include="Assets\Scripts\Game1\TimeCellRoutine.cs" />
     <Compile Include="Assets\Scripts\Game1\Timer.cs" />
     <Compile Include="Assets\Scripts\Menus\Highscore.cs" />
     <Compile Include="Assets\Scripts\Menus\LanguageManager.cs" />

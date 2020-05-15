@@ -38,6 +38,7 @@ public class CellSpawner : MonoBehaviour
     private void Update()
     {
         greenCells = greenCells.Where(item => item != null).ToList();
+        otherCells = otherCells.Where(item => item != null).ToList();
     }
 
     private void SpawnInitialGreenCells()
@@ -233,6 +234,7 @@ public class CellSpawner : MonoBehaviour
         Vector3 position = new Vector3(origin.position.x + 35, origin.position.y, origin.position.z);
         GameObject replica = Instantiate(greenCellPrefab, position, Quaternion.identity);
         replica.GetComponent<GreenCellRoutine>().isInstantiatedInReplication = true;
+        replica.name = "Enemy_" + greenCellNo;
         greenCells.Add(replica);
         replica.transform.SetParent(spawnedCellsParent.transform);
     }

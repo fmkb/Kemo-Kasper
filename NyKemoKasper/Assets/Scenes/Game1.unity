@@ -571,7 +571,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 88741544}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 1150.8435, y: -168.82318, z: 1000}
+  m_LocalPosition: {x: 1182, y: -168.82318, z: 1000}
   m_LocalScale: {x: 1677.0042, y: 151.63275, z: 182.3038}
   m_Children: []
   m_Father: {fileID: 940762753}
@@ -4723,7 +4723,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 710252368}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -777.1565, y: -168.82318, z: 1000}
+  m_LocalPosition: {x: -821, y: -168.82318, z: 1000}
   m_LocalScale: {x: 1624.5978, y: 151.63275, z: 182.3038}
   m_Children: []
   m_Father: {fileID: 940762753}
@@ -4908,7 +4908,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 728766893}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 185.24, y: 212, z: 1000}
+  m_LocalPosition: {x: 185.24, y: 431, z: 1000}
   m_LocalScale: {x: 2919.1255, y: 151.63275, z: 182.3038}
   m_Children: []
   m_Father: {fileID: 940762753}
@@ -8281,7 +8281,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1251877432}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 185.24, y: -705.8232, z: 1000}
+  m_LocalPosition: {x: 185.24, y: -740, z: 1000}
   m_LocalScale: {x: 2794.9077, y: 151.63275, z: 182.3038}
   m_Children: []
   m_Father: {fileID: 940762753}
@@ -8474,6 +8474,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeText: {fileID: 1136053588}
   timeBar: {fileID: 633021987}
+  timeBonusPrefab: {fileID: 7232854222838984672, guid: 029f3b07af1dd5c4ba3bc089b383bb50,
+    type: 3}
   clockIcon: {fileID: 1373862619}
 --- !u!114 &1281042802
 MonoBehaviour:

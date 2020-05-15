@@ -138,6 +138,7 @@ public class KemoKasperRoutine : MonoBehaviour
 
         while (elapsedTime <= 1)
         {
+            if(kasper!=null)
             kasper.transform.position = Vector3.Lerp(kasper.transform.position, newPos, Time.deltaTime);
 
             elapsedTime += Time.deltaTime;

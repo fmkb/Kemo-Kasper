@@ -6,46 +6,48 @@ using UnityEngine.UI;
 public class KemoKasperRoutine : MonoBehaviour
 {
     private GameManager gameManager;
+
     public Button buttonCallKasper;
-    public GameObject kasperPrefab;
-    public GameObject shockwavePrefab;
-    public GameObject pointPrefab;
-    private GameObject pointsParent;
+
+    public GameObject kasperPrefab, shockwavePrefab, pointPrefab;
+
+    private GameObject pointsParent, kasper, shockwave;
+
     private List<GameObject> points;
 
-    private GameObject kasper;
-    private GameObject shockwave;
     private bool isFacingRight;
     private float radius;
 
+
+
     void Start()
     {
-        radius = 200;
-        isFacingRight = true;
-        buttonCallKasper.gameObject.SetActive(false);
         gameManager = FindObjectOfType<GameManager>();
-        buttonCallKasper.onClick.AddListener(CallKemoKasper);
-
         points = new List<GameObject>();
         pointsParent = GameObject.Find("Points");
-    }
-    
-    void Update()
-    {
-        
+
+        radius = 200;
+
+        isFacingRight = true;
+
+        buttonCallKasper.gameObject.SetActive(false);
+        buttonCallKasper.onClick.AddListener(CallKemoKasper);
     }
 
+    // Function for turning on the kemo kasper call button
     public void TurnOnCallButton()
     {
         StartCoroutine("TurnOnButton");
     }
 
+    // Routine for turning on the kemo kasper call button
     IEnumerator TurnOnButton()
     {
         yield return new WaitForSeconds(3);
         buttonCallKasper.gameObject.SetActive(true);
     }
 
+    // Function for calling kemo kasper
     void CallKemoKasper()
     {
         buttonCallKasper.gameObject.SetActive(false);
@@ -53,10 +55,12 @@ public class KemoKasperRoutine : MonoBehaviour
         StartCoroutine("KasperRoutine");
     }
 
+    // Generate new jump position
     Vector3 GetNewAttackPosition()
     {
         int counter = 1;
         int minimumNo = 2;
+
         for (int i = 0; i < counter; i++)
         {
             Vector3 position = new Vector3(Random.Range(-800.0f, 800.0f), Random.Range(-500.0f, 300.0f), -200);
@@ -100,6 +104,7 @@ public class KemoKasperRoutine : MonoBehaviour
         return Vector3.zero;
     }
 
+    // Function for generating bonus object
     public void ShowPoints(int number)
     {
         GameObject point = null;
@@ -113,6 +118,7 @@ public class KemoKasperRoutine : MonoBehaviour
         }
     }
 
+    // Routine for kasper
     IEnumerator KasperRoutine()
     {
         bool firstTime = true;
@@ -131,6 +137,7 @@ public class KemoKasperRoutine : MonoBehaviour
         }
     }
 
+    // Routing for moving to a new position
     IEnumerator MoveKasperToPos()
     {
         float elapsedTime = 0;
@@ -145,7 +152,9 @@ public class KemoKasperRoutine : MonoBehaviour
 
             yield return null;
         }
+
         yield return new WaitForSeconds(0.5f);
+
         if (kasper != null)
         {
             gameManager.DestroyGreenCellsInRadius(kasper.transform.position, radius);
@@ -155,11 +164,13 @@ public class KemoKasperRoutine : MonoBehaviour
         yield return null;
     }
 
+    // Function for turning kasper off after the round is completed
     public void DisableKasper()
     {
         Destroy(kasper);
         Destroy(shockwave);
         StopCoroutine("KasperRoutine");
+        buttonCallKasper.gameObject.SetActive(false);
         isFacingRight = true;
     }
 }

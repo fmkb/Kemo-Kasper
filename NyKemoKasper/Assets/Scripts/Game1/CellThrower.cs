@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 
@@ -11,14 +8,13 @@ public class CellThrower : MonoBehaviour
     
     HingeJoint2D hinge;
 
-    Vector2 velocity;
-    Vector2 lastPosition;
-    Vector2 objPosition;
+    Vector2 velocity, lastPosition, objPosition;
 
     bool move = false;
-
-
+    
     private GameManager gameManager;
+
+
 
     void Start()
     {
@@ -62,6 +58,7 @@ public class CellThrower : MonoBehaviour
                 lastPosition = transform.position;
         }
 
+        // Destroy a cell that is beyod the borders
         if (transform.position.x < -1030 || transform.position.y < -600 || transform.position.x > 1030 || transform.position.y > 600)
         {
             Destroy(this.gameObject);
@@ -81,5 +78,4 @@ public class CellThrower : MonoBehaviour
         //Combines the velocity from the mouse with the velocity from the hinge and applies it to the desired rigid body
         rb.velocity = (rb.velocity + velocity)/2;
     }
-
 }

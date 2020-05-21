@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class GreenCellRoutine : MonoBehaviour
 {
-    private float speed;
     private Rigidbody2D rb;
 
     private GameManager gameManager;
@@ -12,13 +11,13 @@ public class GreenCellRoutine : MonoBehaviour
 
     private Animator anim;
 
-    private bool isSpawningProcessFinished;
-    private bool isReplicating;
+    private bool isSpawningProcessFinished, isReplicating;
 
-    private float chancesForReplication;
-    private float replicationTime;
+    private float chancesForReplication, replicationTime, speed;
 
     public bool isInstantiatedInReplication = false;
+
+
 
     void Start()
     {

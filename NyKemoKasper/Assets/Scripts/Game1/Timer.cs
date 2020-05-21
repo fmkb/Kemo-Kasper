@@ -6,36 +6,31 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
     private GameManager gameManager;
-    private int roundTime;
-    private int countdownValue;
+
+    private int roundTime, countdownValue, counterTimer;
 
     public Text timeText;
+
     public Image timeBar;
-    Vector3 defaultPosition;
-    Vector3 defaultScale;
-    public GameObject timeBonusPrefab;
 
-    private int counterTimer;
+    Vector3 defaultPosition, defaultScale;
 
-    public GameObject clockIcon;
+    public GameObject timeBonusPrefab, clockIcon;
+
+
 
     void Start()
     {
         gameManager = FindObjectOfType<GameManager>();
+
         roundTime = gameManager.roundTime;
         counterTimer = gameManager.roundTime;
 
         defaultPosition = timeBar.rectTransform.position;
         defaultScale = timeBar.rectTransform.localScale;
-
-        StartCoroutine("RoundTimer");
-        StartCoroutine("MoveTimeBar");
-    }
-    
-    void Update()
-    {
     }
 
+    // Routine for the round timer
     public IEnumerator RoundTimer()
     {
         countdownValue = roundTime;
@@ -53,6 +48,7 @@ public class Timer : MonoBehaviour
         }
     }
 
+    // Routine for moving the time bar
     IEnumerator MoveTimeBar()
     {
         float elapsedTime = -1;
@@ -84,6 +80,7 @@ public class Timer : MonoBehaviour
         yield return null;
     }
 
+    // Function for restarting the timer for a new round
     public void RestartTimer()
     {
         roundTime = gameManager.roundTime;
@@ -94,6 +91,7 @@ public class Timer : MonoBehaviour
         StartCoroutine("MoveTimeBar");
     }
 
+    // Function called whenever a bonus time cell is used
     public void AddTime()
     {
         Vector3 position = new Vector3(Screen.width - 100, Screen.height / 2, 0);
@@ -102,6 +100,7 @@ public class Timer : MonoBehaviour
         StartCoroutine(MoveTimeBonus(timePoints));
     }
 
+    // Routine to move the bonus time object from the spawn point to the time bar
     IEnumerator MoveTimeBonus(GameObject timePoints)
     {
         float elapsedTime = 0;
@@ -121,6 +120,7 @@ public class Timer : MonoBehaviour
         yield return null;
     }
 
+    // Function to add one second to the time left
     void AddOneSec()
     {
         if (countdownValue > 0)
@@ -135,5 +135,11 @@ public class Timer : MonoBehaviour
             countdownValue++;
             timeText.text = countdownValue + "";
         }
+    }
+
+    public void StopTimer()
+    {
+        StopCoroutine("RoundTimer");
+        StopCoroutine("MoveTimeBar");
     }
 }

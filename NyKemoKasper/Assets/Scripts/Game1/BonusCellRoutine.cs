@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class BonusCellRoutine : MonoBehaviour
@@ -10,6 +9,8 @@ public class BonusCellRoutine : MonoBehaviour
     private GameManager gameManager;
     private bool wasBonusUsed;
 
+
+
     void Start()
     {
         gameManager = FindObjectOfType<GameManager>();
@@ -17,12 +18,8 @@ public class BonusCellRoutine : MonoBehaviour
         pointsParent = GameObject.Find("Points");
         wasBonusUsed = false;
     }
-    
-    void Update()
-    {
-        
-    }
 
+    // When a bonus cell enters the pipe
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.name == "Pipe")
@@ -32,22 +29,29 @@ public class BonusCellRoutine : MonoBehaviour
                 GetComponent<Animator>().gameObject.SetActive(false);
                 GetComponent<Animator>().gameObject.SetActive(true);
                 GetComponent<Animator>().Play("OtherCellExplode");
+
                 Destroy(this.gameObject, 1 / 6f);
+
                 ShowPoints();
+
                 wasBonusUsed = true;
             }
         }
     }
 
+    // Create a new point object and add it to the total amount of gained points
     private void ShowPoints()
     {
         Vector3 position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+
         GameObject point = null;
         point = Instantiate(pointsBonusPrefab, position, Quaternion.identity);
         point.transform.GetChild(0).GetChild(0).GetComponent<TextMesh>().text = "" + 100;
         points.Add(point);
         point.transform.SetParent(pointsParent.transform);
+
         gameManager.AddPointsForBonusCell();
+
         Destroy(point, 1.15f);
     }
 }

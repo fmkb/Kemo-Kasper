@@ -27,6 +27,7 @@ public class ScoreCounter : MonoBehaviour
     float countSpeed;
 
 
+
     void Start()
     {
         gameManager = FindObjectOfType<GameManager>();
@@ -34,13 +35,8 @@ public class ScoreCounter : MonoBehaviour
         continueButton.SetActive(false);
         bonusPointsScreen.SetActive(false);
         index = 0;
-        countSpeed = 5.0f;
+        countSpeed = 3.0f;
 
-        startTime = System.DateTime.UtcNow;
-        totalNormalScore = 0;
-        totalBonusScore = 0;
-        numberCellsKilledPlayer = 0;
-        numberCellsKilledKasper = 0;
         defaultBonusPos = bonusPointsScreen.transform.position;
     }
     
@@ -91,7 +87,7 @@ public class ScoreCounter : MonoBehaviour
 
     private IEnumerator GeneratePlayerKills(float speed)
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(2.5f);
 
         StartCoroutine(GenerateNormalPoints(countSpeed / totalNormalScore / 2.5f));
 
@@ -181,5 +177,19 @@ public class ScoreCounter : MonoBehaviour
         bonusPointsScreen.SetActive(false);
 
         continueButton.SetActive(true);
+    }
+
+    public void ZeroOutPoints()
+    {
+        startTime = System.DateTime.UtcNow;
+        totalNormalScore = 0;
+        totalBonusScore = 0;
+        numberCellsKilledPlayer = 0;
+        numberCellsKilledKasper = 0;
+
+        killedByYou.text = "0";
+        killedByKasper.text = "0";
+        yourScore.text = "0";
+        bonusPointsScreen.transform.GetChild(0).GetComponent<Text>().text = "0";
     }
 }

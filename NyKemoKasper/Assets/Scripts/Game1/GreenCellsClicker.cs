@@ -13,6 +13,8 @@ public class GreenCellsClicker : MonoBehaviour
     private List<GameObject> points;
     public bool wasCellClicked;
 
+
+
     void Start()
     {
         _collider = GetComponent<Collider2D>();
@@ -47,7 +49,7 @@ public class GreenCellsClicker : MonoBehaviour
 
     private void DestroyTheCell()
     {
-        if (!gameManager.isGamePaused())
+        if (!gameManager.IsGamePaused())
         {
             if (!wasCellClicked)
             {

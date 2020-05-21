@@ -5,48 +5,49 @@ using UnityEngine;
 
 public class CellSpawner : MonoBehaviour
 {
-    public GameObject greenCellPrefab;
-    public GameObject bonusCellPrefab;
-    public GameObject timeCellPrefab;
-    public GameObject spawnedCellsParent;
-    public List<GameObject> greenCells;
-    public List<GameObject> otherCells;
+    public GameObject greenCellPrefab, bonusCellPrefab, timeCellPrefab, spawnedCellsParent;
+    public List<GameObject> greenCells, otherCells;
 
-    private int maxNumberOfGreenCells, maxNumberOfOtherCells;
-    private int initialNumberOfCells;
-    private int greenCellNo, otherCellNo;
+    private int maxNumberOfGreenCells, maxNumberOfOtherCells, initialNumberOfCells, greenCellNo, otherCellNo;
 
     private GameManager gameManager;
 
     private bool spawningEnabled;
 
+
+
     void Start()
     {
+        gameManager = FindObjectOfType<GameManager>();
+
         greenCellNo = 0;
         otherCellNo = 0;
-        gameManager = FindObjectOfType<GameManager>();
+
         maxNumberOfGreenCells = gameManager.maxNumberOfGreenCells;
         maxNumberOfOtherCells = gameManager.maxNumberOfOtherCells;
+
         greenCells = new List<GameObject>();
         otherCells = new List<GameObject>();
-        StartCoroutine("GreenCellsSpawner");
-        StartCoroutine("GreenCellsSpawner");
+
         spawningEnabled = true;
-        SpawnInitialGreenCells();
     }
 
+    // Update the lists of cells
     private void Update()
     {
         greenCells = greenCells.Where(item => item != null).ToList();
         otherCells = otherCells.Where(item => item != null).ToList();
     }
 
+    // Spawn the initial number of green cells
     private void SpawnInitialGreenCells()
     {
         initialNumberOfCells = gameManager.initialNumberOfGreenCells;
+
         for (int i = 0; i < initialNumberOfCells; i++)
         {
             Vector3 position = new Vector3(Random.Range(-800.0f, 800.0f), Random.Range(-300.0f, 300.0f), -200);
+
             if (!IsTooClose(position, greenCells))
             {
                 if (GetNumberOfGreenCells() < maxNumberOfGreenCells)
@@ -61,6 +62,7 @@ public class CellSpawner : MonoBehaviour
                     }
                 }
             }
+            // If the cell would be too close to an existing one, try again
             else
             {
                 initialNumberOfCells++;
@@ -68,6 +70,7 @@ public class CellSpawner : MonoBehaviour
         }
     }
 
+    // Routine for spawning other cells (bonus cells and time cells)
     IEnumerator OtherCellsSpawner()
     {
         float timeToSpawn = 1;
@@ -86,6 +89,7 @@ public class CellSpawner : MonoBehaviour
                     if (spawningEnabled)
                     {
                         GameObject cell = null;
+
                         if (isBonusCellNext)
                         {
                             cell = Instantiate(bonusCellPrefab, position, Quaternion.identity);
@@ -99,6 +103,7 @@ public class CellSpawner : MonoBehaviour
                             otherCellNo++;
                             isBonusCellNext = true;
                         }
+
                         otherCells.Add(cell);
                         cell.transform.SetParent(spawnedCellsParent.transform);
                     }
@@ -119,10 +124,6 @@ public class CellSpawner : MonoBehaviour
                         timeToSpawn = Random.Range(3.0f, 5.0f);
                     }
                 }
-                else
-                {
-                    // do nothing
-                }
             }
             else
             {
@@ -131,6 +132,7 @@ public class CellSpawner : MonoBehaviour
         }
     }
 
+    // Routine for spawning green cells
     IEnumerator GreenCellsSpawner()
     {
         float timeToSpawn = 1;
@@ -170,10 +172,6 @@ public class CellSpawner : MonoBehaviour
                         timeToSpawn = Random.Range(1.0f, 3.0f);
                     }
                 }
-                else
-                {
-                    // do nothing
-                }
             }
             else
             {
@@ -182,6 +180,7 @@ public class CellSpawner : MonoBehaviour
         }
     }
 
+    // Bool for checking if the cell would be to close to any of the existing ones
     public bool IsTooClose(Vector3 objectToSpawn, List<GameObject> alreadySpawned)
     {
         foreach (GameObject previousObject in alreadySpawned)
@@ -200,6 +199,7 @@ public class CellSpawner : MonoBehaviour
         return false;
     }
 
+    // Funciton checking how many other cells are in the given radius
     public int HowManyCellsInRadius(Vector3 position, float radius)
     {
         int number = 0;
@@ -229,6 +229,7 @@ public class CellSpawner : MonoBehaviour
         return otherCells.Count;
     }
 
+    // Function for replicating a green cell
     public void ReplicateGreenCell(Transform origin)
     {
         Vector3 position = new Vector3(origin.position.x + 35, origin.position.y, origin.position.z);
@@ -239,6 +240,7 @@ public class CellSpawner : MonoBehaviour
         replica.transform.SetParent(spawnedCellsParent.transform);
     }
 
+    // Function for instant killing all the cells
     public void KillAllTheCells()
     {
         spawningEnabled = false;
@@ -246,11 +248,17 @@ public class CellSpawner : MonoBehaviour
         {
             Destroy(cell);
         }
+        foreach (GameObject cell in otherCells)
+        {
+            Destroy(cell);
+        }
     }
 
+    // Function for destroying all cells in the given radius
     public void KillCellsInRadius(Vector3 position, float radius)
     {
         int numberKilled = 0;
+
         foreach (GameObject greenCell in greenCells)
         {
             if (greenCell != null)
@@ -265,7 +273,10 @@ public class CellSpawner : MonoBehaviour
                     greenCell.GetComponent<Animator>().gameObject.SetActive(false);
                     greenCell.GetComponent<Animator>().gameObject.SetActive(true);
                     greenCell.GetComponent<Animator>().Play("GreenCellExplode");
+
                     Destroy(greenCell, 1 / 6f);
+                    gameManager.IncreaseStats();
+
                     numberKilled++;
                 }
             }
@@ -282,11 +293,14 @@ public class CellSpawner : MonoBehaviour
                     otherCell.GetComponent<Animator>().gameObject.SetActive(false);
                     otherCell.GetComponent<Animator>().gameObject.SetActive(true);
                     otherCell.GetComponent<Animator>().Play("OtherCellExplode");
+
                     Destroy(otherCell, 1 / 6f);
+
                     numberKilled++;
                 }
             }
         }
+
         gameManager.DisplayKasperPoints(numberKilled);
     }
 
@@ -305,5 +319,10 @@ public class CellSpawner : MonoBehaviour
         greenCellNo = 0;
         spawningEnabled = true;
         SpawnInitialGreenCells();
+    }
+
+    public void StopAllSpawning()
+    {
+        StopAllCoroutines();
     }
 }

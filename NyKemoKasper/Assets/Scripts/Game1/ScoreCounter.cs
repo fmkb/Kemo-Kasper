@@ -20,11 +20,13 @@ public class ScoreCounter : MonoBehaviour
     public Text yourScore;
     public Text killedByYou;
     public Text killedByKasper;
-    public GameObject continueButton;
+    public GameObject continueButton, gameFinishedButton, addScoreButton;
     public GameObject bonusPointsScreen;
 
     private Vector3 defaultBonusPos;
     float countSpeed;
+
+    public bool isTheLastScreen, isScoreBigEnough;
 
 
 
@@ -33,9 +35,11 @@ public class ScoreCounter : MonoBehaviour
         gameManager = FindObjectOfType<GameManager>();
         timeStamps = new int[gameManager.amountForBonus];
         continueButton.SetActive(false);
+        gameFinishedButton.SetActive(false);
+        addScoreButton.SetActive(false);
         bonusPointsScreen.SetActive(false);
         index = 0;
-        countSpeed = 3.0f;
+        countSpeed = 1.0f;
 
         defaultBonusPos = bonusPointsScreen.transform.position;
     }
@@ -89,7 +93,7 @@ public class ScoreCounter : MonoBehaviour
     {
         yield return new WaitForSeconds(2.5f);
 
-        StartCoroutine(GenerateNormalPoints(countSpeed / totalNormalScore / 2.5f));
+        StartCoroutine(GenerateNormalPoints(countSpeed / totalNormalScore / 20f));
 
         while (numberCellsKilledPlayer > 0)
         {
@@ -104,11 +108,33 @@ public class ScoreCounter : MonoBehaviour
         }
         else if (totalBonusScore > 0)
         {
-            StartCoroutine(GenerateBonusPoints(countSpeed / totalBonusScore / 2.5f));
+            StartCoroutine(GenerateBonusPoints(countSpeed / totalBonusScore / 20f));
         }
         else
         {
-            continueButton.SetActive(true);
+            while (totalNormalScore > 0 || numberCellsKilledPlayer > 0)
+            {
+                yield return new WaitForSeconds(1f);
+            }
+
+            if (!isTheLastScreen)
+            {
+                continueButton.SetActive(true);
+            }
+            else
+            {
+                if (gameManager.CheckIfScoreInTop50(GetScore()))
+                {
+                    isScoreBigEnough = true;
+                }
+                gameFinishedButton.SetActive(true);
+                if(isScoreBigEnough)
+                {
+                    addScoreButton.SetActive(true);
+                    isScoreBigEnough = false;
+                }
+                isTheLastScreen = false;
+            }
         }
     }
 
@@ -132,7 +158,7 @@ public class ScoreCounter : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
 
         totalNormalScore = (int)((numberCellsKilledKasper + 1) * 2 / 3f * gameManager.normalPoints);
-        StartCoroutine(GenerateNormalPoints(countSpeed / totalNormalScore / 2.5f));
+        StartCoroutine(GenerateNormalPoints(countSpeed / totalNormalScore / 20f));
 
         while (numberCellsKilledKasper > 0)
         {
@@ -143,11 +169,33 @@ public class ScoreCounter : MonoBehaviour
 
         if (totalBonusScore > 0)
         {
-            StartCoroutine(GenerateBonusPoints(countSpeed / totalBonusScore / 2.5f));
+            StartCoroutine(GenerateBonusPoints(countSpeed / totalBonusScore / 20f));
         }
         else
         {
-            continueButton.SetActive(true);
+            while (totalNormalScore > 0 || numberCellsKilledPlayer > 0)
+            {
+                yield return new WaitForSeconds(1f);
+            }
+
+            if (!isTheLastScreen)
+            {
+                continueButton.SetActive(true);
+            }
+            else
+            {
+                if (gameManager.CheckIfScoreInTop50(GetScore()))
+                {
+                    isScoreBigEnough = true;
+                }
+                gameFinishedButton.SetActive(true);
+                if (isScoreBigEnough)
+                {
+                    addScoreButton.SetActive(true);
+                    isScoreBigEnough = false;
+                }
+                isTheLastScreen = false;
+            }
         }
     }
 
@@ -169,14 +217,31 @@ public class ScoreCounter : MonoBehaviour
                 "" + (int.Parse(bonusPointsScreen.transform.GetChild(0).GetComponent<Text>().text) + 1);
             yourScore.text = "" + (int.Parse(yourScore.text) + 1);
             totalBonusScore--;
-            yield return new WaitForSeconds(speed);
+            yield return new WaitForSeconds(speed / 5);
         }
         yield return new WaitForSeconds(0.5f);
         bonusPointsScreen.GetComponent<Animator>().Play("TotalBonusDisappear");
         yield return new WaitForSeconds(0.5f);
         bonusPointsScreen.SetActive(false);
 
-        continueButton.SetActive(true);
+        if (!isTheLastScreen)
+        {
+            continueButton.SetActive(true);
+        }
+        else
+        {
+            if (gameManager.CheckIfScoreInTop50(GetScore()))
+            {
+                isScoreBigEnough = true;
+            }
+            gameFinishedButton.SetActive(true);
+            if (isScoreBigEnough)
+            {
+                addScoreButton.SetActive(true);
+                isScoreBigEnough = false;
+            }
+            isTheLastScreen = false;
+        }
     }
 
     public void ZeroOutPoints()
@@ -191,5 +256,10 @@ public class ScoreCounter : MonoBehaviour
         killedByKasper.text = "0";
         yourScore.text = "0";
         bonusPointsScreen.transform.GetChild(0).GetComponent<Text>().text = "0";
+    }
+
+    public int GetScore()
+    {
+        return int.Parse(yourScore.text);
     }
 }

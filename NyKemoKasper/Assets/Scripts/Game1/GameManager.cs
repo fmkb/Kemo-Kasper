@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -17,6 +18,7 @@ public class GameManager : MonoBehaviour
     private Timer timer;
     private KemoKasperRoutine kemoKasperRoutine;
     private TimeCellRoutine timeCellRoutine;
+    private HighscoreEvaluator highscoreEvaluator;
 
     public GameObject startScreen, launchScreen1, launchScreen2, launchScreen3, launchScreen4, launchScreenNo, 
         pauseScreen, defaultScreen, roundFinished, roundSummary, gameWonScreen, afterGameScreen, chooseAvatarScreen;
@@ -26,8 +28,8 @@ public class GameManager : MonoBehaviour
 
     public GameObject genderBoy, genderGirl, genderBoy1, genderGirl1;
 
-    public Button backButton1, continueButton1, pauseButton, restroreButton, backButton2, continueSummaryButton,
-                  replayGameButton, menuButton, avatar1, avatar2, avatar3, avatar4;
+    public Button backButton0, backButton1, continueButton1, pauseButton, restroreButton, backButton2, continueSummaryButton,
+                  replayGameButton, menuButton, avatar1, avatar2, avatar3, avatar4, finishGameButton;
 
 
 
@@ -42,15 +44,19 @@ public class GameManager : MonoBehaviour
         kemoKasperRoutine = FindObjectOfType<KemoKasperRoutine>();
         timer = FindObjectOfType<Timer>();
         timeCellRoutine = FindObjectOfType<TimeCellRoutine>();
+        highscoreEvaluator = FindObjectOfType<HighscoreEvaluator>();
 
         Time.timeScale = 0;
 
+        finishGameButton.gameObject.SetActive(false);
+        backButton0.onClick.AddListener(GoBackToMenu);
         backButton1.onClick.AddListener(GoBackToMenu);
         backButton2.onClick.AddListener(GoBackToMenu);
         menuButton.onClick.AddListener(GoBackToMenu);
         continueButton1.onClick.AddListener(CloseFirstScreen);
         pauseButton.onClick.AddListener(PauseGame);
         restroreButton.onClick.AddListener(RestoreGame);
+        finishGameButton.onClick.AddListener(LaunchNewLevel);
         continueSummaryButton.onClick.AddListener(LaunchNewLevel);
         replayGameButton.onClick.AddListener(RestartGame);
         avatar1.onClick.AddListener(delegate { ChooseCharacterFromDefault(1); });
@@ -135,6 +141,7 @@ public class GameManager : MonoBehaviour
     // Function for loading the next level
     void LaunchNewLevel()
     {
+        Time.timeScale = 1;
         roundSummary.SetActive(false);
         if (noGreenCellsKilledSoFar < totalGreenCellsToKill)
         {
@@ -167,10 +174,12 @@ public class GameManager : MonoBehaviour
                     launchScreenNo.GetComponent<Text>().text = "" + lvlNo;
                     break;
             }
+            continueSummaryButton.gameObject.SetActive(false);
         }
         else
         {
             afterGameScreen.SetActive(true);
+            finishGameButton.gameObject.SetActive(false);
         }
     }
 
@@ -220,6 +229,8 @@ public class GameManager : MonoBehaviour
     // Function for opening the main menu
     void GoBackToMenu()
     {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("MainMenuNoLogin");
     }
 
     // Function for checking if the game is paused
@@ -234,6 +245,7 @@ public class GameManager : MonoBehaviour
         defaultScreen.SetActive(false);
         gameWonScreen.SetActive(true);
         timer.StopTimer();
+        scoreCounter.isTheLastScreen = true;
         StartCoroutine(Counter(3));
     }
 
@@ -358,5 +370,10 @@ public class GameManager : MonoBehaviour
                 break;
         }
         startScreen.SetActive(true);
+    }
+
+    public bool CheckIfScoreInTop50(int score)
+    {
+        return highscoreEvaluator.CheckIfScoreInTop50(scoreCounter.GetScore());
     }
 }

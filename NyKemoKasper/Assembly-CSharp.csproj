@@ -62,12 +62,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\ButtonScaleOnHover.cs" />
     <Compile Include="Assets\Scripts\Game1\BonusCellRoutine.cs" />
     <Compile Include="Assets\Scripts\Game1\CellSpawner.cs" />
     <Compile Include="Assets\Scripts\Game1\CellThrower.cs" />
     <Compile Include="Assets\Scripts\Game1\GameManager.cs" />
     <Compile Include="Assets\Scripts\Game1\GreenCellRoutine.cs" />
     <Compile Include="Assets\Scripts\Game1\GreenCellsClicker.cs" />
+    <Compile Include="Assets\Scripts\Game1\HighscoreEvaluator.cs" />
     <Compile Include="Assets\Scripts\Game1\KemoKasperRoutine.cs" />
     <Compile Include="Assets\Scripts\Game1\ScoreCounter.cs" />
     <Compile Include="Assets\Scripts\Game1\StatsManager.cs" />

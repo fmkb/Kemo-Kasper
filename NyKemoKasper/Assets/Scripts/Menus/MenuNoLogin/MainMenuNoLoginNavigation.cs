@@ -15,7 +15,6 @@ public class MainMenuNoLoginNavigation : MonoBehaviour
     public Button goToLoginMenuButton;
 
     public GameObject mainCanvas;
-    public GameObject game1LaunchCanvas;
     public GameObject game2LaunchCanvas;
     public GameObject higscoresCanvas;
     public GameObject hamburger;
@@ -26,7 +25,7 @@ public class MainMenuNoLoginNavigation : MonoBehaviour
         mainCanvas.gameObject.SetActive(true);
 
         goBackButton.onClick.AddListener(DisableAllCanvas);
-        game1Button.onClick.AddListener(OpenGame1LaunchCanvas);
+        game1Button.onClick.AddListener(OpenGame1);
         game2Button.onClick.AddListener(OpenGame2LaunchCanvas);
         highscoresButton.onClick.AddListener(OpenHigscoresCanvas);
         goToLoginMenuButton.onClick.AddListener(GoBackToLoginMenu);
@@ -35,7 +34,6 @@ public class MainMenuNoLoginNavigation : MonoBehaviour
 
     public void DisableAllCanvas()
     {
-        game1LaunchCanvas.gameObject.SetActive(false);
         game2LaunchCanvas.gameObject.SetActive(false);
         higscoresCanvas.gameObject.SetActive(false);
         hamburger.gameObject.SetActive(false);
@@ -43,11 +41,9 @@ public class MainMenuNoLoginNavigation : MonoBehaviour
         HideGoBackButton();
     }
 
-    public void OpenGame1LaunchCanvas()
+    public void OpenGame1()
     {
-        game1LaunchCanvas.gameObject.SetActive(true);
-        ShowGoBackButton();
-        hamburgerButton.gameObject.SetActive(false);
+        SceneManager.LoadScene("Game1");
     }
 
     public void OpenGame2LaunchCanvas()

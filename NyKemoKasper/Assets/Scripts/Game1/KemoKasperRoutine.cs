@@ -45,6 +45,7 @@ public class KemoKasperRoutine : MonoBehaviour
     {
         yield return new WaitForSeconds(3);
         buttonCallKasper.gameObject.SetActive(true);
+        gameManager.PlayKasperButtonAppearSound();
     }
 
     // Function for calling kemo kasper
@@ -52,6 +53,7 @@ public class KemoKasperRoutine : MonoBehaviour
     {
         buttonCallKasper.gameObject.SetActive(false);
         kasper = Instantiate(kasperPrefab, new Vector3(-1000, 0, -200), Quaternion.identity);
+        gameManager.PlayKasperAppearSound();
         StartCoroutine("KasperRoutine");
     }
 
@@ -128,12 +130,14 @@ public class KemoKasperRoutine : MonoBehaviour
             {
                 yield return new WaitForSeconds(1.5f);
             }
+            gameManager.PlayKasperJumpSound();
             StartCoroutine("MoveKasperToPos");
             if(firstTime)
             {
                 firstTime = false;
             }
             yield return new WaitForSeconds(1f);
+            gameManager.PlayKasperSplashSound();
         }
     }
 
@@ -145,8 +149,10 @@ public class KemoKasperRoutine : MonoBehaviour
 
         while (elapsedTime <= 1)
         {
-            if(kasper!=null)
-            kasper.transform.position = Vector3.Lerp(kasper.transform.position, newPos, Time.deltaTime);
+            if (kasper != null)
+            {
+                kasper.transform.position = Vector3.Lerp(kasper.transform.position, newPos, Time.deltaTime);
+            }
 
             elapsedTime += Time.deltaTime;
 

@@ -11,6 +11,8 @@ public class LocalHighscoresLoader : MonoBehaviour
 
     private int currentPage, currentGame;
 
+    public Text pageNo;
+
 
 
     void Start()
@@ -31,6 +33,7 @@ public class LocalHighscoresLoader : MonoBehaviour
             currentPage++;
 
             WriteHighscore();
+            pageNo.text = (currentPage + 1) + "";
 
             if (currentPage == 4)
             {
@@ -51,6 +54,7 @@ public class LocalHighscoresLoader : MonoBehaviour
             currentPage--;
 
             WriteHighscore();
+            pageNo.text = (currentPage + 1) + "";
 
             if (currentPage == 0)
             {
@@ -65,26 +69,28 @@ public class LocalHighscoresLoader : MonoBehaviour
 
     void SwitchToGame1Tab()
     {
-        game1tabButton.GetComponent<Image>().color = new Color32(0, 255, 25, 50);
-        game2tabButton.GetComponent<Image>().color = new Color32(255, 25, 0, 50);
+        game1tabButton.GetComponent<Image>().color = new Color32(0, 255, 25, 255);
+        game2tabButton.GetComponent<Image>().color = new Color32(255, 25, 0, 255);
 
         currentGame = 1;
         currentPage = 0;
 
         WriteHighscore();
         backButton.gameObject.SetActive(false);
+        pageNo.text = "1";
     }
 
     void SwitchToGame2Tab()
     {
-        game1tabButton.GetComponent<Image>().color = new Color32(255, 25, 0, 50);
-        game2tabButton.GetComponent<Image>().color = new Color32(0, 255, 25, 50);
+        game1tabButton.GetComponent<Image>().color = new Color32(255, 25, 0, 255);
+        game2tabButton.GetComponent<Image>().color = new Color32(0, 255, 25, 255);
         
         currentGame = 2;
         currentPage = 0;
 
         WriteHighscore();
         backButton.gameObject.SetActive(false);
+        pageNo.text = "1";
     }
 
     void WriteHighscore()

@@ -140,12 +140,14 @@ public class ScoreCounter : MonoBehaviour
 
     private IEnumerator GenerateNormalPoints(float speed)
     {
+        gameManager.PlayCountingScoreSoundOn();
         while (totalNormalScore > 0)
         {
-            yourScore.text = "" + (int.Parse(yourScore.text) + 1);
-            totalNormalScore--;
+            yourScore.text = "" + (int.Parse(yourScore.text) + 5);
+            totalNormalScore-=5;
             yield return new WaitForSeconds(speed);
         }
+        gameManager.PlayCountingScoreSoundOff();
     }
 
     private IEnumerator GenerateKilledKasper(float speed)
@@ -210,19 +212,24 @@ public class ScoreCounter : MonoBehaviour
 
         bonusPointsScreen.transform.position = defaultBonusPos;
         bonusPointsScreen.SetActive(true);
+        gameManager.PlayBonusScoreAppearSound();
         bonusPointsScreen.GetComponent<Animator>().Play("ButtonAppear");
+
+        gameManager.PlayCountingScoreSoundOn();
         while (totalBonusScore > 0)
         {
             bonusPointsScreen.transform.GetChild(0).GetComponent<Text>().text =
-                "" + (int.Parse(bonusPointsScreen.transform.GetChild(0).GetComponent<Text>().text) + 1);
-            yourScore.text = "" + (int.Parse(yourScore.text) + 1);
-            totalBonusScore--;
+                "" + (int.Parse(bonusPointsScreen.transform.GetChild(0).GetComponent<Text>().text) + 2);
+            yourScore.text = "" + (int.Parse(yourScore.text) + 5);
+            totalBonusScore-=5;
             yield return new WaitForSeconds(speed / 5);
         }
-        yield return new WaitForSeconds(0.5f);
+        gameManager.PlayCountingScoreSoundOff();
+        yield return new WaitForSeconds(1f);
         bonusPointsScreen.GetComponent<Animator>().Play("TotalBonusDisappear");
         yield return new WaitForSeconds(0.5f);
         bonusPointsScreen.SetActive(false);
+
 
         if (!isTheLastScreen)
         {

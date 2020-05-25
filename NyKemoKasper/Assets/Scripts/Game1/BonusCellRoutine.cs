@@ -26,6 +26,7 @@ public class BonusCellRoutine : MonoBehaviour
         {
             if (!wasBonusUsed)
             {
+                gameManager.PlayGetBonusSound();
                 GetComponent<Animator>().gameObject.SetActive(false);
                 GetComponent<Animator>().gameObject.SetActive(true);
                 GetComponent<Animator>().Play("OtherCellExplode");

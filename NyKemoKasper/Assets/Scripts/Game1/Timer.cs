@@ -66,11 +66,21 @@ public class Timer : MonoBehaviour
                     (Time.deltaTime));
             }
 
+            if(countdownValue == 6)
+            {
+                gameManager.PlayTimeRuningOutSoundOn();
+            }
+
             if (countdownValue < 6)
             {
                 clockIcon.transform.localScale = Vector3.Lerp(clockIcon.transform.localScale,
                     new Vector3((Mathf.Cos(5 * Time.time) + 2) / 1.7f, (Mathf.Cos(5 * Time.time) + 2) / 1.7f, (Mathf.Cos(5 * Time.time) + 2) / 1.7f),
                     Time.deltaTime);
+            }
+
+            if (countdownValue == -1)
+            {
+                gameManager.PlayTimeRuningOutSoundOff();
             }
 
             elapsedTime += Time.deltaTime;

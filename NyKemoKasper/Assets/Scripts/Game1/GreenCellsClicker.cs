@@ -73,10 +73,12 @@ public class GreenCellsClicker : MonoBehaviour
         if (!gameManager.CheckForBonus())
         {
             point = Instantiate(pointsNormalPrefab, position, Quaternion.identity);
+            gameManager.PlayKillCellSound();
         }
         else
         {
             point = Instantiate(pointsBonusPrefab, position, Quaternion.identity);
+            gameManager.PlayGetBonusSound();
         }
         points.Add(point);
         point.transform.SetParent(pointsParent.transform);

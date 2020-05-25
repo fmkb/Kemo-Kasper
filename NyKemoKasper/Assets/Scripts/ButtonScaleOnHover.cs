@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ButtonScaleOnHover : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class ButtonScaleOnHover : MonoBehaviour
     private void Start()
     {
         defaultScale = transform.localScale;
+        this.GetComponent<Button>().onClick.AddListener(ScaleDownOnClick);
     }
 
     public void PointerEnter()
@@ -21,6 +23,11 @@ public class ButtonScaleOnHover : MonoBehaviour
     {
         //StopCoroutine("ScaleButtonUp");
         transform.localScale = defaultScale;
+    }
+
+    private void ScaleDownOnClick()
+    {
+        PointerExit();
     }
 
     //private IEnumerator ScaleButtonUp()

@@ -9,7 +9,6 @@ public class MainMenuNoLoginNavigation : MonoBehaviour
     public Button game1Button;
     public Button game2Button;
     public Button highscoresButton;
-    public Button hamburgerButton;
 
     public Button goBackButton;
     public Button goToLoginMenuButton;
@@ -17,7 +16,6 @@ public class MainMenuNoLoginNavigation : MonoBehaviour
     public GameObject mainCanvas;
     public GameObject game2LaunchCanvas;
     public GameObject higscoresCanvas;
-    public GameObject hamburger;
 
     void Start()
     {
@@ -28,17 +26,16 @@ public class MainMenuNoLoginNavigation : MonoBehaviour
         game1Button.onClick.AddListener(OpenGame1);
         game2Button.onClick.AddListener(OpenGame2LaunchCanvas);
         highscoresButton.onClick.AddListener(OpenHigscoresCanvas);
-        goToLoginMenuButton.onClick.AddListener(GoBackToLoginMenu);
-        hamburgerButton.onClick.AddListener(OpenHamburger);
+        //goToLoginMenuButton.onClick.AddListener(GoBackToLoginMenu);
+        goToLoginMenuButton.onClick.AddListener(OpenGame2LaunchCanvas);
     }
 
     public void DisableAllCanvas()
     {
         game2LaunchCanvas.gameObject.SetActive(false);
         higscoresCanvas.gameObject.SetActive(false);
-        hamburger.gameObject.SetActive(false);
-        hamburgerButton.gameObject.SetActive(true);
         HideGoBackButton();
+        ShowGoToMenuButton();
     }
 
     public void OpenGame1()
@@ -50,30 +47,35 @@ public class MainMenuNoLoginNavigation : MonoBehaviour
     {
         game2LaunchCanvas.gameObject.SetActive(true);
         ShowGoBackButton();
-        hamburgerButton.gameObject.SetActive(false);
+        HideGoToMenuButton();
     }
 
     public void OpenHigscoresCanvas()
     {
         higscoresCanvas.gameObject.SetActive(true);
         ShowGoBackButton();
-        hamburgerButton.gameObject.SetActive(false);
+        HideGoToMenuButton();
     }
 
     public void GoBackToLoginMenu()
     {
-        mainCanvas.gameObject.SetActive(false);
-        SceneManager.LoadScene("LoginMenu");
-    }
-
-    public void OpenHamburger()
-    {
-        hamburger.SetActive(!hamburger.activeInHierarchy);
+        //mainCanvas.gameObject.SetActive(false);
+        //SceneManager.LoadScene("LoginMenu");
     }
 
     public void HideGoBackButton()
     {
         goBackButton.gameObject.SetActive(false);
+    }
+
+    private void HideGoToMenuButton()
+    {
+        goToLoginMenuButton.gameObject.SetActive(false);
+    }
+
+    private void ShowGoToMenuButton()
+    {
+        goToLoginMenuButton.gameObject.SetActive(true);
     }
 
     public void ShowGoBackButton()

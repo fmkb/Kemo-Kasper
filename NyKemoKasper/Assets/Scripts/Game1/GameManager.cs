@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     private KemoKasperRoutine kemoKasperRoutine;
     private TimeCellRoutine timeCellRoutine;
     private HighscoreEvaluator highscoreEvaluator;
+    private AudioManager audioManager;
 
     public GameObject startScreen, launchScreen1, launchScreen2, launchScreen3, launchScreen4, launchScreenNo, 
         pauseScreen, defaultScreen, roundFinished, roundSummary, gameWonScreen, afterGameScreen, chooseAvatarScreen;
@@ -31,12 +32,17 @@ public class GameManager : MonoBehaviour
     public Button backButton0, backButton1, continueButton1, pauseButton, restroreButton, backButton2, continueSummaryButton,
                   replayGameButton, menuButton, avatar1, avatar2, avatar3, avatar4, finishGameButton;
 
+    private AudioSource themeMusic;
+
 
 
     void Start()
     {
         lvlNo = 1;
         noGreenCellsKilledSoFar = 0;
+
+        themeMusic = GetComponent<AudioSource>();
+        themeMusic.Stop();
 
         cellSpawner = FindObjectOfType<CellSpawner>();
         scoreCounter = FindObjectOfType<ScoreCounter>();
@@ -45,6 +51,7 @@ public class GameManager : MonoBehaviour
         timer = FindObjectOfType<Timer>();
         timeCellRoutine = FindObjectOfType<TimeCellRoutine>();
         highscoreEvaluator = FindObjectOfType<HighscoreEvaluator>();
+        audioManager = GetComponent<AudioManager>();
 
         Time.timeScale = 0;
 
@@ -109,6 +116,7 @@ public class GameManager : MonoBehaviour
         defaultScreen.SetActive(true);
 
         Time.timeScale = 1;
+        themeMusic.Play();
 
         //cellSpawner.StartSpawningOtherCells();
         //kemoKasperRoutine.TurnOnCallButton(); // TO BE DELETED LATER
@@ -189,6 +197,7 @@ public class GameManager : MonoBehaviour
         defaultScreen.SetActive(false);
         pauseScreen.SetActive(true);
         Time.timeScale = 0;
+        themeMusic.Stop();
     }
 
     // Function for restarting the game when finished
@@ -208,6 +217,7 @@ public class GameManager : MonoBehaviour
         defaultScreen.SetActive(true);
         pauseScreen.SetActive(false);
         Time.timeScale = 1;
+        themeMusic.Play();
     }
 
     // Function for displaying the first screen after a round is completed
@@ -215,7 +225,9 @@ public class GameManager : MonoBehaviour
     {
         defaultScreen.SetActive(false);
         roundFinished.SetActive(true);
+        PlayRoundFinishedSound();
         StartCoroutine(Counter(2));
+        themeMusic.Stop();
     }
 
     // Function for displaying the second screen after a round is completed (the one with scores etc)
@@ -244,8 +256,10 @@ public class GameManager : MonoBehaviour
     {
         defaultScreen.SetActive(false);
         gameWonScreen.SetActive(true);
+        PlayRoundFinishedSound();
         timer.StopTimer();
         scoreCounter.isTheLastScreen = true;
+        themeMusic.volume = 0;
         StartCoroutine(Counter(3));
     }
 
@@ -375,5 +389,55 @@ public class GameManager : MonoBehaviour
     public bool CheckIfScoreInTop50(int score)
     {
         return highscoreEvaluator.CheckIfScoreInTop50(scoreCounter.GetScore());
+    }
+
+
+    public void PlayKillCellSound()
+    {
+        audioManager.PlayKillCellSound();
+    }
+    public void PlayGetBonusSound()
+    {
+        audioManager.PlayGetBonusSound();
+    }
+    public void PlayTimeRuningOutSoundOn()
+    {
+        audioManager.PlayTimeRuningOutSoundOn();
+    }
+    public void PlayTimeRuningOutSoundOff()
+    {
+        audioManager.PlayTimeRuningOutSoundOff();
+    }
+    public void PlayRoundFinishedSound()
+    {
+        audioManager.PlayRoundFinishedSound();
+    }
+    public void PlayCountingScoreSoundOn()
+    {
+        audioManager.PlayCountingScoreSoundOn();
+    }
+    public void PlayCountingScoreSoundOff()
+    {
+        audioManager.PlayCountingScoreSoundOff();
+    }
+    public void PlayBonusScoreAppearSound()
+    {
+        audioManager.PlayBonusScoreAppearSound();
+    }
+    public void PlayKasperButtonAppearSound()
+    {
+        audioManager.PlayKasperButtonAppearSound();
+    }
+    public void PlayKasperAppearSound()
+    {
+        audioManager.PlayKasperAppearSound();
+    }
+    public void PlayKasperJumpSound()
+    {
+        audioManager.PlayKasperJumpSound();
+    }
+    public void PlayKasperSplashSound()
+    {
+        audioManager.PlayKasperSplashSound();
     }
 }
